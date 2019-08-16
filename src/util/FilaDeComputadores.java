@@ -193,9 +193,10 @@ public class FilaDeComputadores {
         No aux = first;
         while (aux != null) {
             Node root = aux.getConteudo().getImagens().getRootNode();
-            System.out.println("Computador: " + aux.getConteudo().getNome());
+            System.out.println("\n\nComputador: " + aux.getConteudo().getNome());
             System.out.println("Imagens: ");
             aux.getConteudo().getImagens().listarImagem(root);
+            aux = aux.getNext();
         }
         return contador;
     }

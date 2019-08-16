@@ -122,14 +122,12 @@ public class SystemTeste {
         assertEquals("hospital", novoSistema.getComputadores().get(4).getNome());
     }
 
-    @Test(expected = FileNotFoundException.class)
+    @Test
     public void testeImportarImagens() throws FileNotFoundException, IOException {
-
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
 
         assertEquals(10, sistema.getComputadores().size());
-
     }
 
     @Test
