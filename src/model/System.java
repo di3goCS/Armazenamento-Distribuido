@@ -40,18 +40,28 @@ public class System {
         computadores = new FilaDeComputadores();
     }
 
+    /** Método para obtenção do registro de imagens registradas
+     * no sistema.
+     * 
+     * @return Tree - árvore de imagens.
+     */
     public Tree getRegistro() {
         return this.registro;
     }
 
+    /** Método para obtenção dos computadores registrados
+     * no sistema.
+     * 
+     * @return FilaDeComputadores - computadores registrados.
+     */
     public FilaDeComputadores getComputadores() {
         return this.computadores;
     }
     
     /** 
-     * Método que adiciona uma imagem a um computador
+     * Método que adiciona uma imagem a um computador.
      * 
-     * @param img
+     * @param img - Imagem a ser adicionada.
      * @throws NullPointerException
      * @throws FileNotFoundException 
      */
@@ -67,6 +77,17 @@ public class System {
         }
     }
 
+    /** Método para importação de imagens a partir de um arquivo
+     * ascii, em que cada linha contém o nome da imagem e o 
+     * tamanho da mesma, separados por um espaço.
+     * 
+     * Exemplo:
+     * img1 10.0
+     * 
+     * @param nome_arq - nome do arquivo que contém as imagens.
+     * @return int - contador de quantas imagens foram importadas.
+     * @throws IOException 
+     */
     public int importarImagens(String nome_arq) throws IOException {
         BufferedReader br = null;
         int contador = 0;
@@ -94,6 +115,17 @@ public class System {
         }
     }
 
+    /** Método para importar computadores a partir de um arquivo ascii
+     * em que cada par de linhas contém o nome do computador
+     * e o armazenamento disponível dela.
+     * 
+     * Exemplo:
+     * casa-pc
+     * 500
+     * 
+     * @param nomeArquivo - nome do arquivo que contém os computadores.
+     * @throws FileNotFoundException 
+     */
     public void importarComputadores(String nomeArquivo) throws FileNotFoundException {
         FileReader arquivo = new FileReader(nomeArquivo);
         try {
@@ -115,6 +147,10 @@ public class System {
         }
     }
 
+    /** Método para remover uma imagem do sistema.
+     * 
+     * @param remover - nome da imagem que deve ser removida.
+     */
     public void removerImagens(String remover) {
         Computador computador = registro.buscarImagem(remover);
         registro.remover(remover);
