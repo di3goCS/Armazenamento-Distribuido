@@ -295,7 +295,7 @@ public class Tree {
         }
     }
     
-    public int posOrder(Node node) 
+    /*public int posOrder(Node node) 
     {   
         int contador = 0;
         if (node == null) 
@@ -308,7 +308,7 @@ public class Tree {
                 "| Tamanho: " + node.getConteudo().getTamanho()); 
         
         return contador++;
-    } 
+    } */
 
     public Iterator iterator() {
         IteratorTree itTree = new IteratorTree(this.root);

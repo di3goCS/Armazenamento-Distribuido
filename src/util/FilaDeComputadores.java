@@ -195,7 +195,7 @@ public class FilaDeComputadores {
             Node root = aux.getConteudo().getImagens().getRootNode();
             System.out.println("Computador: " + aux.getConteudo().getNome());
             System.out.println("Imagens: ");
-            aux.getConteudo().getImagens().posOrder(root);
+            aux.getConteudo().getImagens().listarImagem(root);
         }
         return contador;
     }
