@@ -187,6 +187,18 @@ public class FilaDeComputadores {
         }
         return contador;
     }
+    
+    public int ListarImagens(){
+        int contador = 0;
+        No aux = first;
+        while (aux != null) {
+            Node root = aux.getConteudo().getImagens().getRootNode();
+            System.out.println("Computador: " + aux.getConteudo().getNome());
+            System.out.println("Imagens: ");
+            aux.getConteudo().getImagens().posOrder(root);
+        }
+        return contador;
+    }
 
     public void gravarArquivo() {
         try {

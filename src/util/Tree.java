@@ -294,6 +294,21 @@ public class Tree {
             return quantidade;
         }
     }
+    
+    public int posOrder(Node node) 
+    {   
+        int contador = 0;
+        if (node == null) 
+            return 0; 
+  
+        posOrder(node.getLeft());
+        posOrder(node.getRight()); 
+        
+        System.out.print("Nome: " + node.getConteudo().getNome() + 
+                "| Tamanho: " + node.getConteudo().getTamanho()); 
+        
+        return contador++;
+    } 
 
     public Iterator iterator() {
         IteratorTree itTree = new IteratorTree(this.root);

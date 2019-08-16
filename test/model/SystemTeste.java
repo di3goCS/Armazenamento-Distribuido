@@ -17,6 +17,7 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import util.Node;
 
 /**
  *
@@ -138,8 +139,11 @@ public class SystemTeste {
     }
 
     @Test
-    public void testeListarImagensETamanhosDeCadaComputador() {
-        --
+    public void testeListarImagensETamanhosDeCadaComputador() throws FileNotFoundException, IOException {
+        sistema.importarComputadores("files//computadores.ascii");
+        sistema.importarImagens("files//imagens.ascii");
+        
+        assertEquals(1000, sistema.getComputadores().ListarImagens());
     }
 
     @Test
@@ -149,8 +153,15 @@ public class SystemTeste {
     }
 
     @Test
-    public void testeListarImagens() {
-        ---
+    public void testeListarImagens() throws FileNotFoundException, IOException {
+        sistema.importarComputadores("files//computadores.ascii");
+        assertEquals(10, sistema.getComputadores().size());
+        
+        sistema.importarImagens("files//imagens.ascii");
+        assertEquals(1000, sistema.getRegistro().size());
+        
+        Node root = sistema.getRegistro().getRootNode();
+        assertEquals(1000, sistema.getRegistro().posOrder(root));
     }
 
     @Test
