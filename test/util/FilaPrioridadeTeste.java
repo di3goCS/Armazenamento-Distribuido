@@ -207,6 +207,33 @@ public class FilaPrioridadeTeste {
         fila.dequeue();
         assertEquals(0, fila.size());
     }
+    
+    @Test
+    public void testRemovePorObjeto(){
+        assertEquals(0, fila.size());
+
+        fila.add(pc1);
+        assertEquals(1, fila.size());
+        fila.add(pc2);
+        assertEquals(2, fila.size());
+        fila.add(pc3);
+        assertEquals(3, fila.size());
+        fila.add(pc4);
+        assertEquals(4, fila.size());
+        assertEquals(pc4, fila.peek());
+        
+        fila.remove(pc1);
+        assertEquals(3, fila.size());
+        fila.remove(pc4);
+        assertEquals(2, fila.size());
+        
+        assertEquals(pc3, fila.peek());
+        
+        fila.remove(pc3);
+        assertEquals(1, fila.size());
+        fila.remove(pc2);
+        assertEquals(0, fila.size());
+    }
 
     /**
      * Teste de unidade que verifica se o método iterator está listando os
