@@ -161,7 +161,7 @@ public class SystemTeste {
         assertEquals(1000, sistema.getRegistro().size());
         
         Node root = sistema.getRegistro().getRootNode();
-        assertEquals(1000, sistema.getRegistro().posOrder(root));
+        assertEquals(1000, sistema.getRegistro().listarImagem(root));
     }
 
     @Test

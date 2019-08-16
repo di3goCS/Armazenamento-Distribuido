@@ -164,13 +164,16 @@ public class Tree {
         }
     }
 
-    public void listarImagem(Node root) {
+    public int listarImagem(Node root) {
+        int contador = 0;
         if (root != null) {
             System.out.print("\nNome " + root.getKey());
             System.out.print("\tTamanho" + root.getConteudo().getTamanho());
+            contador++;
             listarImagem(root.getLeft());
             listarImagem(root.getRight());
         }
+        return contador;
     }
 
     public Imagem getMenorChave() {
