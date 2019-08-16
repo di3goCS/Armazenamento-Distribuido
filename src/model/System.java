@@ -62,7 +62,6 @@ public class System {
      * @throws FileNotFoundException 
      */
     public void addImagemAoComputador(Imagem img) throws NullPointerException, FileNotFoundException {
-        //PRECISA TRATAR A EXCEÇÃO DE ADD ATÉ A CAPACIDADE SER 0;
         try {
             registro.add(img);
             computadores.get(0).addImagem(img);
@@ -100,7 +99,7 @@ public class System {
             }
             br.close();
         } catch (IOException ioe) {
-            java.lang.System.out.println("Arquivo não encontrado.Tente novamente");
+            java.lang.System.out.println("Arquivo não encontrado. Tente novamente");
         } catch (NullPointerException ex) {
             importarComputadores("files//computadores.ascii");
         } finally {
