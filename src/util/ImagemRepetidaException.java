@@ -1,0 +1,19 @@
+/**
+ * Componente Curricular: Módulo Integrado de Programação
+ * Autores: Diego Silva e Estéfane Souza
+ * Data: 05/08/2019
+ *
+ * Declaramos que este código foi elaborado de forma coletiva pelos autores
+ * e não contém nenhum trecho de código de outro autor, tais como provindos
+ * de livros e apostilas, e páginas ou documentos eletrônicos da Internet.
+ * Qualquer trecho de código de outra autoria que uma citação para o mesmo
+ * não a minha está destacado com autor e a fonte do código, e estou ciente
+ * que estes trechos não serão considerados para fins de avaliação.
+ */
+package util;
+
+class ImagemRepetidaException extends Exception {
+    
+    public ImagemRepetidaException(){
+    }
+}
