@@ -132,8 +132,9 @@ public class SystemTeste {
     }
 
     @Test
-    public void testeListarComputadoresECapacidade() {
-        --
+    public void testeListarComputadoresECapacidade() throws FileNotFoundException {
+        sistema.importarComputadores("files//computadores.ascii");
+        assertEquals(10, sistema.getComputadores().ListarComputadores());
     }
 
     @Test
@@ -142,8 +143,9 @@ public class SystemTeste {
     }
 
     @Test
-    public void testeListarEspacoDisponivelEmComputadores() {
-        ---
+    public void testeListarEspacoDisponivelEmComputadores() throws FileNotFoundException {
+        sistema.importarComputadores("files//computadores.ascii");
+        assertEquals(10, sistema.getComputadores().ListarEspacoDisponivel());
     }
 
     @Test

@@ -162,24 +162,30 @@ public class FilaDeComputadores {
         return it;
     }
 
-    public void ListarEspacoDisponivel() {
+    public int ListarEspacoDisponivel() {
+        int contador = 0;
         No aux = first;
         int i = 1;
         System.out.println("Espaços Disponível dos Computadores cadastrados");
         while (aux != null) {
             System.out.println(i + " computador: " + aux.getConteudo().getEspacoDisponivel());
             aux = aux.getNext();
+            contador++;
             i++;
         }
+        return contador;
     }
 
-    public void ListarComputadores() {
+    public int ListarComputadores() {
+        int contador = 0;
         No aux = first;
         while (aux != null) {
             System.out.println("Nome: " + aux.getConteudo().getNome());
             System.out.print("\nCapacidade: " + aux.getConteudo().getCapacidade());
+            contador++;
             aux = aux.getNext();
         }
+        return contador;
     }
 
     public void gravarArquivo() {

@@ -48,26 +48,6 @@ public class System {
         return this.computadores;
     }
 
-    /*public void importarImagens(String nomeArquivo) throws FileNotFoundException {
-        FileReader arquivo = new FileReader(nomeArquivo);
-        try (BufferedReader ler = new BufferedReader(arquivo)) {
-            Imagem img;
-            String nome;
-            String linha = ler.readLine();
-            while (linha != null) {
-                    nome= linha;
-                    linha = ler.readLine();
-                    Double tamanho = Double.parseDouble(linha);
-                    img = new Imagem(nome, tamanho);
-                    registro.add(img);
-                    this.addImagemAoComputador(img);
-                    linha = ler.readLine();
-            }
-            ler.close();
-        } catch (IOException ioe) {
-            java.lang.System.out.println("Arquivo não encontrado.Tente novamente");
-        }
-    }*/
     public void addImagemAoComputador(Imagem img) throws NullPointerException, FileNotFoundException {
         //PRECISA TRATAR A EXCEÇÃO DE ADD ATÉ A CAPACIDADE SER 0;
         try {
