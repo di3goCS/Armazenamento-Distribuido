@@ -165,15 +165,16 @@ public class Tree {
     }
 
     public int listarImagem(Node root) {
-        int contador = 0;
-        if (root != null) {
-            contador++;
-            System.out.print("\nNome " + root.getKey());
-            System.out.print("\tTamanho" + root.getConteudo().getTamanho());
-            listarImagem(root.getLeft());
-            listarImagem(root.getRight());
-        }
-        return contador;
+            int direita = 0;
+            int esquerda = 0;
+            if (root != null){
+                System.out.print("\nNome " + root.getKey());
+                System.out.print("\tTamanho" + root.getConteudo().getTamanho());
+                esquerda = listarImagem(root.getLeft());
+                direita = listarImagem(root.getRight());
+                return esquerda + direita + 1;
+            }
+            return esquerda + direita;
     }
 
     public Imagem getMenorChave() {
