@@ -12,11 +12,7 @@
  */
 package model;
 
-import util.FilaDeComputadores;
-import util.Tree;
 import java.io.*;
-import model.Computador;
-import model.Imagem;
 import util.FilaDeComputadores;
 import util.Tree;
 
