@@ -12,7 +12,6 @@
  */
 package model;
 
-import java.util.Objects;
 import util.EspacoInsuficienteException;
 import util.Tree;
 
@@ -20,7 +19,7 @@ import util.Tree;
  * Esta classe armazena os dados de computador, contendo informação sobre o seu
  * nome e a sua capacidade de disco. Exemplo de uso:
  *
- * Computador computer= new Computador("nome",capacidade);
+ * Computador computer = new Computador("nome",capacidade);
  *
  * @author Estéfane Carmo de Souza
  * @author Diego do Carmo Silva
@@ -59,23 +58,37 @@ public class Computador {
         this.espacoDisponivel = espacoDisponivel;
     }
 
-    //O add de imagem precisa ser boolean
-    public void addImagem(Imagem imagem) {
+    /** Método para adicionar imagens aos computadores.
+     * 
+     * 
+     * 
+     * @param imagem - imagem que se deseja adicionar.
+     * @return boolean - true se foi adicionada ou false caso ccontrário.
+     */
+    public boolean addImagem(Imagem imagem) {
         try {
             if (this.getCapacidade() > 0) {
                 imagem.setComputador(this);
-                //this.setEspacoDisponivel(this.espacoDisponivel-imagem.getTamanho());
                 imagens.add(imagem);
+                return true;
             } else {
                 throw new EspacoInsuficienteException();
             }
         } catch (EspacoInsuficienteException e) {
-            e.printStackTrace();
+            // é pra chamar mais computadores ou lançar um print mandando
+            // add?
+            java.lang.System.out.println("Adicione mais computadores");
+            return false;
         }
 
     }
 
     //O add da arvore precisa retornar o que removeu
+    /** Método para remoção de uma imagem.
+     * 
+     * @param nomeImagem - nome da imagem que deve ser removida.
+     * @return Imagem - a imagem que foi removida.
+     */
     public Imagem removerImagem(String nomeImagem) {
         Imagem removido = imagens.procurar(nomeImagem);
         if (removido != null) {
@@ -85,6 +98,12 @@ public class Computador {
         return removido;
     }
 
+    /** Método que testa a igualdade dos valores dos atributos entre dois objetos
+     * do tipo Computador
+     *
+     * @param pc - objeto a ser comparado
+     * @return true - se os objetos forem iguais
+     */
     public boolean equals(Computador pc) {
         return this.getNome().equals(pc.getNome()) && this.getEspacoDisponivel() == pc.getEspacoDisponivel();
     }

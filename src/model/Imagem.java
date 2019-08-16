@@ -58,15 +58,9 @@ public class Imagem {
         this.computador = computador;
     }
 
-    /*
-     public void setPedido(Pedido alterarPedido) {
-        pedido = alterarPedido;
-        pedido.setValorTotal(quantidade * opcaoMenu.getValor());
-        pedido.getItens().add(this);
-    }*/
     /**
      * Método que testa a igualdade dos valores dos atributos entre dois objetos
-     * do tipo
+     * do tipo Imagem
      *
      * @param img - objeto a ser comparado
      * @return true - se os objetos forem iguais

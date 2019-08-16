@@ -47,7 +47,14 @@ public class System {
     public FilaDeComputadores getComputadores() {
         return this.computadores;
     }
-
+    
+    /** 
+     * Método que adiciona uma imagem a um computador
+     * 
+     * @param img
+     * @throws NullPointerException
+     * @throws FileNotFoundException 
+     */
     public void addImagemAoComputador(Imagem img) throws NullPointerException, FileNotFoundException {
         //PRECISA TRATAR A EXCEÇÃO DE ADD ATÉ A CAPACIDADE SER 0;
         try {

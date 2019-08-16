@@ -162,6 +162,11 @@ public class FilaDeComputadores {
         return it;
     }
 
+    /** Método que lista os espaços disponíveis em cada computador
+     * cadastrado no sistema.
+     * 
+     * @return int - contador de quantos computadores foram listados.
+     */
     public int ListarEspacoDisponivel() {
         int contador = 0;
         No aux = first;
@@ -176,6 +181,11 @@ public class FilaDeComputadores {
         return contador;
     }
 
+    /** Método que lista o nome e a capacidade de cada computador
+     * cadastrado no sistema.
+     * 
+     * @return int - contador de quantos computadores foram listados.
+     */
     public int ListarComputadores() {
         int contador = 0;
         No aux = first;
@@ -188,6 +198,10 @@ public class FilaDeComputadores {
         return contador;
     }
     
+    /** Método que lista as imagens armazenada em cada computador.
+     * 
+     * @return int - contador de imagens listadas.
+     */
     public int ListarImagens(){
         int contador = 0;
         No aux = first;
@@ -201,6 +215,10 @@ public class FilaDeComputadores {
         return contador;
     }
 
+    /** Método para gravar o arquivo de computadores, ao adicionar
+     * novos computadores ao sistema.
+     * 
+     */
     public void gravarArquivo() {
         try {
             FileWriter arquivoEscritor = new FileWriter("files//novosComputadores.ascii");
@@ -220,6 +238,11 @@ public class FilaDeComputadores {
         }
     }
 
+    /** Método para remoção de um computador do sistema.
+     * 
+     * @param pc - computador a ser removido.
+     * @return Computador - computador que foi removido.
+     */
     public Computador remove(Computador pc) {
         No auxiliar = first;
         if (auxiliar.getConteudo().equals(pc)) {
