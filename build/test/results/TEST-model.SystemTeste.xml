@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="2" hostname="KUBRICK-PC" name="model.SystemTeste" skipped="0" tests="10" time="38.244" timestamp="2019-08-16T11:29:10">
+<testsuite errors="0" failures="2" hostname="KUBRICK-PC" name="model.SystemTeste" skipped="0" tests="10" time="32.931" timestamp="2019-08-16T11:32:11">
   <properties>
     <property name="libs.spring-framework300.classpath" value="C:\Program Files (x86)\netbeans\ide\modules\org-apache-commons-logging.jar;C:\Program Files (x86)\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-aop-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-aspects-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-beans-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-build-src-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-context-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-context-support-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-core-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-expression-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-framework-bom-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-instrument-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-jdbc-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-jms-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-orm-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-oxm-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-struts-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-test-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-tx-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-web-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.7.RELEASE.jar" />
     <property name="javac.test.classpath" value="C:\Program Files (x86)\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:C:\Program Files (x86)\netbeans\platform\modules\ext\junit-4.12.jar:build/classes" />
-    <property name="javac.includesfile.binary" value="C:\Users\diego\Documents\armazenamento[\null145134204" />
+    <property name="javac.includesfile.binary" value="C:\Users\diego\Documents\armazenamento[\null1419807778" />
     <property name="java.specification.version" value="12" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="jar.index.metainf" value="false" />
@@ -23,7 +23,7 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12\bin" />
     <property name="libs.CopyLibs.src" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner model.SystemTeste skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\diego\Documents\armazenamento[\build\test\results\TEST-model.SystemTeste.xml crashfile=C:\Users\diego\Documents\armazenamento[\build\junitvmwatcher10239055442760081407.properties propsfile=C:\Users\diego\Documents\armazenamento[\build\junit6673627742150050216.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner model.SystemTeste skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\diego\Documents\armazenamento[\build\test\results\TEST-model.SystemTeste.xml crashfile=C:\Users\diego\Documents\armazenamento[\build\junitvmwatcher11528445536105373096.properties propsfile=C:\Users\diego\Documents\armazenamento[\build\junit6117413069587814702.properties" />
     <property name="ant.file.ArmazenamentoDistribuido" value="C:\Users\diego\Documents\armazenamento[\build.xml" />
     <property name="jdk.debug" value="release" />
     <property name="libs.spring-framework300.src" value="" />
@@ -308,7 +308,7 @@
     <property name="junit.forkmode" value="perTest" />
     <property name="annotation.processing.run.all.processors" value="true" />
   </properties>
-  <testcase classname="model.SystemTeste" name="testeListarImagensETamanhosDeCadaComputador" time="7.674">
+  <testcase classname="model.SystemTeste" name="testeListarImagensETamanhosDeCadaComputador" time="6.101">
     <failure message="expected:&lt;1000&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1000&gt; but was:&lt;0&gt;
 	at model.SystemTeste.testeListarImagensETamanhosDeCadaComputador(SystemTeste.java:144)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -316,9 +316,9 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="model.SystemTeste" name="testeInsercaoImagem" time="0.202" />
-  <testcase classname="model.SystemTeste" name="testeImportarImagens" time="8.264" />
-  <testcase classname="model.SystemTeste" name="testeListarImagens" time="8.4">
+  <testcase classname="model.SystemTeste" name="testeInsercaoImagem" time="0.151" />
+  <testcase classname="model.SystemTeste" name="testeImportarImagens" time="7.851" />
+  <testcase classname="model.SystemTeste" name="testeListarImagens" time="6.526">
     <failure message="expected:&lt;1000&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1000&gt; but was:&lt;1&gt;
 	at model.SystemTeste.testeListarImagens(SystemTeste.java:162)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -326,12 +326,12 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="model.SystemTeste" name="testeBuscarImagem" time="6.692" />
+  <testcase classname="model.SystemTeste" name="testeBuscarImagem" time="5.839" />
   <testcase classname="model.SystemTeste" name="testeListarComputadoresECapacidade" time="0.003" />
-  <testcase classname="model.SystemTeste" name="testeAbrirGravarArquivosDeComputadores" time="0.018" />
-  <testcase classname="model.SystemTeste" name="testeListarEspacoDisponivelEmComputadores" time="0.019" />
-  <testcase classname="model.SystemTeste" name="testeExcluirImagem" time="6.399" />
-  <testcase classname="model.SystemTeste" name="testeCadastroComputadores" time="0.032" />
+  <testcase classname="model.SystemTeste" name="testeAbrirGravarArquivosDeComputadores" time="0.023" />
+  <testcase classname="model.SystemTeste" name="testeListarEspacoDisponivelEmComputadores" time="0.033" />
+  <testcase classname="model.SystemTeste" name="testeExcluirImagem" time="5.836" />
+  <testcase classname="model.SystemTeste" name="testeCadastroComputadores" time="0.05" />
   <system-out><![CDATA[
 
 Computador: computerCmma

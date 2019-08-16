@@ -168,7 +168,7 @@ public class FilaDeComputadores {
         int i = 1;
         System.out.println("Espaços Disponível dos Computadores cadastrados");
         while (aux != null) {
-            System.out.println(i + " computador: " + aux.getConteudo().getEspacoDisponivel());
+            System.out.println(i + "º computador: " + aux.getConteudo().getEspacoDisponivel());
             aux = aux.getNext();
             contador++;
             i++;
@@ -180,8 +180,8 @@ public class FilaDeComputadores {
         int contador = 0;
         No aux = first;
         while (aux != null) {
-            System.out.println("Nome: " + aux.getConteudo().getNome());
-            System.out.print("\nCapacidade: " + aux.getConteudo().getCapacidade());
+            System.out.println("\nNome: " + aux.getConteudo().getNome());
+            System.out.print("Capacidade: " + aux.getConteudo().getCapacidade());
             contador++;
             aux = aux.getNext();
         }
