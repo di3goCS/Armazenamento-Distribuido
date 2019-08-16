@@ -14,7 +14,6 @@ package util;
 
 import java.util.Iterator;
 
-
 /**
  * Classe para objetos do tipo Iterador que implementa a interface Iterator,
  * contendo seus métodos e referência para um nó. Exemplo de uso:
@@ -50,7 +49,7 @@ public class Iterador implements Iterator {
      */
     @Override
     public Object next() {
-        if (hasNext()) { 
+        if (hasNext()) {
             No next = atual;
             atual = atual.getNext();
             return next.getConteudo();

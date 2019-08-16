@@ -10,9 +10,7 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-
 package util;
-
 
 import java.util.Iterator;
 import model.Computador;
@@ -36,18 +34,18 @@ public class Tree {
     public Tree() {
     }
 
-    public Node getRootNode(){
+    public Node getRootNode() {
         return root;
     }
+
     public Imagem getRoot() {
         return root.getConteudo();
     }
-   
-    
+
     public void setRoot(Node root) {
         this.root = root;
     }
-    
+
     /**
      * Método que verifica se a árvore está vazia
      *
@@ -56,6 +54,7 @@ public class Tree {
     public boolean isEmpty() {
         return (root == null);
     }
+
     public int altura(Node no) {
         if (no == null) {
             return 0;
@@ -77,8 +76,8 @@ public class Tree {
         root.setRight(auxiliar.getLeft());
         auxiliar.setLeft(root);
 
-        root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight()))+1);
-        auxiliar.setHeight(alturaMaxima(altura(auxiliar.getLeft()), altura(auxiliar.getRight()))+1);
+        root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight())) + 1);
+        auxiliar.setHeight(alturaMaxima(altura(auxiliar.getLeft()), altura(auxiliar.getRight())) + 1);
 
         return auxiliar;
     }
@@ -88,8 +87,8 @@ public class Tree {
         root.setLeft(auxiliar.getRight());
         auxiliar.setRight(root);
 
-        root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight()))+1);
-        auxiliar.setHeight(alturaMaxima(altura(auxiliar.getLeft()) + 1, altura(auxiliar.getRight()))+1);
+        root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight())) + 1);
+        auxiliar.setHeight(alturaMaxima(altura(auxiliar.getLeft()) + 1, altura(auxiliar.getRight())) + 1);
 
         return auxiliar;
     }
@@ -111,19 +110,20 @@ public class Tree {
             return altura(root.getLeft()) - altura(root.getRight());
         }
     }
-    public Computador buscarImagem(String nomeImagem){
-        Imagem auxiliar= procurar(nomeImagem);
+
+    public Computador buscarImagem(String nomeImagem) {
+        Imagem auxiliar = procurar(nomeImagem);
         return auxiliar.getComputador();
     }
+
     //Contando que arvore é só para imagem
     public Imagem procurar(String key) {
-       Node encontrado = procurarNo(this.root, key);
-       if (encontrado == null){
-           return null;
-       }
-       else{
-           return encontrado.getConteudo();
-       } 
+        Node encontrado = procurarNo(this.root, key);
+        if (encontrado == null) {
+            return null;
+        } else {
+            return encontrado.getConteudo();
+        }
     }
 
     private Node procurarNo(Node root, String key) {
@@ -163,9 +163,8 @@ public class Tree {
             listar(root.getRight());
         }
     }
-    
-    
-     public void listarImagem(Node root) {
+
+    public void listarImagem(Node root) {
         if (root != null) {
             System.out.print("\nNome " + root.getKey());
             System.out.print("\tTamanho" + root.getConteudo().getTamanho());
@@ -174,11 +173,11 @@ public class Tree {
         }
     }
 
-    public Imagem getMenorChave(){
-        Node r= menorChave(this.root);
+    public Imagem getMenorChave() {
+        Node r = menorChave(this.root);
         return r.getConteudo();
     }
-    
+
     private Node menorChave(Node root) {
         if (root == null) {
             return null;
@@ -209,7 +208,7 @@ public class Tree {
             return root;
         }
     }
-    
+
     //considerando que a arvore só será usada para a imagem
     public void add(Imagem im) {
         Computador pc;
@@ -219,8 +218,7 @@ public class Tree {
             if (pc != null) {
                 pc.setEspacoDisponivel(pc.getEspacoDisponivel() - im.getTamanho());
             }
-        }
-        catch (ImagemRepetidaException e){
+        } catch (ImagemRepetidaException e) {
             System.out.println("Já existe uma imagem com esse nome!");
         }
     }
@@ -229,40 +227,34 @@ public class Tree {
         if (root == null) {
             return (new Node(im));
         }
-        if(im.getNome().compareToIgnoreCase(root.getKey()) == 0){
+        if (im.getNome().compareToIgnoreCase(root.getKey()) == 0) {
             throw new ImagemRepetidaException();
-        }
-        else if (im.getNome().compareToIgnoreCase(root.getKey()) < 0) {
+        } else if (im.getNome().compareToIgnoreCase(root.getKey()) < 0) {
             root.setLeft(insercao(im, root.getLeft()));
         } else if (im.getNome().compareToIgnoreCase(root.getKey()) > 0) {
             root.setRight(insercao(im, root.getRight()));
         } else {
             return root;
         }
-        root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight()))+1);
+        root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight())) + 1);
         return balancear(root);
     }
-  
-     public void remover(String im) {
-        Imagem removido= null;
-        root = remove(im, root, removido);
-       // return removido;
+
+    public void remover(String im) {
+        root = remove(im, root);
     }
 
     //METODO DE REMOVER
-    private Node remove(String im, Node root, Imagem removido) {
+    private Node remove(String im, Node root) {
         if (root == null) {
-            return null;
+            this.root = null;
         }
-        //removido = root.getConteudo();
         if (im.compareToIgnoreCase(root.getKey()) < 0) {
-            root.setLeft(remove(im, root.getLeft(),removido));
+            root.setLeft(remove(im, root.getLeft()));
         } else if (im.compareToIgnoreCase(root.getKey()) > 0) {
-            root.setRight(remove(im, root.getRight(),removido));
+            root.setRight(remove(im, root.getRight()));
         } else {
-            //removido = root.getConteudo();
-            //root.getConteudo().setComputador(null);
-            //removido= root;
+            root.getConteudo().setComputador(null);
             if (root.getLeft() == null || root.getRight() == null) {
                 Node auxiliar = null;
                 if (root.getLeft() == null) {
@@ -277,41 +269,35 @@ public class Tree {
                     auxiliar = root;
                     root = null;
                     return root;
-
-                } 
+                }
             } else {
-                removido = root.getConteudo();
                 Node auxiliar2 = this.menorChave(root.getRight());
                 root.setKey(auxiliar2.getKey());
-                root.setRight(remove(auxiliar2.getKey(), root.getRight(),removido));
+                root.setRight(remove(auxiliar2.getKey(), root.getRight()));
             }
-
         }
-        root.setHeight(alturaMaxima(altura(root.getLeft())+1, altura(root.getRight())));
+        root.setHeight(alturaMaxima(altura(root.getLeft()) + 1, altura(root.getRight())));
         return balancear(root);
-        
     }
 
-    
-   public int size() {
+    public int size() {
         return quantidadeDeNós(root);
     }
-   
+
     private int quantidadeDeNós(Node root) {
-        if (root==null) {
+        if (root == null) {
             return 0;
         } else {
-            int quantidade=1;
+            int quantidade = 1;
             quantidade += quantidadeDeNós(root.getLeft());
             quantidade += quantidadeDeNós(root.getRight());
             return quantidade;
         }
     }
-    
-    public Iterator iterator(){
+
+    public Iterator iterator() {
         IteratorTree itTree = new IteratorTree(this.root);
         return itTree;
     }
 
-    
 }

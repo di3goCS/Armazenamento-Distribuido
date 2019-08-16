@@ -44,9 +44,10 @@ public class FilaDeComputadores {
         return first.getConteudo();
     }
 
-     public No getFirst() {
+    public No getFirst() {
         return first;
     }
+
     /**
      * Método que altera a referência do primeiro elemento da fila
      *
@@ -101,12 +102,11 @@ public class FilaDeComputadores {
     }
 
     /**
-     * Método para adicionar um novo computador à fila
-     * e adicioná-lo ao arquivo.
-     * 
-     * @param computador 
+     * Método para adicionar um novo computador à fila e adicioná-lo ao arquivo.
+     *
+     * @param computador
      */
-    public void addComputador(Computador computador){
+    public void addComputador(Computador computador) {
         add(computador);
         gravarArquivo();
     }
@@ -196,9 +196,28 @@ public class FilaDeComputadores {
                 auxiliar = auxiliar.getNext();
             }
             reescrever.close();
-        } 
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Arquivo não encontrado");
+        }
+    }
+
+    public Computador remove(Computador pc) {
+        No auxiliar = first;
+        if (auxiliar.getConteudo().equals(pc)) {
+            first = first.getNext();
+            return auxiliar.getConteudo();
+        } else {
+            No auxiliar2 = first;
+            while (auxiliar2.getNext() != null && !auxiliar2.getConteudo().equals(pc)) {
+                auxiliar = auxiliar2;
+                auxiliar2 = auxiliar2.getNext();
+            }
+            if (auxiliar2 != null) {
+                auxiliar.setNext(auxiliar2.getNext());
+                return auxiliar2.getConteudo();
+            } else {
+                return null;
+            }
         }
     }
 

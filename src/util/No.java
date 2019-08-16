@@ -10,7 +10,6 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-
 package util;
 
 import model.Computador;
@@ -21,7 +20,7 @@ import model.Computador;
  *
  * Exemplo de uso:
  *
- * Node node= new Node("conteudo");
+ * No no= new No("conteudo");
  *
  * @autor Estéfane Carmo de Souza
  * @author Diego do Carmo Silva

@@ -10,9 +10,9 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-
 package model;
 
+import java.util.Objects;
 import util.EspacoInsuficienteException;
 import util.Tree;
 
@@ -62,29 +62,31 @@ public class Computador {
     //O add de imagem precisa ser boolean
     public void addImagem(Imagem imagem) {
         try {
-            if(this.getCapacidade() > 0){
+            if (this.getCapacidade() > 0) {
                 imagem.setComputador(this);
                 //this.setEspacoDisponivel(this.espacoDisponivel-imagem.getTamanho());
                 imagens.add(imagem);
-            }
-            else{
+            } else {
                 throw new EspacoInsuficienteException();
             }
-        }
-        catch (EspacoInsuficienteException e){
+        } catch (EspacoInsuficienteException e) {
             e.printStackTrace();
         }
-        
+
     }
 
     //O add da arvore precisa retornar o que removeu
-    public Imagem removerImagem(Imagem imagem) {
-        Imagem removido = imagens.procurar(imagem.getNome());
-        if (removido != null){
-            imagens.remover(imagem.getNome());
-            this.setEspacoDisponivel(getEspacoDisponivel() + removido.getTamanho());
-            //return removido;
+    public Imagem removerImagem(String nomeImagem) {
+        Imagem removido = imagens.procurar(nomeImagem);
+        if (removido != null) {
+            imagens.remover(nomeImagem);
+            setEspacoDisponivel(this.espacoDisponivel + removido.getTamanho());
         }
-        return removido;    
+        return removido;
     }
+
+    public boolean equals(Computador pc) {
+        return this.getNome().equals(pc.getNome()) && this.getEspacoDisponivel() == pc.getEspacoDisponivel();
+    }
+
 }

@@ -15,7 +15,6 @@ package util;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-
 /**
  * Classe para objetos do tipo Iterador que implementa a interface Iterator,
  * contendo seus métodos e referência para um nó. Exemplo de uso:
@@ -31,12 +30,14 @@ public class IteratorTree implements Iterator {
 
     public IteratorTree(Node root) {
         atual = root;
-        
-        if(atual == null)
-            return;
 
-        while (atual.getLeft() != null)
-           atual = atual.getLeft();
+        if (atual == null) {
+            return;
+        }
+
+        while (atual.getLeft() != null) {
+            atual = atual.getLeft();
+        }
     }
 
     /**
@@ -57,22 +58,25 @@ public class IteratorTree implements Iterator {
      */
     @Override
     public Object next() throws NoSuchElementException {
-        if(!hasNext()) throw new NoSuchElementException();
+        if (!hasNext()) {
+            throw new NoSuchElementException();
+        }
         Node r = atual;
-        
-        if(atual.getRight() != null) {
+
+        if (atual.getRight() != null) {
             atual = atual.getRight();
-            while (atual.getLeft() != null)
+            while (atual.getLeft() != null) {
                 atual = atual.getLeft();
+            }
             return r.getConteudo();
         }
 
-        while(true) {
-            if(atual.getPai(atual, atual.getKey()) == null) {
+        while (true) {
+            if (atual.getPai(atual, atual.getKey()) == null) {
                 atual = null;
                 return r.getConteudo();
             }
-            if(atual.getPai(atual, atual.getKey()).getLeft() == atual) {
+            if (atual.getPai(atual, atual.getKey()).getLeft() == atual) {
                 atual = atual.getPai(atual, atual.getKey());
                 return r.getConteudo();
             }

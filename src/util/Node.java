@@ -10,14 +10,13 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-
 package util;
 
 import model.Imagem;
 
 /**
  * Classe para objetos do tipo Node, que contém seus atributos e métodos. Possui
- * uma referência para o conteúdo do nó, a referência para os nós a esquerda e a
+ * uma referência para o conteúdo do nó, a referência para os nós a esquerda, nós a
  * direita e a altura do nó.
  *
  * Exemplo de uso:
@@ -30,16 +29,15 @@ import model.Imagem;
 public class Node {
 
     //mudar o nó para generics depois;
-    
     private Imagem conteudo;
     private Node right;
     private Node left;
     private String key;
     private int height;
-    
+
     public Node(Imagem conteudo) {
         this.conteudo = conteudo;
-        key= conteudo.getNome();
+        key = conteudo.getNome();
         height = 1;
     }
 
@@ -82,18 +80,16 @@ public class Node {
     public void setHeight(int height) {
         this.height = height;
     }
-    
+
     public Node getPai(Node root, String chave) {
         if (root.getKey().equals(chave) || root == null) {
             return null;
         }
         if (root.getRight().getKey().equals(chave) || root.getLeft().getKey().equals(chave)) {
             return root;
-        }
-        else if (root.getKey().compareToIgnoreCase(chave) < 0) {
+        } else if (root.getKey().compareToIgnoreCase(chave) < 0) {
             return getPai(root.getRight(), chave);
-        }
-        else{
+        } else {
             return getPai(root.getLeft(), chave);
         }
     }

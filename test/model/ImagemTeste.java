@@ -10,7 +10,6 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-
 package model;
 
 import static org.junit.Assert.assertEquals;

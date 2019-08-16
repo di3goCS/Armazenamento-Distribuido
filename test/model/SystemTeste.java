@@ -45,17 +45,17 @@ public class SystemTeste {
     @Test
     public void testeCadastroComputadores() throws FileNotFoundException {
         assertTrue(sistema.getComputadores().isEmpty());
-        
+
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
-        
+
         sistema.getComputadores().addComputador(computador1);
         assertEquals(11, sistema.getComputadores().size());
 
         sistema.getComputadores().addComputador(computador2);
         assertEquals(12, sistema.getComputadores().size());
-        
-        Computador computer= new Computador("pc", 1220.00);
+
+        Computador computer = new Computador("pc", 1220.00);
 
         sistema.getComputadores().addComputador(computer);
         assertEquals(13, sistema.getComputadores().size());
@@ -65,34 +65,34 @@ public class SystemTeste {
 
     @Test
     public void testeInsercaoImagem() throws IOException {
-        
+
         assertTrue(sistema.getComputadores().isEmpty());
-        
+
         sistema.getComputadores().addComputador(computador1);
         sistema.getComputadores().addComputador(computador2);
         sistema.getComputadores().addComputador(computador4);
         sistema.getComputadores().addComputador(computador3);
-        
+
         assertEquals(4, sistema.getComputadores().size());
-   
+
         assertTrue(sistema.getRegistro().isEmpty());
-     
-        assertEquals(computador4,sistema.getComputadores().get(0));
-        
+
+        assertEquals(computador4, sistema.getComputadores().get(0));
+
         sistema.addImagemAoComputador(imagem1);
-        assertEquals(imagem1,sistema.getComputadores().get(2).getImagens().getRoot());
-        assertEquals(computador4,sistema.getComputadores().get(2));
-        
-        assertEquals(computador1,sistema.getComputadores().get(0));
+        assertEquals(imagem1, sistema.getComputadores().get(2).getImagens().getRoot());
+        assertEquals(computador4, sistema.getComputadores().get(2));
+
+        assertEquals(computador1, sistema.getComputadores().get(0));
         sistema.addImagemAoComputador(imagem2);
-        assertEquals(imagem2,sistema.getComputadores().get(2).getImagens().getRoot());
-         assertEquals(computador1,sistema.getComputadores().get(2));
-        
+        assertEquals(imagem2, sistema.getComputadores().get(2).getImagens().getRoot());
+        assertEquals(computador1, sistema.getComputadores().get(2));
+
         Imagem picture = new Imagem("Photo24", 4);
-        assertEquals(computador2,sistema.getComputadores().get(0));
+        assertEquals(computador2, sistema.getComputadores().get(0));
         sistema.addImagemAoComputador(picture);
-        assertEquals(computador2,sistema.getComputadores().get(2));
-        assertEquals(1,sistema.getComputadores().get(2).getImagens().size());   
+        assertEquals(computador2, sistema.getComputadores().get(2));
+        assertEquals(1, sistema.getComputadores().get(2).getImagens().size());
     }
 
     @Test(expected = FileNotFoundException.class)
@@ -120,33 +120,35 @@ public class SystemTeste {
         assertEquals("pcRecepcao", novoSistema.getComputadores().get(5).getNome());
         assertEquals("hospital", novoSistema.getComputadores().get(4).getNome());
     }
-    
-    @Test
-    public void testeImportarImagens() throws IOException {
+
+    @Test(expected = FileNotFoundException.class)
+    public void testeImportarImagens() throws FileNotFoundException, IOException {
+
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
-        
-    //PRECISA DESCOBRIR EM QUAIS COMPUTADORES ALGUMAS ESTÃO
+
+        assertEquals(10, sistema.getComputadores().size());
+
     }
-    
+
     @Test
     public void testeListarComputadoresECapacidade() {
---
+        --
     }
 
     @Test
     public void testeListarImagensETamanhosDeCadaComputador() {
---
+        --
     }
 
     @Test
     public void testeListarEspacoDisponivelEmComputadores() {
---
+        ---
     }
 
     @Test
     public void testeListarImagens() {
---
+        ---
     }
 
     @Test
@@ -156,33 +158,66 @@ public class SystemTeste {
 
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
-        
-        assertEquals(sistema.getComputadores().get(8), sistema.getRegistro().buscarImagem("aaf"));
-        assertEquals("computadorcm", sistema.getComputadores().get(8).getNome());
-        
-        assertEquals(sistema.getComputadores().get(0), sistema.getRegistro().buscarImagem("adq"));
-        assertEquals("solutions", sistema.getComputadores().get(0).getNome());
-        
-        //assertEquals(sistema.getComputadores().get(9), sistema.getRegistro().buscarImagem("acw"));
-        //assertEquals("hospitalPc", sistema.getComputadores().get(9).getNome());
-        
-        //assertEquals(sistema.getComputadores().get(1), sistema.getRegistro().buscarImagem("ato"));
-        //assertEquals("cmmaSolutions", sistema.getComputadores().get(1).getNome());
-        
-        assertEquals(sistema.getComputadores().get(2), sistema.getRegistro().buscarImagem("bia"));
-        assertEquals("hspSolution", sistema.getComputadores().get(2).getNome());
-        
-        assertEquals(sistema.getComputadores().get(3), sistema.getRegistro().buscarImagem("auw"));
-        assertEquals("solutionsComputer", sistema.getComputadores().get(3).getNome());
+
+        assertEquals(sistema.getComputadores().get(7), sistema.getRegistro().buscarImagem("aaf"));
+        assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
+
+        assertEquals(sistema.getComputadores().get(0), sistema.getRegistro().buscarImagem("acn"));
+        assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
+
+        assertEquals(sistema.getComputadores().get(8), sistema.getRegistro().buscarImagem("acw"));
+        assertEquals("solutions", sistema.getComputadores().get(8).getNome());
+
+        assertEquals(sistema.getComputadores().get(6), sistema.getRegistro().buscarImagem("ato"));
+        assertEquals("computer", sistema.getComputadores().get(6).getNome());
+
+        assertEquals(sistema.getComputadores().get(3), sistema.getRegistro().buscarImagem("bia"));
+        assertEquals("hospitalPc", sistema.getComputadores().get(3).getNome());
+
+        assertEquals(sistema.getComputadores().get(9), sistema.getRegistro().buscarImagem("ana"));
+        assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
+
+        assertEquals(sistema.getComputadores().get(5), sistema.getRegistro().buscarImagem("blc"));
+        assertEquals("solutionsComputer", sistema.getComputadores().get(5).getNome());
     }
 
     @Test
     public void testeExcluirImagem() throws FileNotFoundException, IOException {
-      sistema.importarComputadores("files//computadores.ascii");
-      assertEquals(10, sistema.getComputadores().size());
-     
-      sistema.importarImagens("files//imagens.ascii");
-      assertEquals(1000, sistema.getRegistro().size());
+        sistema.importarComputadores("files//computadores.ascii");
+        assertEquals(10, sistema.getComputadores().size());
+
+        sistema.importarImagens("files//imagens.ascii");
+        assertEquals(1000, sistema.getRegistro().size());
+
+        assertEquals(216.5999999999994, sistema.getComputadores().get(7).getEspacoDisponivel(), .0001);
+        assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
+        sistema.removerImagens("aaa");
+        assertEquals(219.5999999999994, sistema.getComputadores().get(4).getEspacoDisponivel(), .0001);
+        assertEquals("computadorcm", sistema.getComputadores().get(4).getNome());
+
+        assertEquals(221.29999999999936, sistema.getComputadores().get(0).getEspacoDisponivel(), .0001);
+        assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
+        sistema.removerImagens("aka");
+        assertEquals(221.39999999999935, sistema.getComputadores().get(0).getEspacoDisponivel(), .0001);
+        assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
+
+        assertEquals(212.2000000000001, sistema.getComputadores().get(9).getEspacoDisponivel(), .0001);
+        assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
+        sistema.removerImagens("aql");
+        assertEquals(215.0000000000001, sistema.getComputadores().get(9).getEspacoDisponivel(), .0001);
+        assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
+
+        assertEquals(218.10000000000014, sistema.getComputadores().get(5).getEspacoDisponivel(), .0001);
+        assertEquals("hspSolution", sistema.getComputadores().get(5).getNome());
+        sistema.removerImagens("ary");
+        assertEquals(219.50000000000014, sistema.getComputadores().get(5).getEspacoDisponivel(), .0001);
+        assertEquals("hspSolution", sistema.getComputadores().get(5).getNome());
+
+        assertEquals(215.79999999999987, sistema.getComputadores().get(8).getEspacoDisponivel(), .0001);
+        assertEquals("solutions", sistema.getComputadores().get(8).getNome());
+        sistema.removerImagens("azm");
+        assertEquals(216.39999999999986, sistema.getComputadores().get(8).getEspacoDisponivel(), .0001);
+        assertEquals("solutions", sistema.getComputadores().get(8).getNome());
     }
 
 }

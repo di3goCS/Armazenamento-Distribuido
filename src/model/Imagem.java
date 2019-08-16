@@ -10,7 +10,6 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-
 package model;
 
 /**
@@ -59,6 +58,12 @@ public class Imagem {
         this.computador = computador;
     }
 
+    /*
+     public void setPedido(Pedido alterarPedido) {
+        pedido = alterarPedido;
+        pedido.setValorTotal(quantidade * opcaoMenu.getValor());
+        pedido.getItens().add(this);
+    }*/
     /**
      * Método que testa a igualdade dos valores dos atributos entre dois objetos
      * do tipo

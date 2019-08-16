@@ -68,26 +68,24 @@ public class System {
             java.lang.System.out.println("Arquivo não encontrado.Tente novamente");
         }
     }*/
-    public void addImagemAoComputador(Imagem img) throws NullPointerException, FileNotFoundException{
+    public void addImagemAoComputador(Imagem img) throws NullPointerException, FileNotFoundException {
         //PRECISA TRATAR A EXCEÇÃO DE ADD ATÉ A CAPACIDADE SER 0;
-        try{
+        try {
             registro.add(img);
             computadores.get(0).addImagem(img);
             Computador removido = computadores.dequeue();
             computadores.addComputador(removido);
-        }
-        catch(NullPointerException ex){
+        } catch (NullPointerException ex) {
             importarComputadores("files//computadores.ascii");
         }
- }  
-        
-    
+    }
+
     public int importarImagens(String nome_arq) throws IOException {
         BufferedReader br = null;
         int contador = 0;
-        try{		
+        try {
             br = new BufferedReader(new FileReader(nome_arq));
-            while(br.ready()){
+            while (br.ready()) {
                 String linha = br.readLine();
                 String[] parts = linha.split(" ");
                 String nome = parts[0];
@@ -97,46 +95,19 @@ public class System {
                 contador++;
             }
             br.close();
-        }
-        catch(IOException ioe){
+        } catch (IOException ioe) {
             java.lang.System.out.println("Arquivo não encontrado.Tente novamente");
-        }
-        catch(NullPointerException ex){
+        } catch (NullPointerException ex) {
             importarComputadores("files//computadores.ascii");
-        }
-        finally{
-            if (br != null)
+        } finally {
+            if (br != null) {
                 br.close();
+            }
             return contador;
         }
     }
 
-   /* public int importarComputadores(String nome_arq) throws IOException {
-        BufferedReader br = null;
-        int contador = 0;
-        try{		
-            br = new BufferedReader(new FileReader(nome_arq));
-            while(br.ready()){
-                String linha = br.readLine();
-                String[] parts = linha.split(" ");
-                String nome = parts[0];
-                Double capacidade = Double.parseDouble(parts[1]);
-                Computador novo = new Computador(nome, capacidade);
-                computadores.add(novo);
-                contador++;
-            }
-            br.close();
-        }
-        catch(IOException ioe){
-            java.lang.System.out.println("Arquivo não encontrado. Tente novamente");
-        }
-        finally{
-            if(br != null)
-                br.close();
-            return contador;
-        }
-    }*/
-     public void importarComputadores(String nomeArquivo) throws FileNotFoundException {
+    public void importarComputadores(String nomeArquivo) throws FileNotFoundException {
         FileReader arquivo = new FileReader(nomeArquivo);
         try {
             BufferedReader ler = new BufferedReader(arquivo);
@@ -144,12 +115,12 @@ public class System {
             String nome;
             String linha = ler.readLine();
             while (linha != null) {
-                    nome= linha;
-                    linha = ler.readLine();
-                    Double capacidade = Double.parseDouble(linha);
-                    computador= new Computador(nome,capacidade);
-                    computadores.add(computador);
-                    linha = ler.readLine();
+                nome = linha;
+                linha = ler.readLine();
+                Double capacidade = Double.parseDouble(linha);
+                computador = new Computador(nome, capacidade);
+                computadores.add(computador);
+                linha = ler.readLine();
             }
             ler.close();
         } catch (IOException excecao) {
@@ -157,5 +128,12 @@ public class System {
         }
     }
 
+    public void removerImagens(String remover) {
+        Computador computador = registro.buscarImagem(remover);
+        registro.remover(remover);
+        Computador removido = computadores.remove(computador);
+        removido.removerImagem(remover);
+        computadores.addComputador(removido);
+    }
 
 }
