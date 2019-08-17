@@ -10,7 +10,7 @@
  * não a minha está destacado com autor e a fonte do código, e estou ciente
  * que estes trechos não serão considerados para fins de avaliação.
  */
-package util;
+package exception;
 
 public class EspacoInsuficienteException extends Exception {
     

@@ -12,6 +12,7 @@
  */
 package util;
 
+import exception.ImagemRepetidaException;
 import java.util.Iterator;
 import model.Computador;
 import model.Imagem;

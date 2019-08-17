@@ -12,7 +12,7 @@
  */
 package model;
 
-import util.EspacoInsuficienteException;
+import exception.EspacoInsuficienteException;
 import util.Tree;
 
 /**
