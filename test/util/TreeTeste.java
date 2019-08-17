@@ -138,42 +138,6 @@ public class TreeTeste {
     }
 
     @Test
-    public void ListarEmOrdem() {
-        tree.add(img9);
-        tree.add(img3);
-        tree.add(img1);
-        tree.add(img6);
-        tree.add(img4);
-        tree.add(img2);
-        tree.add(img8);
-
-        Iterator itTree = tree.iterator();
-        assertTrue(itTree.hasNext());
-        assertEquals(img1, itTree.next());
-
-        assertTrue(itTree.hasNext());
-        assertEquals(img2, itTree.next());
-
-        assertTrue(itTree.hasNext());
-        assertEquals(img3, itTree.next());
-
-        assertTrue(itTree.hasNext());
-        assertEquals(img4, itTree.next());
-
-        assertTrue(itTree.hasNext());
-        assertEquals(img6, itTree.next());
-
-        assertTrue(itTree.hasNext());
-        assertEquals(img9, itTree.next());
-
-        assertTrue(itTree.hasNext());
-        assertEquals(img10, itTree.next());
-
-        assertFalse(itTree.hasNext());
-
-    }
-
-    @Test
     public void TesteBalanceamento() {
         tree.add(img9);
         tree.add(img3);

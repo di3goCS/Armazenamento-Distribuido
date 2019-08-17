@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="KUBRICK-PC" name="allTests.AllTests" skipped="0" tests="29" time="49.856" timestamp="2019-08-16T13:00:53">
+<testsuite errors="0" failures="1" hostname="KUBRICK-PC" name="allTests.AllTests" skipped="0" tests="30" time="29.909" timestamp="2019-08-17T00:06:04">
   <properties>
     <property name="libs.spring-framework300.classpath" value="C:\Program Files (x86)\netbeans\ide\modules\org-apache-commons-logging.jar;C:\Program Files (x86)\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-aop-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-aspects-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-beans-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-build-src-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-context-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-context-support-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-core-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-expression-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-framework-bom-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-instrument-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-jdbc-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-jms-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-orm-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-oxm-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-struts-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-test-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-tx-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-web-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.7.RELEASE.jar" />
     <property name="javac.test.classpath" value="C:\Program Files (x86)\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:C:\Program Files (x86)\netbeans\platform\modules\ext\junit-4.12.jar:build/classes" />
-    <property name="javac.includesfile.binary" value="C:\Users\diego\Documents\armazenamento[\null1606523390" />
+    <property name="javac.includesfile.binary" value="C:\Users\diego\Documents\armazenamento[\null527394955" />
     <property name="java.specification.version" value="12" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="jar.index.metainf" value="false" />
@@ -23,7 +23,7 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12\bin" />
     <property name="libs.CopyLibs.src" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner allTests.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\diego\Documents\armazenamento[\build\test\results\TEST-allTests.AllTests.xml crashfile=C:\Users\diego\Documents\armazenamento[\build\junitvmwatcher2490284521074205865.properties propsfile=C:\Users\diego\Documents\armazenamento[\build\junit11638957809068241308.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner allTests.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\diego\Documents\armazenamento[\build\test\results\TEST-allTests.AllTests.xml crashfile=C:\Users\diego\Documents\armazenamento[\build\junitvmwatcher11553969419148296025.properties propsfile=C:\Users\diego\Documents\armazenamento[\build\junit7370983205972342785.properties" />
     <property name="ant.file.ArmazenamentoDistribuido" value="C:\Users\diego\Documents\armazenamento[\build.xml" />
     <property name="jdk.debug" value="release" />
     <property name="libs.spring-framework300.src" value="" />
@@ -308,32 +308,33 @@
     <property name="junit.forkmode" value="perTest" />
     <property name="annotation.processing.run.all.processors" value="true" />
   </properties>
-  <testcase classname="model.ComputadorTeste" name="Insercao" time="0.008" />
-  <testcase classname="model.ImagemTeste" name="testeBasico" time="0.002" />
-  <testcase classname="model.ImagemTeste" name="testeEquals" time="0.0" />
-  <testcase classname="model.SystemTeste" name="testeListarImagensETamanhosDeCadaComputador" time="10.003" />
-  <testcase classname="model.SystemTeste" name="testeInsercaoImagem" time="0.121" />
-  <testcase classname="model.SystemTeste" name="testeImportarImagens" time="10.781" />
-  <testcase classname="model.SystemTeste" name="testeListarImagens" time="10.026" />
-  <testcase classname="model.SystemTeste" name="testeBuscarImagem" time="8.958" />
-  <testcase classname="model.SystemTeste" name="testeListarComputadoresECapacidade" time="0.004" />
+  <testcase classname="model.ComputadorTeste" name="Insercao" time="0.006" />
+  <testcase classname="model.ImagemTeste" name="testeBasico" time="0.0" />
+  <testcase classname="model.ImagemTeste" name="testeEquals" time="0.002" />
+  <testcase classname="model.SystemTeste" name="testeListarImagensETamanhosDeCadaComputador" time="6.663" />
+  <testcase classname="model.SystemTeste" name="testeInsercaoImagem" time="0.18" />
+  <testcase classname="model.SystemTeste" name="testeImportarImagens" time="5.915" />
+  <testcase classname="model.SystemTeste" name="testeListarImagens" time="5.506" />
+  <testcase classname="model.SystemTeste" name="testeBuscarImagem" time="5.944" />
+  <testcase classname="model.SystemTeste" name="testeListarComputadoresECapacidade" time="0.003" />
   <testcase classname="model.SystemTeste" name="testeAbrirGravarArquivosDeComputadores" time="0.025" />
-  <testcase classname="model.SystemTeste" name="testeListarEspacoDisponivelEmComputadores" time="0.058" />
-  <testcase classname="model.SystemTeste" name="testeExcluirImagem" time="8.625" />
-  <testcase classname="model.SystemTeste" name="testeCadastroComputadores" time="0.04" />
+  <testcase classname="model.SystemTeste" name="testeListarEspacoDisponivelEmComputadores" time="0.014" />
+  <testcase classname="model.SystemTeste" name="testeExcluirImagem" time="4.796" />
+  <testcase classname="model.SystemTeste" name="testeCadastroComputadores" time="0.031" />
   <testcase classname="util.FilaPrioridadeTeste" name="testGet" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testSize" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testisEmpty" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testDelete" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testInsertDelete" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testInsert" time="0.0" />
-  <testcase classname="util.FilaPrioridadeTeste" name="testIterator" time="0.0" />
+  <testcase classname="util.FilaPrioridadeTeste" name="testIterator" time="0.001" />
+  <testcase classname="util.FilaPrioridadeTeste" name="testRemovePorObjeto" time="0.0" />
   <testcase classname="util.TreeTeste" name="TesteBalanceamento" time="0.0" />
   <testcase classname="util.TreeTeste" name="TesteAlturaMaximaEAltura" time="0.0" />
   <testcase classname="util.TreeTeste" name="testeSize" time="0.0" />
   <testcase classname="util.TreeTeste" name="TesteMaiorChaveMenorChave" time="0.0" />
-  <testcase classname="util.TreeTeste" name="TesteBusca" time="0.0" />
-  <testcase classname="util.TreeTeste" name="ListarEmOrdem" time="0.023">
+  <testcase classname="util.TreeTeste" name="TesteBusca" time="0.001" />
+  <testcase classname="util.TreeTeste" name="ListarEmOrdem" time="0.011">
     <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
 	at util.TreeTeste.ListarEmOrdem(TreeTeste.java:157)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
