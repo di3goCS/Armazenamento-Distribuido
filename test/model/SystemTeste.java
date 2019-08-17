@@ -1,7 +1,7 @@
 /**
  * Componente Curricular: Módulo Integrado de Programação
  * Autores: Diego Silva e Estéfane Souza
- * Data:  2019
+ * Data: 16/08/2019
  *
  * Declaramos que este código foi elaborado de forma coletiva pelos autores
  * e não contém nenhum trecho de código de outro autor, tais como provindos
@@ -20,8 +20,10 @@ import static org.junit.Assert.*;
 import util.Node;
 
 /**
+ * Classe teste para cada operação que o sistema deve realizar.
  *
- * @author casa
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
  */
 public class SystemTeste {
 
@@ -43,6 +45,12 @@ public class SystemTeste {
 
     }
 
+    /**
+     * Testa se um computador e a sua capacidade de disco é cadastrado no
+     * sistema corretamente.
+     *
+     * @throws FileNotFoundException
+     */
     @Test
     public void testeCadastroComputadores() throws FileNotFoundException {
         assertTrue(sistema.getComputadores().isEmpty());
@@ -64,11 +72,18 @@ public class SystemTeste {
         assertEquals(computer, sistema.getComputadores().peek());
     }
 
+    /**
+     * Testa se novas imagens e seus tamanhos são armazenadas corretamente nos
+     * computadores com mais espaço disponível
+     *
+     * @throws IOException
+     */
     @Test
     public void testeInsercaoImagem() throws IOException {
-
+        //testa se a fila de computadores está vazia
         assertTrue(sistema.getComputadores().isEmpty());
 
+        //adiciona os computadores
         sistema.getComputadores().addComputador(computador1);
         sistema.getComputadores().addComputador(computador2);
         sistema.getComputadores().addComputador(computador4);
@@ -80,25 +95,40 @@ public class SystemTeste {
 
         assertEquals(computador4, sistema.getComputadores().get(0));
 
-        sistema.addImagemAoComputador(imagem1);
+        //adiciona a imagem ao sistema e verifica se foi adicionada ao computador de maior espaço
+        sistema.addImagem(imagem1);
         assertEquals(imagem1, sistema.getComputadores().get(2).getImagens().getRoot());
         assertEquals(computador4, sistema.getComputadores().get(2));
 
+        //adiciona a imagem ao sistema e verifica se foi adicionada ao computador de maior espaço
         assertEquals(computador1, sistema.getComputadores().get(0));
-        sistema.addImagemAoComputador(imagem2);
+        sistema.addImagem(imagem2);
         assertEquals(imagem2, sistema.getComputadores().get(2).getImagens().getRoot());
         assertEquals(computador1, sistema.getComputadores().get(2));
 
         Imagem picture = new Imagem("Photo24", 4);
+
+        //adiciona a imagem ao sistema e verifica se foi adicionada ao computador de maior espaço
         assertEquals(computador2, sistema.getComputadores().get(0));
-        sistema.addImagemAoComputador(picture);
+        sistema.addImagem(picture);
         assertEquals(computador2, sistema.getComputadores().get(2));
         assertEquals(1, sistema.getComputadores().get(2).getImagens().size());
+
+        //verifica se foi adicionada na árvore de registro
+        assertEquals(3, sistema.getRegistro().size());
     }
 
+    /**
+     * Testa se um arquivo de computadores é importado corretamente e adicionado
+     * na fila de computadores. Testa se o arquivo foi escrito corretamente.
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Test(expected = FileNotFoundException.class)
     public void testeAbrirGravarArquivosDeComputadores() throws FileNotFoundException, IOException {
 
+        //importa os computadores
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
 
@@ -122,46 +152,96 @@ public class SystemTeste {
         assertEquals("hospital", novoSistema.getComputadores().get(4).getNome());
     }
 
+    /**
+     * Método que testa se um arquivo de imagens foi importado corretamente, e
+     * se as imagens foram adicionadas no computadores de maior espaço.
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Test
     public void testeImportarImagens() throws FileNotFoundException, IOException {
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
 
         assertEquals(10, sistema.getComputadores().size());
+
+        assertEquals(sistema.getComputadores().get(0), sistema.getRegistro().buscarImagem("aaa"));
+        assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
+
+        assertEquals(sistema.getComputadores().get(9), sistema.getRegistro().buscarImagem("bmk"));
+        assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
+        
+        assertEquals(sistema.getComputadores().get(7), sistema.getRegistro().buscarImagem("ayp"));
+        assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
+         
     }
 
+    /**
+     * Testa se a listagem dos computadores com suas capacidades foi efetuada
+     * corretamente;
+     *
+     * @throws FileNotFoundException
+     */
     @Test
     public void testeListarComputadoresECapacidade() throws FileNotFoundException {
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().ListarComputadores());
     }
 
+    /**
+     * Testa se a listagem das imagens/tamanho de cada computador foi efetuada
+     * corretamente.
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Test
     public void testeListarImagensETamanhosDeCadaComputador() throws FileNotFoundException, IOException {
         sistema.importarComputadores("files//computadores.ascii");
         sistema.importarImagens("files//imagens.ascii");
-        
+
         assertEquals(1000, sistema.getComputadores().ListarImagens());
     }
 
+    /**
+     * Testa se a listagem do espaço disponível de cada computador foi realizada
+     * corretamente.
+     *
+     * @throws FileNotFoundException
+     */
     @Test
     public void testeListarEspacoDisponivelEmComputadores() throws FileNotFoundException {
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().ListarEspacoDisponivel());
     }
 
+    /**
+     * Testa se a listagem dos nomes das imagens de um determinado computador
+     * foi realizada corretamente.
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Test
     public void testeListarImagens() throws FileNotFoundException, IOException {
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
-        
+
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
-        
+
         Node root = sistema.getRegistro().getRootNode();
         assertEquals(1000, sistema.getRegistro().listarImagem(root));
     }
 
+    /**
+     * Testa a busca de uma imagem no sistema e em que computador ela está
+     * armazenada.
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Test
     public void testeBuscarImagem() throws FileNotFoundException, IOException {
         sistema.importarComputadores("files//computadores.ascii");
@@ -192,6 +272,13 @@ public class SystemTeste {
         assertEquals("solutionsComputer", sistema.getComputadores().get(5).getNome());
     }
 
+    /**
+     * Testa a exclusão de uma imagem no sistema e se o espaço disonível do
+     * computador hospedeiro aumenta após a remorção.
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Test
     public void testeExcluirImagem() throws FileNotFoundException, IOException {
         sistema.importarComputadores("files//computadores.ascii");
@@ -202,31 +289,31 @@ public class SystemTeste {
 
         assertEquals(216.5999999999994, sistema.getComputadores().get(7).getEspacoDisponivel(), .0001);
         assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
-        sistema.removerImagens("aaa");
+        sistema.removerImagem("aaa");
         assertEquals(219.5999999999994, sistema.getComputadores().get(4).getEspacoDisponivel(), .0001);
         assertEquals("computadorcm", sistema.getComputadores().get(4).getNome());
 
         assertEquals(221.29999999999936, sistema.getComputadores().get(0).getEspacoDisponivel(), .0001);
         assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
-        sistema.removerImagens("aka");
+        sistema.removerImagem("aka");
         assertEquals(221.39999999999935, sistema.getComputadores().get(0).getEspacoDisponivel(), .0001);
         assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
 
         assertEquals(212.2000000000001, sistema.getComputadores().get(9).getEspacoDisponivel(), .0001);
         assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
-        sistema.removerImagens("aql");
+        sistema.removerImagem("aql");
         assertEquals(215.0000000000001, sistema.getComputadores().get(9).getEspacoDisponivel(), .0001);
         assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
 
         assertEquals(218.10000000000014, sistema.getComputadores().get(5).getEspacoDisponivel(), .0001);
         assertEquals("hspSolution", sistema.getComputadores().get(5).getNome());
-        sistema.removerImagens("ary");
+        sistema.removerImagem("ary");
         assertEquals(219.50000000000014, sistema.getComputadores().get(5).getEspacoDisponivel(), .0001);
         assertEquals("hspSolution", sistema.getComputadores().get(5).getNome());
 
         assertEquals(215.79999999999987, sistema.getComputadores().get(8).getEspacoDisponivel(), .0001);
         assertEquals("solutions", sistema.getComputadores().get(8).getNome());
-        sistema.removerImagens("azm");
+        sistema.removerImagem("azm");
         assertEquals(216.39999999999986, sistema.getComputadores().get(8).getEspacoDisponivel(), .0001);
         assertEquals("solutions", sistema.getComputadores().get(8).getNome());
     }

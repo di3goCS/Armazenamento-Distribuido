@@ -19,6 +19,13 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Classe teste para a análise na criação de objetos do tipo imagem e alterações
+ * em seus atributos
+ *
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
+ */
 public class ImagemTeste {
 
     private Computador computer, computer2;
@@ -32,6 +39,10 @@ public class ImagemTeste {
 
     }
 
+    /**
+     * Método para o teste se cada valor de atríbuto está sendo inserido
+     * corretamente. bem como suas modificações
+     */
     @Test
     public void testeBasico() {
         assertEquals("carlosPhoto", imagem1.getNome());
@@ -42,6 +53,9 @@ public class ImagemTeste {
         assertEquals(computer, imagem1.getComputador());
     }
 
+    /**
+     * Método que testa a igualdade entre dois objetos do tipo imagem.
+     */
     @Test
     public void testeEquals() {
         imagem2 = new Imagem("imag001", 0.0004806519);
@@ -53,5 +67,4 @@ public class ImagemTeste {
         imagem2 = new Imagem("09811", 0.0000651621);
         assertFalse(imagem2.equals(imagem1));
     }
-
 }

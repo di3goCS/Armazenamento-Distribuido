@@ -16,17 +16,28 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Classe teste para a análise na criação de objetos do tipo computador e
+ * alterações em seus atributos
+ *
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
+ */
 public class ComputadorTeste {
 
-    private Computador computer;
+    private Computador computer, computer2;
     private Imagem img1, img2, img3, img4;
 
     @Before
     public void setUp() throws Exception {
         computer = new Computador("comps103", 500.00);
-
     }
 
+    /**
+     * O método testa se cada atributo está sendo inserido corretamente, se as
+     * imagens estão sendo inseridas na arvóre do computador e se as alterações
+     * são efetuadas com sucesso.
+     */
     @Test
     public void Insercao() {
         assertEquals("comps103", computer.getNome());
@@ -63,7 +74,21 @@ public class ComputadorTeste {
         assertEquals(img2, computer.getImagens().getRoot());
         assertEquals(2, computer.getImagens().size());
         assertEquals(499.98388, computer.getEspacoDisponivel(), .0001);
+    }
 
+    /**
+     * Método que testa se 2 objetos do tipo computador são iguais.
+     */
+    @Test
+    public void testeEquals() {
+        computer2 = new Computador("comps103", 900.00);
+        assertFalse(computer.equals(computer2));
+
+        computer2 = new Computador("comps103", 500.00);
+        assertTrue(computer.equals(computer2));
+
+        computer2 = new Computador("newComputer", 250.00);
+        assertFalse(computer2.equals(computer));
     }
 
 }

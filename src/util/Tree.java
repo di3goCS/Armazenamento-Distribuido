@@ -13,7 +13,6 @@
 package util;
 
 import exception.ImagemRepetidaException;
-import java.util.Iterator;
 import model.Computador;
 import model.Imagem;
 
@@ -214,7 +213,6 @@ public class Tree {
         }
     }
 
-    //considerando que a arvore só será usada para a imagem
     public void add(Imagem im) {
         Computador pc;
         try {
@@ -249,7 +247,6 @@ public class Tree {
         root = remove(im, root);
     }
 
-    //METODO DE REMOVER
     private Node remove(String im, Node root) {
         if (root == null) {
             this.root = null;
@@ -314,10 +311,5 @@ public class Tree {
         
         return contador++;
     } */
-
-    public Iterator iterator() {
-        IteratorTree itTree = new IteratorTree(this.root);
-        return itTree;
-    }
 
 }

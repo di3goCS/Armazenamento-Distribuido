@@ -17,7 +17,10 @@ import util.Tree;
 
 /**
  * Esta classe armazena os dados de computador, contendo informação sobre o seu
- * nome e a sua capacidade de disco. Exemplo de uso:
+ * nome, a sua capacidade de disco, o espaço disponível na memória e a árvore
+ * para as imagens a serem armazenadas.
+ *
+ * Exemplo de uso:
  *
  * Computador computer = new Computador("nome",capacidade);
  *
@@ -31,6 +34,13 @@ public class Computador {
     private Tree imagens;
     private double espacoDisponivel;
 
+    /**
+     * O construtor inicializa as váriaveis e o espaço disponivel inicialmente é
+     * igual a capacidade de disco.
+     *
+     * @param nome- nome do computador
+     * @param capacidade- capacidade de disco do computador
+     */
     public Computador(String nome, double capacidade) {
         this.nome = nome;
         this.capacidade = capacidade;
@@ -38,32 +48,56 @@ public class Computador {
         espacoDisponivel = capacidade;
     }
 
+    /**
+     * Método que obtém o nome do computador
+     *
+     * @return String - nome do computador
+     */
     public String getNome() {
         return nome;
     }
 
+    /**
+     * Método que obtém a capacidade do computador
+     *
+     * @return double - a capacidade
+     */
     public double getCapacidade() {
         return capacidade;
     }
 
+    /**
+     * Método para obter a árvore de imagens
+     *
+     * @return Tree - árvore de imagens
+     */
     public Tree getImagens() {
         return imagens;
     }
 
+    /**
+     * Método que obtém o espaço disponível no computador
+     *
+     * @return double - espaco disponivel
+     */
     public double getEspacoDisponivel() {
         return espacoDisponivel;
     }
 
+    /**
+     * Método que altera o espaco disponível do computador
+     *
+     * @param espacoDisponivel - novo espaço
+     */
     public void setEspacoDisponivel(double espacoDisponivel) {
         this.espacoDisponivel = espacoDisponivel;
     }
 
-    /** Método para adicionar imagens aos computadores.
-     * 
-     * 
-     * 
+    /**
+     * Método para adicionar imagens aos computadores.
+     *
      * @param imagem - imagem que se deseja adicionar.
-     * @return boolean - true se foi adicionada ou false caso ccontrário.
+     * @return boolean - true se foi adicionada ou false caso contrário.
      */
     public boolean addImagem(Imagem imagem) {
         try {
@@ -75,30 +109,29 @@ public class Computador {
                 throw new EspacoInsuficienteException();
             }
         } catch (EspacoInsuficienteException e) {
-            // é pra chamar mais computadores ou lançar um print mandando
-            // add?
             java.lang.System.out.println("Adicione mais computadores");
             return false;
         }
-
     }
 
-    //O add da arvore precisa retornar o que removeu
-    /** Método para remoção de uma imagem.
-     * 
+    /**
+     * Método para remoção de uma imagem da árvore, após a remorção o espaço na
+     * memória é liberado.
+     *
      * @param nomeImagem - nome da imagem que deve ser removida.
      * @return Imagem - a imagem que foi removida.
      */
     public Imagem removerImagem(String nomeImagem) {
-        Imagem removido = imagens.procurar(nomeImagem);
-        if (removido != null) {
+        Imagem removido = imagens.procurar(nomeImagem); //Procura se existe a imagem
+        if (removido != null) { //Se encontrou, remove
             imagens.remover(nomeImagem);
             setEspacoDisponivel(this.espacoDisponivel + removido.getTamanho());
         }
         return removido;
     }
 
-    /** Método que testa a igualdade dos valores dos atributos entre dois objetos
+    /**
+     * Método que testa a igualdade dos valores dos atributos entre dois objetos
      * do tipo Computador
      *
      * @param pc - objeto a ser comparado

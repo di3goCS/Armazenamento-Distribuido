@@ -13,7 +13,6 @@
 package util;
 
 import java.io.*;
-import java.io.File;
 import java.util.Iterator;
 import model.Computador;
 
@@ -102,7 +101,8 @@ public class FilaDeComputadores {
     }
 
     /**
-     * Método para adicionar um novo computador à fila e adicioná-lo ao arquivo.
+     * Método para adicionar um novo computador à fila. Ao ser adicionado, é
+     * adicionado a um arquivo .ascii
      *
      * @param computador
      */
@@ -111,15 +111,22 @@ public class FilaDeComputadores {
         gravarArquivo();
     }
 
+    /**
+     * Método que adiciona um computador na fila por ordem de prioridade. A
+     * prioridade corresponde ao espaço disponível dos computadores.
+     *
+     * @param computador
+     */
     public void add(Computador computador) {
         No novo = new No(computador);
+        //Se a fila estiver vazia, ou o computador possuir maior prioridade que o primeiro nó, adiciona no início
         if (this.isEmpty() || computador.getEspacoDisponivel() > first.getConteudo().getEspacoDisponivel()) {
             novo.setNext(first);
             first = novo;
         } else { //Se não for vazia
             No auxiliar = first;
             No auxiliar2 = first;
-            //Pecorre a lista até que encontre o ultimo elemento e o nó atual tenha prioridade superior ao do novo nó
+            //Pecorre a fista até que encontre o ultimo elemento e o nó atual tenha prioridade superior ao do novo nó
             while (auxiliar2.getNext() != null && auxiliar2.getConteudo().getEspacoDisponivel() > computador.getEspacoDisponivel()) {
                 auxiliar = auxiliar2;
                 auxiliar2 = auxiliar2.getNext();
@@ -135,11 +142,10 @@ public class FilaDeComputadores {
                 auxiliar2.setNext(novo);
             }
         }
-
     }
 
     /**
-     * Método que remove um nó da fila.
+     * Método que remove o primeiro nó da fila.
      *
      * @return Computador - O nó que foi removido
      */
@@ -153,18 +159,36 @@ public class FilaDeComputadores {
     }
 
     /**
-     * Método que retorna o Iterador da Lista
+     * Método para remoção de um determinado computador do sistema.
      *
-     * @return Iterator
+     * @param pc - computador a ser removido.
+     * @return Computador - computador que foi removido.
      */
-    public Iterator iterator() {
-        Iterador it = new Iterador(first);
-        return it;
+    public Computador remove(Computador pc) {
+        No auxiliar = first;
+        if (auxiliar.getConteudo().equals(pc)) { //Se o primeiro nó for igual ao computador
+            first = first.getNext();
+            return auxiliar.getConteudo();
+        } else { //Caso não seja
+            No auxiliar2 = first;
+            //Pecorre a fila até o final ou até encontrar o computador informado
+            while (auxiliar2.getNext() != null && !auxiliar2.getConteudo().equals(pc)) {
+                auxiliar = auxiliar2;
+                auxiliar2 = auxiliar2.getNext();
+            }
+            if (auxiliar2 != null) { //Se encontrou o computador, remove
+                auxiliar.setNext(auxiliar2.getNext());
+                return auxiliar2.getConteudo();
+            } else {
+                return null;
+            }
+        }
     }
 
-    /** Método que lista os espaços disponíveis em cada computador
-     * cadastrado no sistema.
-     * 
+    /**
+     * Método que lista os espaços disponíveis em cada computador cadastrado no
+     * sistema.
+     *
      * @return int - contador de quantos computadores foram listados.
      */
     public int ListarEspacoDisponivel() {
@@ -181,9 +205,10 @@ public class FilaDeComputadores {
         return contador;
     }
 
-    /** Método que lista o nome e a capacidade de cada computador
-     * cadastrado no sistema.
-     * 
+    /**
+     * Método que lista o nome e a capacidade de cada computador cadastrado no
+     * sistema.
+     *
      * @return int - contador de quantos computadores foram listados.
      */
     public int ListarComputadores() {
@@ -197,12 +222,13 @@ public class FilaDeComputadores {
         }
         return contador;
     }
-    
-    /** Método que lista as imagens armazenada em cada computador.
-     * 
+
+    /**
+     * Método que lista as imagens armazenada em cada computador.
+     *
      * @return int - contador de imagens listadas.
      */
-    public int ListarImagens(){
+    public int ListarImagens() {
         int contador = 0;
         No aux = first;
         while (aux != null) {
@@ -215,9 +241,19 @@ public class FilaDeComputadores {
         return contador;
     }
 
-    /** Método para gravar o arquivo de computadores, ao adicionar
-     * novos computadores ao sistema.
-     * 
+    /**
+     * Método que retorna o Iterador da fila
+     *
+     * @return Iterator
+     */
+    public Iterator iterator() {
+        Iterador it = new Iterador(first);
+        return it;
+    }
+
+    /**
+     * Método para gravar o arquivo de computadores, ao adicionar novos
+     * computadores ao sistema.
      */
     public void gravarArquivo() {
         try {
@@ -225,42 +261,17 @@ public class FilaDeComputadores {
             BufferedWriter reescrever = new BufferedWriter(arquivoEscritor);
             No auxiliar = first;
             while (auxiliar != null) {
-                reescrever.write(auxiliar.getConteudo().getNome());
-                reescrever.newLine();
+                reescrever.write(auxiliar.getConteudo().getNome()); //escreve o nome do computador
+                reescrever.newLine();//vai para a proxima linha
+                //escreve a capacidade, através da conversão de double para string
                 reescrever.write(Double.toString(auxiliar.getConteudo().getCapacidade()));
                 reescrever.newLine();
                 reescrever.flush();
-                auxiliar = auxiliar.getNext();
+                auxiliar = auxiliar.getNext();//Auxiliar recebe a referência do novo nó da fila
             }
-            reescrever.close();
-        } catch (IOException e) {
+            reescrever.close(); //fecha o arquivo
+        } catch (IOException e) {//Informa se o arquivo não for encontrado
             System.out.println("Arquivo não encontrado");
         }
     }
-
-    /** Método para remoção de um computador do sistema.
-     * 
-     * @param pc - computador a ser removido.
-     * @return Computador - computador que foi removido.
-     */
-    public Computador remove(Computador pc) {
-        No auxiliar = first;
-        if (auxiliar.getConteudo().equals(pc)) {
-            first = first.getNext();
-            return auxiliar.getConteudo();
-        } else {
-            No auxiliar2 = first;
-            while (auxiliar2.getNext() != null && !auxiliar2.getConteudo().equals(pc)) {
-                auxiliar = auxiliar2;
-                auxiliar2 = auxiliar2.getNext();
-            }
-            if (auxiliar2 != null) {
-                auxiliar.setNext(auxiliar2.getNext());
-                return auxiliar2.getConteudo();
-            } else {
-                return null;
-            }
-        }
-    }
-
 }

@@ -12,15 +12,19 @@
  */
 package util;
 
-import java.util.Iterator;
 import model.Imagem;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Classe teste para a estrutura de dados árvore 
+ *
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
+ */
 public class TreeTeste {
 
     private Tree tree;
@@ -60,22 +64,11 @@ public class TreeTeste {
         tree.add(img2);
         assertEquals(2, tree.size());
 
-        /* listagem pré ordem
-        assertEquals(img8);
-        assertEquals(img2,);
-         */
         tree.add(img4);
         assertEquals(3, tree.size());
 
         tree.add(img6);
         assertEquals(4, tree.size());
-        /*
-        assertEquals(img4);
-        assertEquals(img2,);
-        assertEquals(img8);
-        assertEquals(img6);
-         */
-
     }
 
     @Test

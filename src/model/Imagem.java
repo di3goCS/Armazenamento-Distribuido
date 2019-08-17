@@ -14,7 +14,7 @@ package model;
 
 /**
  * Esta classe armazena os dados de uma imagem, contendo informação sobre o seu
- * nome e o seu tamanho.
+ * nome, seu tamanho, e em que computador ela está inserida.
  *
  * Exemplo de uso:
  *
@@ -34,26 +34,47 @@ public class Imagem {
         this.tamanho = tamanho;
     }
 
+    /**
+     * Método que retorna o nome da imagem
+     *
+     * @return String - nome da imagem
+     */
     public String getNome() {
         return nome;
     }
 
+    /**
+     * Método que altera o nome da imagem
+     *
+     * @param nome - novo nome
+     */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    /**
+     * Método que retorna o tamanho da imagem
+     *
+     * @return double - tamanho da imagem
+     */
     public double getTamanho() {
         return tamanho;
     }
 
-    public void setTamanho(double tamanho) {
-        this.tamanho = tamanho;
-    }
-
+    /**
+     * Método que obtém o computador que a imagem está inserida
+     *
+     * @return Computador
+     */
     public Computador getComputador() {
         return computador;
     }
 
+    /**
+     * Método que altera o computador que a imagem está inserida
+     *
+     * @param computador - novo computador
+     */
     public void setComputador(Computador computador) {
         this.computador = computador;
     }

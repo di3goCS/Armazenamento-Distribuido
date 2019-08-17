@@ -40,7 +40,7 @@ public class No {
     /**
      * Método que obtém o próximo Nó
      *
-     * @return Node - O próximo nó
+     * @return No - O próximo nó
      */
     public No getNext() {
         return next;
@@ -49,7 +49,7 @@ public class No {
     /**
      * Método que obtém o conteúdo do Nó
      *
-     * @return Object - O conteúdo
+     * @return Computador - O conteúdo
      */
     public Computador getConteudo() {
         return conteudo;

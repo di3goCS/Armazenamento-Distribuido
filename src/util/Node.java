@@ -16,8 +16,8 @@ import model.Imagem;
 
 /**
  * Classe para objetos do tipo Node, que contém seus atributos e métodos. Possui
- * uma referência para o conteúdo do nó, a referência para os nós a esquerda, nós a
- * direita e a altura do nó.
+ * informações sobre a chave, altura do nó, uma referência para o conteúdo do
+ * nó, para os nós a esquerda e a direita.
  *
  * Exemplo de uso:
  *
@@ -28,7 +28,6 @@ import model.Imagem;
  */
 public class Node {
 
-    //mudar o nó para generics depois;
     private Imagem conteudo;
     private Node right;
     private Node left;
@@ -41,56 +40,94 @@ public class Node {
         height = 1;
     }
 
+    /**
+     * Método que obtém o conteúdo do nó
+     *
+     * @return Imagem - conteúdo
+     */
     public Imagem getConteudo() {
         return conteudo;
     }
 
-    public void setConteudo(Imagem conteudo) {
-        this.conteudo = conteudo;
+    /**
+     * Método que modifica o conteúdo do nó
+     *
+     * @param novoConteudo - O novo conteúdo do nó
+     */
+    public void setConteudo(Imagem novoConteudo) {
+        conteudo = novoConteudo;
     }
 
+    /**
+     * Método que obtém o nó a direita
+     *
+     * @return Node - nó direito
+     */
     public Node getRight() {
         return right;
     }
 
+    /**
+     * Método que altera a refêrencia do nó á direita
+     *
+     * @param right - novo nó direito
+     */
     public void setRight(Node right) {
         this.right = right;
     }
 
+    /**
+     * Método que obtém o nó a esquerda
+     *
+     * @return Node - nó esquerdo
+     */
     public Node getLeft() {
         return left;
     }
 
+    /**
+     * Método que altera a refêrencia do nó á esquerda
+     *
+     * @param left - novo nó esquerdo
+     */
     public void setLeft(Node left) {
         this.left = left;
     }
 
+    /**
+     * Método que obtém a chave do nó
+     *
+     * @return String - a chave
+     */
     public String getKey() {
         return key;
     }
 
+    /**
+     * Método que altera a chave do nó
+     *
+     * @param key - a nova chave
+     */
     public void setKey(String key) {
         this.key = key;
     }
 
+    /**
+     * Metodo que obtém a altura do nó
+     *
+     * @return int - a altura
+     */
     public int getHeight() {
         return height;
     }
 
+    /**
+     * Método que altera a altura do nó
+     *
+     * @param height - nova altura
+     */
     public void setHeight(int height) {
         this.height = height;
     }
 
-    public Node getPai(Node root, String chave) {
-        if (root.getKey().equals(chave) || root == null) {
-            return null;
-        }
-        if (root.getRight().getKey().equals(chave) || root.getLeft().getKey().equals(chave)) {
-            return root;
-        } else if (root.getKey().compareToIgnoreCase(chave) < 0) {
-            return getPai(root.getRight(), chave);
-        } else {
-            return getPai(root.getLeft(), chave);
-        }
-    }
 }

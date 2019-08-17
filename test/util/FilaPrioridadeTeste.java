@@ -19,8 +19,10 @@ import static org.junit.Assert.*;
 import model.Computador;
 
 /**
+ * Classe teste para a fila de prioridade.
  *
- * @author
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
  */
 public class FilaPrioridadeTeste {
 

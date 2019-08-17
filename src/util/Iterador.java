@@ -32,7 +32,7 @@ public class Iterador implements Iterator {
     }
 
     /**
-     * Método que analisa se existe um próximo nó na lista.
+     * Método que analisa se existe um próximo nó na fila.
      *
      * @return true - Se o nó atual não for nulo
      */
@@ -43,7 +43,7 @@ public class Iterador implements Iterator {
 
     /**
      * Método que retorna o nó atual, e altera a referência do atual para o
-     * proximo nó da lista, desde que este não seja nulo.
+     * proximo nó da fila, desde que este não seja nulo.
      *
      * @return Object - O conteúdo do antigo nó atual
      */
