@@ -58,19 +58,19 @@ public class System {
      * Método que adiciona uma imagem ao sitema.
      *
      * @param img - Imagem a ser adicionada.
-     * @throws NullPointerException
-     * @throws FileNotFoundException
+     * @throws NullPointerException - exceção de ponteiro nulo
+     * @throws FileNotFoundException - exceção para arquivo não encontrado
      */
     public void addImagem(Imagem img) throws NullPointerException, FileNotFoundException {
         try {
             registro.add(img); //Adiciona a imagem na árvore de registos
             computadores.get(0).addImagem(img); //adiciona no computador que possui maior capacidade
             //remove o computador da fila e adiciona para atualizar a prioridade
-            Computador removido = computadores.dequeue(); 
+            Computador removido = computadores.dequeue();
             computadores.addComputador(removido);
         } catch (NullPointerException ex) {
             //importa o arquivo de computadores se não tiver computadores cadastrados no sistema
-           this.importarComputadores("files//computadores.ascii");
+            this.importarComputadores("files//computadores.ascii");
         }
     }
 
@@ -96,7 +96,7 @@ public class System {
      *
      * @param nome_arq - nome do arquivo que contém as imagens.
      * @return int - contador de quantas imagens foram importadas.
-     * @throws IOException
+     * @throws IOException - exceção de arquivo
      */
     public int importarImagens(String nome_arq) throws IOException {
         BufferedReader ler = null;
@@ -133,7 +133,7 @@ public class System {
      * Exemplo: casa-pc 500
      *
      * @param nomeArquivo - nome do arquivo que contém os computadores.
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException - exceção de arquivo inexistente
      */
     public void importarComputadores(String nomeArquivo) throws FileNotFoundException {
         FileReader arquivo = new FileReader(nomeArquivo);

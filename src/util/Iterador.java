@@ -13,6 +13,7 @@
 package util;
 
 import java.util.Iterator;
+import model.Computador;
 
 /**
  * Classe para objetos do tipo Iterador que implementa a interface Iterator,
@@ -45,7 +46,7 @@ public class Iterador implements Iterator {
      * Método que retorna o nó atual, e altera a referência do atual para o
      * proximo nó da fila, desde que este não seja nulo.
      *
-     * @return Object - O conteúdo do antigo nó atual
+     * @return Object- O conteúdo do antigo nó atual
      */
     @Override
     public Object next() {

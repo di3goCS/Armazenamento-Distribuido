@@ -34,14 +34,29 @@ public class Tree {
     public Tree() {
     }
 
+    /**
+     * Método que obtém a referência para a raiz da árvore
+     *
+     * @return Node - o primeiro nó
+     */
     public Node getRootNode() {
         return root;
     }
 
+    /**
+     * Método que obtém o conteúdo da raíz da árvore
+     *
+     * @return Imagem - o conteúdo
+     */
     public Imagem getRoot() {
         return root.getConteudo();
     }
 
+    /**
+     * Método que altera a referência da raíz da árvore
+     *
+     * @param root - nova raíz
+     */
     public void setRoot(Node root) {
         this.root = root;
     }
@@ -55,14 +70,27 @@ public class Tree {
         return (root == null);
     }
 
+    /**
+     * Método que obtém a altura de um determinado nó. Nós nulos, tem altura 0.
+     *
+     * @param no - nó que deseja obter a altura
+     * @return int- a altura
+     */
     public int altura(Node no) {
-        if (no == null) {
+        if (no == null) { //Se o nó for nulo
             return 0;
-        } else {
+        } else { //Se não for nulo
             return no.getHeight();
         }
     }
 
+    /**
+     * Método que compara qual das duas alturas informadas é a maior
+     *
+     * @param altura1 - uma das alturas da comparação
+     * @param altura2 - uma das alturas da comparação
+     * @return int - a maior altura
+     */
     public int alturaMaxima(int altura1, int altura2) {
         if (altura1 > altura2) {
             return altura1;
@@ -116,7 +144,6 @@ public class Tree {
         return auxiliar.getComputador();
     }
 
-    //Contando que arvore é só para imagem
     public Imagem procurar(String key) {
         Node encontrado = procurarNo(this.root, key);
         if (encontrado == null) {
@@ -156,25 +183,29 @@ public class Tree {
         return root;
     }
 
-    public void listar(Node root) {
+    public int listar(Node root) {
+        int direita = 0;
+        int esquerda = 0;
         if (root != null) {
             System.out.print("\nImagem: " + root.getKey());
-            listar(root.getLeft());
-            listar(root.getRight());
+            esquerda = listar(root.getLeft());
+            direita = listar(root.getRight());
+            return esquerda + direita + 1;
         }
+        return esquerda + direita;
     }
 
     public int listarImagem(Node root) {
-            int direita = 0;
-            int esquerda = 0;
-            if (root != null){
-                System.out.print("\nNome " + root.getKey());
-                System.out.print("\tTamanho" + root.getConteudo().getTamanho());
-                esquerda = listarImagem(root.getLeft());
-                direita = listarImagem(root.getRight());
-                return esquerda + direita + 1;
-            }
-            return esquerda + direita;
+        int direita = 0;
+        int esquerda = 0;
+        if (root != null) {
+            System.out.print("\nNome " + root.getKey());
+            System.out.print("\tTamanho" + root.getConteudo().getTamanho());
+            esquerda = listarImagem(root.getLeft());
+            direita = listarImagem(root.getRight());
+            return esquerda + direita + 1;
+        }
+        return esquerda + direita;
     }
 
     public Imagem getMenorChave() {
@@ -296,20 +327,5 @@ public class Tree {
             return quantidade;
         }
     }
-    
-    /*public int posOrder(Node node) 
-    {   
-        int contador = 0;
-        if (node == null) 
-            return 0; 
-  
-        posOrder(node.getLeft());
-        posOrder(node.getRight()); 
-        
-        System.out.print("Nome: " + node.getConteudo().getNome() + 
-                "| Tamanho: " + node.getConteudo().getTamanho()); 
-        
-        return contador++;
-    } */
 
 }

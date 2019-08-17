@@ -20,7 +20,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Classe teste para a estrutura de dados árvore 
+ * Classe teste para a estrutura de dados árvore
  *
  * @author Estéfane Carmo de Souza
  * @author Diego do Carmo Silva
@@ -45,6 +45,9 @@ public class TreeTeste {
         img10 = new Imagem("img010", 0.00123);
     }
 
+    /**
+     * Método que testa se a árvore está vazia
+     */
     @Test
     public void isEmpty() {
         assertTrue(tree.isEmpty());
@@ -54,6 +57,9 @@ public class TreeTeste {
         assertTrue(tree.isEmpty());
     }
 
+    /**
+     * Método que testa as inserções de imagens na árvore
+     */
     @Test
     public void testeInsercao() {
         assertEquals(0, tree.size());
@@ -71,6 +77,9 @@ public class TreeTeste {
         assertEquals(4, tree.size());
     }
 
+    /**
+     * Método que testa se o tamanho da árvore é atualizado corretamente.
+     */
     @Test
     public void testeSize() {
         assertEquals(0, tree.size());
@@ -95,6 +104,9 @@ public class TreeTeste {
         assertEquals(0, tree.size());
     }
 
+    /**
+     * Método que testa se a busca por uma imagem é realizada corretamente.
+     */
     @Test
     public void TesteBusca() {
         tree.add(img3);
@@ -108,6 +120,10 @@ public class TreeTeste {
         assertEquals(img5, tree.procurar("img001"));
     }
 
+    /**
+     * Método que testa se a captura pelo elemento que possui a maior chave e
+     * menor chave é efetuada com sucesso.
+     */
     @Test
     public void TesteMaiorChaveMenorChave() {
         assertEquals(0, tree.size());
@@ -130,6 +146,9 @@ public class TreeTeste {
 
     }
 
+    /**
+     * Método para o teste do balanceamento da árvore
+     */
     @Test
     public void TesteBalanceamento() {
         tree.add(img9);
@@ -143,6 +162,9 @@ public class TreeTeste {
         assertEquals(-1, tree.getBalanceamento(tree.getRootNode()));
     }
 
+    /**
+     * Método que testa se as alturas de cada nó são calculadas corretamente.
+     */
     @Test
     public void TesteAlturaMaximaEAltura() {
         tree.add(img3);
@@ -164,6 +186,9 @@ public class TreeTeste {
         assertEquals(3, tree.altura(tree.getRootNode()));
     }
 
+    /**
+     * Testa se as remorções na árvore ocorrem corretamente.
+     */
     @Test
     public void testeRemorcao() {
         tree.add(img8);

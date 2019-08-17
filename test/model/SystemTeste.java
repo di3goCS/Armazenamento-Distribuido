@@ -17,7 +17,6 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import util.Node;
 
 /**
  * Classe teste para cada operação que o sistema deve realizar.
@@ -128,7 +127,6 @@ public class SystemTeste {
     @Test(expected = FileNotFoundException.class)
     public void testeAbrirGravarArquivosDeComputadores() throws FileNotFoundException, IOException {
 
-        //importa os computadores
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
 
@@ -161,20 +159,31 @@ public class SystemTeste {
      */
     @Test
     public void testeImportarImagens() throws FileNotFoundException, IOException {
+        sistema.importarComputadores("files//computadores.ascii");
+        assertEquals(10, sistema.getComputadores().size());
+
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
 
-        assertEquals(10, sistema.getComputadores().size());
+        assertEquals(187, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(0)));
 
-        assertEquals(sistema.getComputadores().get(0), sistema.getRegistro().buscarImagem("aaa"));
-        assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
+        assertEquals(29, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(1)));
 
-        assertEquals(sistema.getComputadores().get(9), sistema.getRegistro().buscarImagem("bmk"));
-        assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
-        
-        assertEquals(sistema.getComputadores().get(7), sistema.getRegistro().buscarImagem("ayp"));
-        assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
-         
+        assertEquals(29, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(2)));
+
+        assertEquals(16, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(3)));
+
+        assertEquals(111, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(4)));
+
+        assertEquals(23, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(5)));
+
+        assertEquals(114, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(6)));
+
+        assertEquals(190, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(7)));
+
+        assertEquals(181, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(8)));
+
+        assertEquals(120, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(9)));
     }
 
     /**
@@ -201,7 +210,7 @@ public class SystemTeste {
         sistema.importarComputadores("files//computadores.ascii");
         sistema.importarImagens("files//imagens.ascii");
 
-        assertEquals(1000, sistema.getComputadores().ListarImagens());
+        assertEquals(1000, sistema.getComputadores().listarImagensDeComputadores());
     }
 
     /**
@@ -231,8 +240,17 @@ public class SystemTeste {
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
 
-        Node root = sistema.getRegistro().getRootNode();
-        assertEquals(1000, sistema.getRegistro().listarImagem(root));
+        assertEquals(187, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(0)));
+        assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
+
+        assertEquals(16, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(3)));
+        assertEquals("hospitalPc", sistema.getComputadores().get(3).getNome());
+
+        assertEquals(114, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(6)));
+        assertEquals("computer", sistema.getComputadores().get(6).getNome());
+
+        assertEquals(120, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(9)));
+        assertEquals("cmmaSolutions", sistema.getComputadores().get(9).getNome());
     }
 
     /**

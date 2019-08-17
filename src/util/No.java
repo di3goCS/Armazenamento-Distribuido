@@ -22,7 +22,7 @@ import model.Computador;
  *
  * No no= new No("conteudo");
  *
- * @autor Estéfane Carmo de Souza
+ * @author Estéfane Carmo de Souza
  * @author Diego do Carmo Silva
  */
 public class No {

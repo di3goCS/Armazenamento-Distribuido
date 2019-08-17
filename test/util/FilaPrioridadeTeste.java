@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 import model.Computador;
 
 /**
- * Classe teste para a fila de prioridade.
+ * Classe teste para a estrutura de dados fila de prioridade.
  *
  * @author Estéfane Carmo de Souza
  * @author Diego do Carmo Silva
@@ -45,16 +45,16 @@ public class FilaPrioridadeTeste {
     @Before
     public void setUp() {
         fila = new FilaDeComputadores();
-        pc2 = new Computador("PC-HOME", 110.0);
-        pc7 = new Computador("PC-HOME", 290.0);
-        pc10 = new Computador("PC-HOME", 320.0);
-        pc9 = new Computador("PC-HOME", 410.0);
-        pc5 = new Computador("PC-HOME", 412.0);
-        pc3 = new Computador("PC-HOME", 499.0);
-        pc1 = new Computador("PC-HOME", 500.0);
-        pc4 = new Computador("PC-HOME", 501.0);
-        pc6 = new Computador("PC-HOME", 723.0);
-        pc8 = new Computador("PC-HOME", 800.0);
+        pc2 = new Computador("PC-HOME1", 110.0);
+        pc7 = new Computador("PC-HOME2", 290.0);
+        pc10 = new Computador("PC-HOME3", 320.0);
+        pc9 = new Computador("PC-HOME4", 410.0);
+        pc5 = new Computador("PC-HOME5", 412.0);
+        pc3 = new Computador("PC-HOME6", 499.0);
+        pc1 = new Computador("PC-HOME7", 500.0);
+        pc4 = new Computador("PC-HOME8", 501.0);
+        pc6 = new Computador("PC-HOME9", 723.0);
+        pc8 = new Computador("PC-HOME10", 800.0);
     }
 
     /**
@@ -72,7 +72,18 @@ public class FilaPrioridadeTeste {
         assertEquals(2, fila.size());
 
         fila.add(pc3);
+
+        assertEquals(pc1, fila.get(0));
+        assertEquals(pc3, fila.get(1));
+        assertEquals(pc2, fila.get(2));
+
         fila.add(pc4);
+
+        assertEquals(pc4, fila.get(0));
+        assertEquals(pc1, fila.get(1));
+        assertEquals(pc3, fila.get(2));
+        assertEquals(pc2, fila.get(3));
+
         fila.add(pc5);
         fila.add(pc6);
         fila.add(pc7);
@@ -209,9 +220,12 @@ public class FilaPrioridadeTeste {
         fila.dequeue();
         assertEquals(0, fila.size());
     }
-    
+
+    /**
+     * Teste de unidade para a remorção de um determinado objeto.
+     */
     @Test
-    public void testRemovePorObjeto(){
+    public void testRemovePorObjeto() {
         assertEquals(0, fila.size());
 
         fila.add(pc1);
@@ -223,14 +237,14 @@ public class FilaPrioridadeTeste {
         fila.add(pc4);
         assertEquals(4, fila.size());
         assertEquals(pc4, fila.peek());
-        
+
         fila.remove(pc1);
         assertEquals(3, fila.size());
         fila.remove(pc4);
         assertEquals(2, fila.size());
-        
+
         assertEquals(pc3, fila.peek());
-        
+
         fila.remove(pc3);
         assertEquals(1, fila.size());
         fila.remove(pc2);

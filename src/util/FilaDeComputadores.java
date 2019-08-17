@@ -104,7 +104,7 @@ public class FilaDeComputadores {
      * Método para adicionar um novo computador à fila. Ao ser adicionado, é
      * adicionado a um arquivo .ascii
      *
-     * @param computador
+     * @param computador - computador a ser adicionado
      */
     public void addComputador(Computador computador) {
         add(computador);
@@ -115,7 +115,7 @@ public class FilaDeComputadores {
      * Método que adiciona um computador na fila por ordem de prioridade. A
      * prioridade corresponde ao espaço disponível dos computadores.
      *
-     * @param computador
+     * @param computador - computador a ser adicionado
      */
     public void add(Computador computador) {
         No novo = new No(computador);
@@ -228,7 +228,7 @@ public class FilaDeComputadores {
      *
      * @return int - contador de imagens listadas.
      */
-    public int ListarImagens() {
+    public int listarImagensDeComputadores() {
         int contador = 0;
         No aux = first;
         while (aux != null) {
@@ -238,6 +238,18 @@ public class FilaDeComputadores {
             contador += aux.getConteudo().getImagens().listarImagem(root);
             aux = aux.getNext();
         }
+        return contador;
+    }
+
+    /**
+     * Método para listagens dos nomes das imgens em um determinado computador.
+     *
+     * @param computador - computador que terá as imagens listadas
+     * @return int - contador com as imagens listadas
+     */
+    public int listarNomeImagem(Computador computador) {
+        Node root = computador.getImagens().getRootNode();
+        int contador = computador.getImagens().listar(root);
         return contador;
     }
 

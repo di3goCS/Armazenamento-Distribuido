@@ -74,6 +74,11 @@ public class ComputadorTeste {
         assertEquals(img2, computer.getImagens().getRoot());
         assertEquals(2, computer.getImagens().size());
         assertEquals(499.98388, computer.getEspacoDisponivel(), .0001);
+        
+        computer.removerImagem("anaEnsaio");
+        computer.removerImagem("carlosPhoto");
+        assertEquals(0, computer.getImagens().size());
+        assertEquals(500.00, computer.getEspacoDisponivel(), .0001);
     }
 
     /**

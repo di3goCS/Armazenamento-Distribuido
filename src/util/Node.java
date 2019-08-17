@@ -23,7 +23,7 @@ import model.Imagem;
  *
  * Node node= new Node("conteudo");
  *
- * @autor Estéfane Carmo de Souza
+ * @author Estéfane Carmo de Souza
  * @author Diego do Carmo Silva
  */
 public class Node {
