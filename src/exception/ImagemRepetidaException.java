@@ -12,9 +12,13 @@
  */
 package exception;
 
-
+/**
+ * Exceção lançada quando o usuário tenta inserir uma imagem, porém
+ * já existe uma imagem com o mesmo nome no sistema.
+ */
 public class ImagemRepetidaException extends Exception {
     
     public ImagemRepetidaException(){
+        super();
     }
 }

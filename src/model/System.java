@@ -71,6 +71,7 @@ public class System {
         } catch (NullPointerException ex) {
             //importa o arquivo de computadores se não tiver computadores cadastrados no sistema
             this.importarComputadores("files//computadores.ascii");
+            addImagem(img);
         }
     }
 
@@ -98,31 +99,37 @@ public class System {
      * @return int - contador de quantas imagens foram importadas.
      * @throws IOException - exceção de arquivo
      */
-    public int importarImagens(String nome_arq) throws IOException {
+    public int importarImagens(String nome_arq) throws IOException{
         BufferedReader ler = null;
         int contador = 0;
-        try {
-            ler = new BufferedReader(new FileReader(nome_arq));
-            while (ler.ready()) {
-                String linha = ler.readLine();
-                String[] parts = linha.split(" ");
-                String nome = parts[0];
-                double tamanho = Double.parseDouble(parts[1]); //converte a string com números para double
-                Imagem nova = new Imagem(nome, tamanho); //instancia um objeto imagem
-                this.addImagem(nova); //adiciona a imagem
-                contador++;//incrementa o contador
+        boolean controle = true;
+        do{
+            try {
+                contador = 0;
+                ler = new BufferedReader(new FileReader(nome_arq));
+                while (ler.ready()) {
+                    String linha = ler.readLine();//lê a linha
+                    String[] parts = linha.split(" "); //divide a linha em duas partes
+                    String nome = parts[0]; //primeira parte contém o nome da imagem
+                    double tamanho = Double.parseDouble(parts[1]); //converte a string com números para double
+                    Imagem nova = new Imagem(nome, tamanho); //instancia um objeto imagem
+                    this.addImagem(nova); //adiciona a imagem
+                    contador++;//incrementa o contador de imagens importadas
+                    controle = false;
+                }
+            } catch (FileNotFoundException fnfe) {
+                java.lang.System.out.println("Arquivo não encontrado. Tente novamente");
+            } catch (NullPointerException e) {
+                importarComputadores("files//computadores.ascii");
+            } finally {
+                if (ler != null) {
+                    ler.close(); //fecha o arquivo
+                }
+                // O contador indica quantas vezes foi iterado e consequentemente
+                return contador;
             }
-            ler.close(); //fecha o arquivo
-        } catch (IOException ioe) {
-            java.lang.System.out.println("Arquivo não encontrado. Tente novamente");
-        } catch (NullPointerException ex) {
-            importarComputadores("files//computadores.ascii");
-        } finally {
-            if (ler != null) {
-                ler.close(); //fecha o arquivo
-            }
-            return contador;
-        }
+        } while (controle);
+        
     }
 
     /**
@@ -141,17 +148,17 @@ public class System {
             BufferedReader ler = new BufferedReader(arquivo);
             Computador computador;
             String nome;
-            String linha = ler.readLine(); //ler a linha e armazena na string
-            while (linha != null) { //Enquanto não for o fim do arquivo
+            String linha = ler.readLine(); //lê a linha e armazena na string
+            while (linha != null) { //enquanto não for o fim do arquivo
                 nome = linha; //armazena os dados da linha anterior
-                linha = ler.readLine();//ler a proxima linha
+                linha = ler.readLine();//lê a proxima linha
                 Double capacidade = Double.parseDouble(linha); //converte para double a string com os números
                 computador = new Computador(nome, capacidade); //cria o objeto computador
                 computadores.add(computador); //adiciona o computador na fila
-                linha = ler.readLine(); //ler a proxima linha
+                linha = ler.readLine(); //lê a proxima linha
             }
             ler.close();//fecha o arquivo
-        } catch (IOException excecao) {
+        } catch (IOException e) {
             java.lang.System.out.println("Arquivo não encontrado. Tente novament");
         }
     }

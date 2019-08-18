@@ -187,10 +187,10 @@ public class TreeTeste {
     }
 
     /**
-     * Testa se as remorções na árvore ocorrem corretamente.
+     * Método que testa se as remorções na árvore ocorrem corretamente.
      */
     @Test
-    public void testeRemorcao() {
+    public void testeRemocao() {
         tree.add(img8);
         tree.add(img1);
         tree.add(img7);

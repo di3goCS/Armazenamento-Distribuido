@@ -12,9 +12,13 @@
  */
 package exception;
 
+/**
+ * Exceção lançada quando o usuário tenta inserir uma imagem, porém
+ * não há espaço disponível nos computadores.
+ */
 public class EspacoInsuficienteException extends Exception {
     
     public EspacoInsuficienteException(){
-        
+        super();
     }
 }

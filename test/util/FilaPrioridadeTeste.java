@@ -158,7 +158,6 @@ public class FilaPrioridadeTeste {
      */
     @Test
     public void testInsertDelete() {
-
         assertTrue(fila.isEmpty());
 
         fila.add(pc1);

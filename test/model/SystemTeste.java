@@ -154,8 +154,8 @@ public class SystemTeste {
      * Método que testa se um arquivo de imagens foi importado corretamente, e
      * se as imagens foram adicionadas no computadores de maior espaço.
      *
-     * @throws FileNotFoundException
-     * @throws IOException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
+     * @throws IOException - exceção de entrada/saida
      */
     @Test
     public void testeImportarImagens() throws FileNotFoundException, IOException {
@@ -184,13 +184,17 @@ public class SystemTeste {
         assertEquals(181, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(8)));
 
         assertEquals(120, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(9)));
+        
+        // Se todos os testes acima deram certo, a quantidade esperada está correta, sendo assim
+        // podemos validar que todas as imagens foram importadas, já que
+        // 187 + 29 + 29 + 16 + 111 + 23 + 114 + 190 + 181 + 120 = 1000
     }
 
     /**
      * Testa se a listagem dos computadores com suas capacidades foi efetuada
      * corretamente;
      *
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
      */
     @Test
     public void testeListarComputadoresECapacidade() throws FileNotFoundException {
@@ -202,8 +206,8 @@ public class SystemTeste {
      * Testa se a listagem das imagens/tamanho de cada computador foi efetuada
      * corretamente.
      *
-     * @throws FileNotFoundException
-     * @throws IOException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
+     * @throws IOException - exceção de entrada/saida
      */
     @Test
     public void testeListarImagensETamanhosDeCadaComputador() throws FileNotFoundException, IOException {
@@ -217,7 +221,7 @@ public class SystemTeste {
      * Testa se a listagem do espaço disponível de cada computador foi realizada
      * corretamente.
      *
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
      */
     @Test
     public void testeListarEspacoDisponivelEmComputadores() throws FileNotFoundException {
@@ -229,8 +233,8 @@ public class SystemTeste {
      * Testa se a listagem dos nomes das imagens de um determinado computador
      * foi realizada corretamente.
      *
-     * @throws FileNotFoundException
-     * @throws IOException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
+     * @throws IOException - exceção de entrada/saida
      */
     @Test
     public void testeListarImagens() throws FileNotFoundException, IOException {
@@ -239,7 +243,8 @@ public class SystemTeste {
 
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
-
+        // O número mágico representa a quantidade de iterações nas operações
+        // de exibição dos nomes das imagens.
         assertEquals(187, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(0)));
         assertEquals("computerCmma", sistema.getComputadores().get(0).getNome());
 
@@ -257,17 +262,18 @@ public class SystemTeste {
      * Testa a busca de uma imagem no sistema e em que computador ela está
      * armazenada.
      *
-     * @throws FileNotFoundException
-     * @throws IOException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
+     * @throws IOException - exceção de entrada/saida
      */
     @Test
     public void testeBuscarImagem() throws FileNotFoundException, IOException {
+        // Importação dos computadores
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
-
+        // Importação das imagens
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
-
+        // Verifica se as imagens estão nos computadores esperados
         assertEquals(sistema.getComputadores().get(7), sistema.getRegistro().buscarImagem("aaf"));
         assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
 
@@ -291,20 +297,22 @@ public class SystemTeste {
     }
 
     /**
-     * Testa a exclusão de uma imagem no sistema e se o espaço disonível do
-     * computador hospedeiro aumenta após a remorção.
+     * Testa a exclusão de uma imagem no sistema e se o espaço disponível do
+     * computador hospedeiro aumenta após a remoção.
      *
-     * @throws FileNotFoundException
-     * @throws IOException
+     * @throws FileNotFoundException - exceção de arquivo não encontrado
+     * @throws IOException - exceção de entrada/saida
      */
     @Test
     public void testeExcluirImagem() throws FileNotFoundException, IOException {
+        // Importação dos computadores
         sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
-
+        // Importação das imagens
         sistema.importarImagens("files//imagens.ascii");
         assertEquals(1000, sistema.getRegistro().size());
-
+        // Verifica se o espaço disponível em cada computador é o esperado após
+        // a distribuição das imagens e remoção de alguma delas.
         assertEquals(216.5999999999994, sistema.getComputadores().get(7).getEspacoDisponivel(), .0001);
         assertEquals("computadorcm", sistema.getComputadores().get(7).getNome());
         sistema.removerImagem("aaa");
