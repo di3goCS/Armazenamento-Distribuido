@@ -3,22 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/test/allTests/AllTests.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/util/Node.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/test/model/SystemTeste.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/test/model/ComputadorTeste.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/test/util/FilaPrioridadeTeste.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/util/No.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/model/System.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/util/Iterador.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/exception/ImagemRepetidaException.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/model/Computador.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/model/Imagem.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/util/FilaDeComputadores.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/test/util/TreeTeste.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/exception/EspacoInsuficienteException.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/src/util/Tree.java</file>
-            <file>file:/C:/Users/casa/Documents/NetBeansProjects/Armazenamento-Distribuido-master/test/model/ImagemTeste.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/test/util/TreeTeste.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/test/model/ComputadorTeste.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/exception/EspacoInsuficienteException.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/model/Imagem.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/model/System.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/util/Tree.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/util/Iterador.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/util/FilaDeComputadores.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/test/model/SystemTeste.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/model/Computador.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/test/util/FilaPrioridadeTeste.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/exception/ImagemRepetidaException.java</file>
+            <file>file:/C:/Users/diego/Documents/armazenamento/src/util/No.java</file>
         </group>
     </open-files>
 </project-private>
