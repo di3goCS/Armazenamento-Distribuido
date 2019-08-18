@@ -110,7 +110,7 @@ public class Tree {
         Node auxiliar = root.getRight();
         root.setRight(auxiliar.getLeft());
         auxiliar.setLeft(root);
-
+        // Atualiza a altura.
         root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight())) + 1);
         auxiliar.setHeight(alturaMaxima(altura(auxiliar.getLeft()), altura(auxiliar.getRight())) + 1);
 
@@ -128,7 +128,7 @@ public class Tree {
         Node auxiliar = root.getLeft();
         root.setLeft(auxiliar.getRight());
         auxiliar.setRight(root);
-
+        // Atualiza a altura.
         root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight())) + 1);
         auxiliar.setHeight(alturaMaxima(altura(auxiliar.getLeft()) + 1, altura(auxiliar.getRight())) + 1);
 
@@ -226,6 +226,7 @@ public class Tree {
      * @return Node - raíz da árvore.
      */
     public Node balancear(Node root) {
+        // se o fator de balanceamento for > 1 ou < -1, a árvore deve ser balanceada.
         if (getBalanceamento(root) == 2) {
             if (getBalanceamento(root.getLeft()) >= 0) {
                 return rotacaoDireita(root);
@@ -253,6 +254,7 @@ public class Tree {
         int esquerda = 0;
         if (root != null) {
             System.out.print("\nImagem: " + root.getKey());
+            // passa recursivamente pelas subárvores esquerdas e direitas.
             esquerda = listar(root.getLeft());
             direita = listar(root.getRight());
             return esquerda + direita + 1;
@@ -274,7 +276,7 @@ public class Tree {
             System.out.print("\tTamanho" + root.getConteudo().getTamanho());
             esquerda = listarImagem(root.getLeft());
             direita = listarImagem(root.getRight());
-            return esquerda + direita + 1;
+            return esquerda + direita + 1; // incrementa a quantidade de imagens listadas
         }
         return esquerda + direita;
     }
@@ -298,9 +300,10 @@ public class Tree {
         if (root == null) {
             return null;
         }
+        // Se os dois filhos forem nulos.
         if (root.getRight() == null && root.getLeft() == null) {
             return root;
-        } else if (root.getLeft() != null) {
+        } else if (root.getLeft() != null) { // Se o filho esquerdo for nulo.
             return menorChave(root.getLeft());
         } else {
             return root;
@@ -326,9 +329,10 @@ public class Tree {
         if (root == null) {
             return null;
         }
+        // Se os dois filhos forem nulos
         if (root.getRight() == null && root.getLeft() == null) {
             return root;
-        } else if (root.getRight() != null) {
+        } else if (root.getRight() != null) { // Se o filho direito for nulo.
             return maiorChave(root.getRight());
         } else {
             return root;
@@ -346,6 +350,7 @@ public class Tree {
             this.root = insercao(img, this.root);
             pc = img.getComputador();
             if (pc != null) {
+                // Atualiza o espaço disponível no computador.
                 pc.setEspacoDisponivel(pc.getEspacoDisponivel() - img.getTamanho());
             }
         } catch (ImagemRepetidaException e) {
@@ -365,8 +370,11 @@ public class Tree {
         if (root == null) {
             return (new Node(im));
         }
+        // Se essa comparação for verdadeira, já existe uma imagem com a chave.
         if (im.getNome().compareToIgnoreCase(root.getKey()) == 0) {
             throw new ImagemRepetidaException();
+        // Aqui, observamos se a chave atual é maior ou menor que a do nó
+        // atual, para decidir para que lado ir.
         } else if (im.getNome().compareToIgnoreCase(root.getKey()) < 0) {
             root.setLeft(insercao(im, root.getLeft()));
         } else if (im.getNome().compareToIgnoreCase(root.getKey()) > 0) {
@@ -374,6 +382,7 @@ public class Tree {
         } else {
             return root;
         }
+        // Atualiza a altura.
         root.setHeight(alturaMaxima(altura(root.getLeft()), altura(root.getRight())) + 1);
         return balancear(root);
     }
@@ -425,6 +434,7 @@ public class Tree {
                     return root;
                 }
             } else {
+                // Busca o sucessor.
                 Node auxiliar2 = this.menorChave(root.getRight());
                 root.setKey(auxiliar2.getKey());
                 root.setRight(remove(auxiliar2.getKey(), root.getRight()));
