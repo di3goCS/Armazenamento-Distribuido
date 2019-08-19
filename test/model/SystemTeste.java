@@ -26,13 +26,14 @@ import static org.junit.Assert.*;
  */
 public class SystemTeste {
 
-    System sistema;
+    System sistema, sistema2;
     Computador computador1, computador2, computador3, computador4, computador5;
     Imagem imagem1, imagem2, imagem3, imagem4, imagem5, imagem6;
 
     @Before
     public void setUp() throws Exception {
         sistema = new System();
+        sistema2 = new System();
         computador1 = new Computador("hospital", 600);
         computador2 = new Computador("pcRecepcao", 598);
         computador3 = new Computador("computerCMMA", 450);
@@ -41,7 +42,9 @@ public class SystemTeste {
         imagem1 = new Imagem("Photo1", 5);
         imagem2 = new Imagem("anaBook", 4);
         imagem3 = new Imagem("Photo1", 2);
-
+        
+        sistema.importarComputadores("files//computadores.ascii");
+        sistema2.importarComputadores("files//computadores.ascii");
     }
 
     /**
@@ -54,7 +57,7 @@ public class SystemTeste {
     public void testeCadastroComputadores() throws FileNotFoundException {
         assertTrue(sistema.getComputadores().isEmpty());
 
-        sistema.importarComputadores("files//computadores.ascii");
+        //sistema.importarComputadores("files//computadores.ascii");
         assertEquals(10, sistema.getComputadores().size());
 
         sistema.getComputadores().addComputador(computador1);
