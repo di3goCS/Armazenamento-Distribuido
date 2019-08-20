@@ -60,7 +60,7 @@ public class Computador {
     /**
      * Método que obtém a capacidade do computador
      *
-     * @return double - a capacidade
+     * @return double- a capacidade
      */
     public double getCapacidade() {
         return capacidade;
@@ -134,7 +134,7 @@ public class Computador {
      * Método que testa a igualdade dos valores dos atributos entre dois objetos
      * do tipo Computador
      *
-     * @param pc - objeto a ser comparado
+     * @param pc- objeto a ser comparado
      * @return true - se os objetos forem iguais
      */
     public boolean equals(Computador pc) {

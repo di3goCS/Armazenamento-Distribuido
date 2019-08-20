@@ -102,7 +102,7 @@ public class Tree {
     /**
      * Método privado que rotaciona a árvore para a esquerda, quando ela está
      * desbalanceada para a direita.
-     * 
+     *
      * @param root - raíz da árvore.
      * @return Node - nó que estava desbalanceado.
      */
@@ -120,7 +120,7 @@ public class Tree {
     /**
      * Método privado que rotaciona a árvore para a direita, quando ela está
      * desbalanceada para a esquerda.
-     * 
+     *
      * @param root - raíz da árvore.
      * @return Node - nó que estava desbalanceado.
      */
@@ -136,9 +136,9 @@ public class Tree {
     }
 
     /**
-     * Método privado que realização uma rotação direita-esquerda, quando a 
+     * Método privado que realização uma rotação direita-esquerda, quando a
      * árvore está desbalanceada.
-     * 
+     *
      * @param root - raíz da árvore.
      * @return Node - nó que estava desbalanceado.
      */
@@ -148,9 +148,9 @@ public class Tree {
     }
 
     /**
-     * Método privado que realização uma rotação esquerda-direita, quando a 
+     * Método privado que realização uma rotação esquerda-direita, quando a
      * árvore está desbalanceada.
-     * 
+     *
      * @param root - raíz da árvore.
      * @return Node - nó que estava desbalanceado.
      */
@@ -161,7 +161,7 @@ public class Tree {
 
     /**
      * Método que retorna o fator de balanceamento do nó.
-     * 
+     *
      * @param root - Nó que se deseja obter o fator de balanceamento.
      * @return int - fator de balanceamento.
      */
@@ -175,7 +175,7 @@ public class Tree {
 
     /**
      * Método que retorna o computador em que uma determinada imagem está.
-     * 
+     *
      * @param nomeImagem - nome da imagem que se deseja buscar.
      * @return Computador em que a imagem está.
      */
@@ -186,7 +186,7 @@ public class Tree {
 
     /**
      * Método que procura uma imagem no registro.
-     * 
+     *
      * @param key - chave/nome da imagem que se está buscando.
      * @return Imagem buscada.
      */
@@ -200,8 +200,9 @@ public class Tree {
     }
 
     /**
-     * Método privado que busca um nó específico na árvore em que se está um elemento.
-     * 
+     * Método privado que busca um nó específico na árvore em que se está um
+     * elemento.
+     *
      * @param root - nó raíz da árvore.
      * @param key - chave do elemento através do qual se deseja buscar o nó.
      * @return Node - nó que possui a chave passada.
@@ -221,7 +222,7 @@ public class Tree {
 
     /**
      * Método de balanceamento da árvore.
-     * 
+     *
      * @param root - nó raíz.
      * @return Node - raíz da árvore.
      */
@@ -245,15 +246,15 @@ public class Tree {
 
     /**
      * Método para listar todas as imagens da árvore.
-     * 
+     *
      * @param root - nó raíz.
-     * @return int - contador de quantas imagens foram listadas. 
+     * @return int - contador de quantas imagens foram listadas.
      */
     public int listar(Node root) {
         int direita = 0;
         int esquerda = 0;
         if (root != null) {
-            System.out.print("\nImagem: " + root.getKey());
+            System.out.println(" Nome da imagem: "+ root.getKey());
             // passa recursivamente pelas subárvores esquerdas e direitas.
             esquerda = listar(root.getLeft());
             direita = listar(root.getRight());
@@ -264,7 +265,7 @@ public class Tree {
 
     /**
      * Método para listar as imagens de uma árvore com nome e tamanho.
-     * 
+     *
      * @param root - nó raíz.
      * @return int - contador de quantas imagens foram listadas.
      */
@@ -272,8 +273,7 @@ public class Tree {
         int direita = 0;
         int esquerda = 0;
         if (root != null) {
-            System.out.print("\nNome " + root.getKey());
-            System.out.print("\tTamanho" + root.getConteudo().getTamanho());
+            System.out.print("\n   Nome: " + root.getKey()+" /Tamanho" + root.getConteudo().getTamanho());
             esquerda = listarImagem(root.getLeft());
             direita = listarImagem(root.getRight());
             return esquerda + direita + 1; // incrementa a quantidade de imagens listadas
@@ -283,16 +283,17 @@ public class Tree {
 
     /**
      * Método para obter o objeto de menor valor na árvore.
-     * 
-     * @return Imagem - imagem que possui a chave com menor valor. 
+     *
+     * @return Imagem - imagem que possui a chave com menor valor.
      */
     public Imagem getMenorChave() {
         Node r = menorChave(this.root);
         return r.getConteudo();
     }
 
-    /**Método privado para obter o objeto de menor valor na árvore.
-     * 
+    /**
+     * Método privado para obter o objeto de menor valor na árvore.
+     *
      * @param root - nó raíz.
      * @return Node - nó raíz.
      */
@@ -312,17 +313,18 @@ public class Tree {
 
     /**
      * Método para obter o objeto de maior valor na árvore.
-     * 
-     * @return Imagem - imagem que possui a chave com maior valor. 
+     *
+     * @return Imagem- imagem que possui a chave com maior valor.
      */
     public Imagem getMaiorChave() {
         Node im = maiorChave(this.root);
         return im.getConteudo();
     }
 
-    /**Método privado para obter o objeto de maior valor na árvore.
-     * 
-     * @param root - nó raíz.
+    /**
+     * Método privado para obter o objeto de maior valor na árvore.
+     *
+     * @param root- nó raíz.
      * @return Node - nó raíz.
      */
     private Node maiorChave(Node root) {
@@ -341,8 +343,8 @@ public class Tree {
 
     /**
      * Método para adicionar uma imagem à árvore.
-     * 
-     * @param img - imagem que se deseja adicionar. 
+     *
+     * @param img- imagem que se deseja adicionar.
      */
     public void add(Imagem img) {
         Computador pc;
@@ -360,10 +362,10 @@ public class Tree {
 
     /**
      * Método privado que adiciona a imagem no lugar adequado da árvore.
-     * 
-     * @param im - imagem que se deseja adicionar.
-     * @param root - nó raíz.
-     * @return Node - nó raíz.
+     *
+     * @param im- imagem que se deseja adicionar.
+     * @param root- nó raíz.
+     * @return Node- nó raíz.
      * @throws ImagemRepetidaException - exceção de imagem repetida.
      */
     private Node insercao(Imagem im, Node root) throws ImagemRepetidaException {
@@ -373,8 +375,8 @@ public class Tree {
         // Se essa comparação for verdadeira, já existe uma imagem com a chave.
         if (im.getNome().compareToIgnoreCase(root.getKey()) == 0) {
             throw new ImagemRepetidaException();
-        // Aqui, observamos se a chave atual é maior ou menor que a do nó
-        // atual, para decidir para que lado ir.
+            // Aqui, observamos se a chave atual é maior ou menor que a do nó
+            // atual, para decidir para que lado ir.
         } else if (im.getNome().compareToIgnoreCase(root.getKey()) < 0) {
             root.setLeft(insercao(im, root.getLeft()));
         } else if (im.getNome().compareToIgnoreCase(root.getKey()) > 0) {
@@ -389,16 +391,16 @@ public class Tree {
 
     /**
      * Método para remover uma imagem da árvore.
-     * 
-     * @param im - nome/chave da imagem a ser removida.
+     *
+     * @param im- nome/chave da imagem a ser removida.
      */
     public void remover(String im) {
         root = remove(im, root);
     }
-    
+
     /**
      * Método privado que busca e remove a imagem da árvore.
-     * 
+     *
      * @param im - imagem a ser removida.
      * @param root - nó raíz.
      * @return Node - nó raíz.
@@ -410,10 +412,10 @@ public class Tree {
         // Se o resultado da comparação for true, a chave é menor que o nó atual.
         if (im.compareToIgnoreCase(root.getKey()) < 0) {
             root.setLeft(remove(im, root.getLeft()));
-        // Se o resultado da comparação for true, a chave é maior que o nó atual.
+            // Se o resultado da comparação for true, a chave é maior que o nó atual.
         } else if (im.compareToIgnoreCase(root.getKey()) > 0) {
             root.setRight(remove(im, root.getRight()));
-        // Se entrar no else, a chave foi encontrada.
+            // Se entrar no else, a chave foi encontrada.
         } else {
             root.getConteudo().setComputador(null);
             // Caso o nó tenha ao menor um filho.
@@ -446,8 +448,8 @@ public class Tree {
 
     /**
      * Método que retorna o tamanho da árvore (quantidade de nós).
-     * 
-     * @return int - quantidade de nós da árvore. 
+     *
+     * @return int - quantidade de nós da árvore.
      */
     public int size() {
         return quantidadeDeNós(root);
@@ -455,8 +457,8 @@ public class Tree {
 
     /**
      * Método privado que retorna o tamanho da árvore (quantidade de nós).
-     * 
-     * @return int - quantidade de nós da árvore. 
+     *
+     * @return int - quantidade de nós da árvore.
      */
     private int quantidadeDeNós(Node root) {
         if (root == null) {

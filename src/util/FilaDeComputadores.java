@@ -195,7 +195,7 @@ public class FilaDeComputadores {
         int contador = 0;
         No aux = first;
         int i = 1;
-        System.out.println("Espaços Disponível dos Computadores cadastrados");
+        System.out.println("\n\nESPAÇOS DISPONÍVEIS DOS COMPUTADORES CADASTRADOS");
         while (aux != null) {
             System.out.println(i + "º computador: " + aux.getConteudo().getEspacoDisponivel());
             aux = aux.getNext();
@@ -214,9 +214,9 @@ public class FilaDeComputadores {
     public int ListarComputadores() {
         int contador = 0;
         No aux = first;
+        System.out.println("\n\nCOMPUTADORES E CAPACIDADE DE DISCO:");
         while (aux != null) {
-            System.out.println("\nNome: " + aux.getConteudo().getNome());
-            System.out.print("Capacidade: " + aux.getConteudo().getCapacidade());
+            System.out.println(" -Nome: " + aux.getConteudo().getNome()+"  -Capacidade: " + aux.getConteudo().getCapacidade());
             contador++;
             aux = aux.getNext();
         }
@@ -224,17 +224,18 @@ public class FilaDeComputadores {
     }
 
     /**
-     * Método que lista as imagens armazenada em cada computador.
+     * Método que lista as imagens armazenadas em cada computador.
      *
      * @return int - contador de imagens listadas.
      */
     public int listarImagensDeComputadores() {
         int contador = 0;
         No aux = first;
+        System.out.println("\n\nRELAÇÃO DE IMAGENS DE CADA COMPUTADOR");
         while (aux != null) {
             Node root = aux.getConteudo().getImagens().getRootNode();
-            System.out.println("\n\nComputador: " + aux.getConteudo().getNome());
-            System.out.println("Imagens: ");
+            System.out.println("\n\n-Computador: " + aux.getConteudo().getNome());
+            System.out.print("  Imagens: ");
             contador += aux.getConteudo().getImagens().listarImagem(root);
             aux = aux.getNext();
         }
@@ -249,6 +250,7 @@ public class FilaDeComputadores {
      */
     public int listarNomeImagem(Computador computador) {
         Node root = computador.getImagens().getRootNode();
+        System.out.println("\n\nIMAGENS DO COMPUTADOR "+computador.getNome());
         int contador = computador.getImagens().listar(root);
         return contador;
     }

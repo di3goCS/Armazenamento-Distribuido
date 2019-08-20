@@ -20,6 +20,13 @@ import model.SystemTeste;
 import util.FilaPrioridadeTeste;
 import util.TreeTeste;
 
+/**
+ * Classe que unifica todas as classes de teste
+ *
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
+ */
+
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
     ComputadorTeste.class,

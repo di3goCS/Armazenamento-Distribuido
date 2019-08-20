@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="KUBRICK-PC" name="allTests.AllTests" skipped="0" tests="30" time="42.098" timestamp="2019-08-18T12:45:36">
+<testsuite errors="0" failures="0" hostname="KUBRICK-PC" name="allTests.AllTests" skipped="0" tests="30" time="45.368" timestamp="2019-08-20T01:21:12">
   <properties>
     <property name="libs.spring-framework300.classpath" value="C:\Program Files (x86)\netbeans\ide\modules\org-apache-commons-logging.jar;C:\Program Files (x86)\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-aop-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-aspects-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-beans-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-build-src-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-context-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-context-support-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-core-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-expression-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-framework-bom-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-instrument-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-jdbc-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-jms-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-orm-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-oxm-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-struts-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-test-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-tx-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-web-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar;C:\Program Files (x86)\netbeans\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.7.RELEASE.jar" />
     <property name="javac.test.classpath" value="C:\Program Files (x86)\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:C:\Program Files (x86)\netbeans\platform\modules\ext\junit-4.12.jar:build/classes" />
-    <property name="javac.includesfile.binary" value="C:\Users\diego\Documents\armazenamento\null458072102" />
+    <property name="javac.includesfile.binary" value="C:\Users\diego\Documents\armazenamento\null1905792071" />
     <property name="java.specification.version" value="12" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="jar.index.metainf" value="false" />
@@ -23,7 +23,7 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12\bin" />
     <property name="libs.CopyLibs.src" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner allTests.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\diego\Documents\armazenamento\build\test\results\TEST-allTests.AllTests.xml crashfile=C:\Users\diego\Documents\armazenamento\build\junitvmwatcher15454934070749785325.properties propsfile=C:\Users\diego\Documents\armazenamento\build\junit17317713653613764100.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner allTests.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\diego\Documents\armazenamento\build\test\results\TEST-allTests.AllTests.xml crashfile=C:\Users\diego\Documents\armazenamento\build\junitvmwatcher7652117527024426053.properties propsfile=C:\Users\diego\Documents\armazenamento\build\junit3414461991355648472.properties" />
     <property name="ant.file.ArmazenamentoDistribuido" value="C:\Users\diego\Documents\armazenamento\build.xml" />
     <property name="jdk.debug" value="release" />
     <property name="libs.spring-framework300.src" value="" />
@@ -308,2545 +308,2575 @@
     <property name="junit.forkmode" value="perTest" />
     <property name="annotation.processing.run.all.processors" value="true" />
   </properties>
-  <testcase classname="model.ComputadorTeste" name="testeEquals" time="0.004" />
-  <testcase classname="model.ComputadorTeste" name="Insercao" time="0.015" />
-  <testcase classname="model.ImagemTeste" name="testeBasico" time="0.0" />
-  <testcase classname="model.ImagemTeste" name="testeEquals" time="0.0" />
-  <testcase classname="model.SystemTeste" name="testeListarImagensETamanhosDeCadaComputador" time="13.088" />
-  <testcase classname="model.SystemTeste" name="testeInsercaoImagem" time="1.869" />
-  <testcase classname="model.SystemTeste" name="testeImportarImagens" time="5.605" />
-  <testcase classname="model.SystemTeste" name="testeListarImagens" time="7.049" />
-  <testcase classname="model.SystemTeste" name="testeBuscarImagem" time="4.795" />
-  <testcase classname="model.SystemTeste" name="testeListarComputadoresECapacidade" time="0.003" />
-  <testcase classname="model.SystemTeste" name="testeAbrirGravarArquivosDeComputadores" time="0.016" />
-  <testcase classname="model.SystemTeste" name="testeListarEspacoDisponivelEmComputadores" time="0.011" />
-  <testcase classname="model.SystemTeste" name="testeExcluirImagem" time="8.291" />
-  <testcase classname="model.SystemTeste" name="testeCadastroComputadores" time="0.02" />
+  <testcase classname="model.ComputadorTeste" name="testeEquals" time="0.005" />
+  <testcase classname="model.ComputadorTeste" name="Insercao" time="0.001" />
+  <testcase classname="model.ImagemTeste" name="testeBasico" time="0.001" />
+  <testcase classname="model.ImagemTeste" name="testeEquals" time="0.001" />
+  <testcase classname="model.SystemTeste" name="testeListarImagensETamanhosDeCadaComputador" time="10.067" />
+  <testcase classname="model.SystemTeste" name="testeInsercaoImagem" time="0.281" />
+  <testcase classname="model.SystemTeste" name="testeImportarImagens" time="8.441" />
+  <testcase classname="model.SystemTeste" name="testeListarImagens" time="7.94" />
+  <testcase classname="model.SystemTeste" name="testeBuscarImagem" time="6.483" />
+  <testcase classname="model.SystemTeste" name="testeListarComputadoresECapacidade" time="0.006" />
+  <testcase classname="model.SystemTeste" name="testeAbrirGravarArquivosDeComputadores" time="0.026" />
+  <testcase classname="model.SystemTeste" name="testeListarEspacoDisponivelEmComputadores" time="6.914" />
+  <testcase classname="model.SystemTeste" name="testeExcluirImagem" time="4.525" />
+  <testcase classname="model.SystemTeste" name="testeCadastroComputadores" time="0.012" />
   <testcase classname="util.FilaPrioridadeTeste" name="testGet" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testSize" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testisEmpty" time="0.0" />
-  <testcase classname="util.FilaPrioridadeTeste" name="testDelete" time="0.0" />
-  <testcase classname="util.FilaPrioridadeTeste" name="testInsertDelete" time="0.001" />
+  <testcase classname="util.FilaPrioridadeTeste" name="testDelete" time="0.001" />
+  <testcase classname="util.FilaPrioridadeTeste" name="testInsertDelete" time="0.0" />
   <testcase classname="util.FilaPrioridadeTeste" name="testInsert" time="0.001" />
-  <testcase classname="util.FilaPrioridadeTeste" name="testIterator" time="0.003" />
-  <testcase classname="util.FilaPrioridadeTeste" name="testRemovePorObjeto" time="0.0" />
-  <testcase classname="util.TreeTeste" name="TesteBalanceamento" time="0.0" />
-  <testcase classname="util.TreeTeste" name="TesteAlturaMaximaEAltura" time="0.001" />
+  <testcase classname="util.FilaPrioridadeTeste" name="testIterator" time="0.108" />
+  <testcase classname="util.FilaPrioridadeTeste" name="testRemovePorObjeto" time="0.001" />
+  <testcase classname="util.TreeTeste" name="TesteBalanceamento" time="0.001" />
+  <testcase classname="util.TreeTeste" name="TesteAlturaMaximaEAltura" time="0.0" />
   <testcase classname="util.TreeTeste" name="testeSize" time="0.0" />
-  <testcase classname="util.TreeTeste" name="TesteMaiorChaveMenorChave" time="0.001" />
-  <testcase classname="util.TreeTeste" name="TesteBusca" time="0.0" />
-  <testcase classname="util.TreeTeste" name="testeRemorcao" time="0.0" />
+  <testcase classname="util.TreeTeste" name="testeRemocao" time="0.0" />
+  <testcase classname="util.TreeTeste" name="TesteMaiorChaveMenorChave" time="0.0" />
+  <testcase classname="util.TreeTeste" name="TesteBusca" time="0.001" />
   <testcase classname="util.TreeTeste" name="testeInsercao" time="0.001" />
-  <testcase classname="util.TreeTeste" name="isEmpty" time="0.001" />
+  <testcase classname="util.TreeTeste" name="isEmpty" time="0.0" />
   <system-out><![CDATA[Já existe uma imagem com esse nome!
 
 
-Computador: computerCmma
-Imagens: 
+RELAÇÃO DE IMAGENS DE CADA COMPUTADOR
 
-Nome agu	Tamanho1.8
-Nome ada	Tamanho0.1
-Nome aba	Tamanho6.1
-Nome aam	Tamanho1.4
-Nome aag	Tamanho1.8
-Nome aac	Tamanho4.5
-Nome aab	Tamanho0.6
-Nome aae	Tamanho2.1
-Nome aaj	Tamanho0.5
-Nome aai	Tamanho3.9
-Nome aal	Tamanho0.1
-Nome aaq	Tamanho1.9
-Nome aao	Tamanho0.3
-Nome aan	Tamanho1.7
-Nome aap	Tamanho3.1
-Nome aaw	Tamanho0.3
-Nome aas	Tamanho5.2
-Nome aax	Tamanho2.6
-Nome acd	Tamanho1.4
-Nome abs	Tamanho0.5
-Nome abk	Tamanho8.7
-Nome abg	Tamanho2.5
-Nome abr	Tamanho0.7
-Nome aby	Tamanho0.6
-Nome abt	Tamanho4.0
-Nome abz	Tamanho1.9
-Nome acl	Tamanho0.7
-Nome ach	Tamanho4.9
-Nome ace	Tamanho2.3
-Nome ack	Tamanho1.6
-Nome acr	Tamanho0.2
-Nome acn	Tamanho2.9
-Nome acs	Tamanho5.0
-Nome afa	Tamanho5.3
-Nome adz	Tamanho1.7
-Nome adj	Tamanho6.3
-Nome add	Tamanho1.3
-Nome adc	Tamanho0.2
-Nome adf	Tamanho1.0
-Nome adv	Tamanho0.9
-Nome adm	Tamanho6.1
-Nome ady	Tamanho0.1
-Nome aeo	Tamanho4.4
-Nome aef	Tamanho5.6
-Nome aec	Tamanho3.0
-Nome aem	Tamanho0.9
-Nome aex	Tamanho2.7
-Nome aes	Tamanho5.6
-Nome aez	Tamanho1.0
-Nome afy	Tamanho2.1
-Nome afk	Tamanho5.7
-Nome afi	Tamanho0.1
-Nome afg	Tamanho2.4
-Nome afj	Tamanho0.2
-Nome afs	Tamanho5.5
-Nome afr	Tamanho1.2
-Nome afw	Tamanho2.6
-Nome agj	Tamanho8.5
-Nome agc	Tamanho7.7
-Nome aga	Tamanho1.1
-Nome agi	Tamanho1.1
-Nome ags	Tamanho0.9
-Nome agq	Tamanho0.6
-Nome agt	Tamanho0.1
-Nome are	Tamanho1.3
-Nome ako	Tamanho2.9
-Nome ajb	Tamanho0.6
-Nome ahz	Tamanho3.3
-Nome ahh	Tamanho1.2
-Nome ahb	Tamanho2.8
-Nome agw	Tamanho4.7
-Nome ahe	Tamanho4.2
-Nome ahp	Tamanho2.1
-Nome ahi	Tamanho5.0
-Nome aht	Tamanho4.5
-Nome aip	Tamanho0.1
-Nome aim	Tamanho0.9
-Nome aif	Tamanho5.0
-Nome ain	Tamanho1.2
-Nome ait	Tamanho4.8
-Nome aiq	Tamanho2.5
-Nome aiz	Tamanho0.1
-Nome ajt	Tamanho0.4
-Nome ajj	Tamanho1.8
-Nome aje	Tamanho1.1
-Nome ajc	Tamanho1.0
-Nome ajf	Tamanho4.0
-Nome ajm	Tamanho0.2
-Nome ajk	Tamanho0.9
-Nome ajn	Tamanho2.1
-Nome akc	Tamanho0.6
-Nome ajv	Tamanho2.9
-Nome aju	Tamanho1.2
-Nome aka	Tamanho0.1
-Nome akm	Tamanho0.1
-Nome akd	Tamanho3.1
-Nome akn	Tamanho0.1
-Nome aod	Tamanho6.1
-Nome amw	Tamanho1.2
-Nome alp	Tamanho1.6
-Nome akz	Tamanho4.8
-Nome akt	Tamanho2.0
-Nome alh	Tamanho4.4
-Nome amg	Tamanho0.4
-Nome aly	Tamanho5.6
-Nome ami	Tamanho6.4
-Nome ant	Tamanho0.5
-Nome ano	Tamanho1.5
-Nome anb	Tamanho4.6
-Nome anr	Tamanho0.4
-Nome aoa	Tamanho1.2
-Nome anx	Tamanho1.4
-Nome aoc	Tamanho0.3
-Nome apu	Tamanho3.4
-Nome apa	Tamanho0.4
-Nome aoq	Tamanho2.0
-Nome aop	Tamanho0.2
-Nome aoz	Tamanho1.0
-Nome apk	Tamanho2.7
-Nome apc	Tamanho4.0
-Nome aps	Tamanho0.9
-Nome aqo	Tamanho1.0
-Nome aqh	Tamanho2.3
-Nome aqb	Tamanho2.7
-Nome aqm	Tamanho1.2
-Nome aqt	Tamanho0.6
-Nome aqp	Tamanho0.7
-Nome aqu	Tamanho0.9
-Nome bcv	Tamanho4.4
-Nome awh	Tamanho7.8
-Nome atr	Tamanho0.3
-Nome arp	Tamanho5.2
-Nome arm	Tamanho1.0
-Nome arl	Tamanho0.3
-Nome aro	Tamanho0.3
-Nome aso	Tamanho4.9
-Nome asc	Tamanho5.7
-Nome atb	Tamanho7.6
-Nome auq	Tamanho4.8
-Nome aud	Tamanho5.3
-Nome att	Tamanho2.3
-Nome aun	Tamanho1.8
-Nome avc	Tamanho5.5
-Nome auy	Tamanho2.3
-Nome avo	Tamanho8.0
-Nome azu	Tamanho8.8
-Nome ayl	Tamanho1.5
-Nome axr	Tamanho1.8
-Nome axh	Tamanho3.8
-Nome axu	Tamanho6.6
-Nome ayz	Tamanho1.4
-Nome ayr	Tamanho3.6
-Nome azb	Tamanho7.1
-Nome bbg	Tamanho5.3
-Nome bbd	Tamanho0.1
-Nome bav	Tamanho2.9
-Nome bbe	Tamanho0.9
-Nome bci	Tamanho3.1
-Nome bbv	Tamanho5.6
-Nome bcs	Tamanho0.8
-Nome bil	Tamanho1.8
-Nome bga	Tamanho1.0
-Nome bed	Tamanho0.7
-Nome bdv	Tamanho0.2
-Nome bdn	Tamanho1.9
-Nome bdx	Tamanho1.9
-Nome ben	Tamanho7.9
-Nome bef	Tamanho2.3
-Nome bfk	Tamanho4.5
-Nome bhb	Tamanho1.4
-Nome bgj	Tamanho5.8
-Nome bgf	Tamanho1.2
-Nome bgz	Tamanho0.2
-Nome big	Tamanho1.4
-Nome bhf	Tamanho6.9
-Nome bik	Tamanho0.1
-Nome bjq	Tamanho4.7
-Nome bjo	Tamanho0.1
-Nome bit	Tamanho4.6
-Nome bjp	Tamanho2.3
-Nome blb	Tamanho1.3
-Nome bku	Tamanho0.9
-Nome bkr	Tamanho0.3
-Nome bky	Tamanho0.6
-Nome blg	Tamanho7.0
-Nome blf	Tamanho0.3
-Nome bmi	Tamanho0.6
 
-Computador: cmma
-Imagens: 
+-Computador: computerCmma
+  Imagens: 
+   Nome: agu /Tamanho1.8
+   Nome: ada /Tamanho0.1
+   Nome: aba /Tamanho6.1
+   Nome: aam /Tamanho1.4
+   Nome: aag /Tamanho1.8
+   Nome: aac /Tamanho4.5
+   Nome: aab /Tamanho0.6
+   Nome: aae /Tamanho2.1
+   Nome: aaj /Tamanho0.5
+   Nome: aai /Tamanho3.9
+   Nome: aal /Tamanho0.1
+   Nome: aaq /Tamanho1.9
+   Nome: aao /Tamanho0.3
+   Nome: aan /Tamanho1.7
+   Nome: aap /Tamanho3.1
+   Nome: aaw /Tamanho0.3
+   Nome: aas /Tamanho5.2
+   Nome: aax /Tamanho2.6
+   Nome: acd /Tamanho1.4
+   Nome: abs /Tamanho0.5
+   Nome: abk /Tamanho8.7
+   Nome: abg /Tamanho2.5
+   Nome: abr /Tamanho0.7
+   Nome: aby /Tamanho0.6
+   Nome: abt /Tamanho4.0
+   Nome: abz /Tamanho1.9
+   Nome: acl /Tamanho0.7
+   Nome: ach /Tamanho4.9
+   Nome: ace /Tamanho2.3
+   Nome: ack /Tamanho1.6
+   Nome: acr /Tamanho0.2
+   Nome: acn /Tamanho2.9
+   Nome: acs /Tamanho5.0
+   Nome: afa /Tamanho5.3
+   Nome: adz /Tamanho1.7
+   Nome: adj /Tamanho6.3
+   Nome: add /Tamanho1.3
+   Nome: adc /Tamanho0.2
+   Nome: adf /Tamanho1.0
+   Nome: adv /Tamanho0.9
+   Nome: adm /Tamanho6.1
+   Nome: ady /Tamanho0.1
+   Nome: aeo /Tamanho4.4
+   Nome: aef /Tamanho5.6
+   Nome: aec /Tamanho3.0
+   Nome: aem /Tamanho0.9
+   Nome: aex /Tamanho2.7
+   Nome: aes /Tamanho5.6
+   Nome: aez /Tamanho1.0
+   Nome: afy /Tamanho2.1
+   Nome: afk /Tamanho5.7
+   Nome: afi /Tamanho0.1
+   Nome: afg /Tamanho2.4
+   Nome: afj /Tamanho0.2
+   Nome: afs /Tamanho5.5
+   Nome: afr /Tamanho1.2
+   Nome: afw /Tamanho2.6
+   Nome: agj /Tamanho8.5
+   Nome: agc /Tamanho7.7
+   Nome: aga /Tamanho1.1
+   Nome: agi /Tamanho1.1
+   Nome: ags /Tamanho0.9
+   Nome: agq /Tamanho0.6
+   Nome: agt /Tamanho0.1
+   Nome: are /Tamanho1.3
+   Nome: ako /Tamanho2.9
+   Nome: ajb /Tamanho0.6
+   Nome: ahz /Tamanho3.3
+   Nome: ahh /Tamanho1.2
+   Nome: ahb /Tamanho2.8
+   Nome: agw /Tamanho4.7
+   Nome: ahe /Tamanho4.2
+   Nome: ahp /Tamanho2.1
+   Nome: ahi /Tamanho5.0
+   Nome: aht /Tamanho4.5
+   Nome: aip /Tamanho0.1
+   Nome: aim /Tamanho0.9
+   Nome: aif /Tamanho5.0
+   Nome: ain /Tamanho1.2
+   Nome: ait /Tamanho4.8
+   Nome: aiq /Tamanho2.5
+   Nome: aiz /Tamanho0.1
+   Nome: ajt /Tamanho0.4
+   Nome: ajj /Tamanho1.8
+   Nome: aje /Tamanho1.1
+   Nome: ajc /Tamanho1.0
+   Nome: ajf /Tamanho4.0
+   Nome: ajm /Tamanho0.2
+   Nome: ajk /Tamanho0.9
+   Nome: ajn /Tamanho2.1
+   Nome: akc /Tamanho0.6
+   Nome: ajv /Tamanho2.9
+   Nome: aju /Tamanho1.2
+   Nome: aka /Tamanho0.1
+   Nome: akm /Tamanho0.1
+   Nome: akd /Tamanho3.1
+   Nome: akn /Tamanho0.1
+   Nome: aod /Tamanho6.1
+   Nome: amw /Tamanho1.2
+   Nome: alp /Tamanho1.6
+   Nome: akz /Tamanho4.8
+   Nome: akt /Tamanho2.0
+   Nome: alh /Tamanho4.4
+   Nome: amg /Tamanho0.4
+   Nome: aly /Tamanho5.6
+   Nome: ami /Tamanho6.4
+   Nome: ant /Tamanho0.5
+   Nome: ano /Tamanho1.5
+   Nome: anb /Tamanho4.6
+   Nome: anr /Tamanho0.4
+   Nome: aoa /Tamanho1.2
+   Nome: anx /Tamanho1.4
+   Nome: aoc /Tamanho0.3
+   Nome: apu /Tamanho3.4
+   Nome: apa /Tamanho0.4
+   Nome: aoq /Tamanho2.0
+   Nome: aop /Tamanho0.2
+   Nome: aoz /Tamanho1.0
+   Nome: apk /Tamanho2.7
+   Nome: apc /Tamanho4.0
+   Nome: aps /Tamanho0.9
+   Nome: aqo /Tamanho1.0
+   Nome: aqh /Tamanho2.3
+   Nome: aqb /Tamanho2.7
+   Nome: aqm /Tamanho1.2
+   Nome: aqt /Tamanho0.6
+   Nome: aqp /Tamanho0.7
+   Nome: aqu /Tamanho0.9
+   Nome: bcv /Tamanho4.4
+   Nome: awh /Tamanho7.8
+   Nome: atr /Tamanho0.3
+   Nome: arp /Tamanho5.2
+   Nome: arm /Tamanho1.0
+   Nome: arl /Tamanho0.3
+   Nome: aro /Tamanho0.3
+   Nome: aso /Tamanho4.9
+   Nome: asc /Tamanho5.7
+   Nome: atb /Tamanho7.6
+   Nome: auq /Tamanho4.8
+   Nome: aud /Tamanho5.3
+   Nome: att /Tamanho2.3
+   Nome: aun /Tamanho1.8
+   Nome: avc /Tamanho5.5
+   Nome: auy /Tamanho2.3
+   Nome: avo /Tamanho8.0
+   Nome: azu /Tamanho8.8
+   Nome: ayl /Tamanho1.5
+   Nome: axr /Tamanho1.8
+   Nome: axh /Tamanho3.8
+   Nome: axu /Tamanho6.6
+   Nome: ayz /Tamanho1.4
+   Nome: ayr /Tamanho3.6
+   Nome: azb /Tamanho7.1
+   Nome: bbg /Tamanho5.3
+   Nome: bbd /Tamanho0.1
+   Nome: bav /Tamanho2.9
+   Nome: bbe /Tamanho0.9
+   Nome: bci /Tamanho3.1
+   Nome: bbv /Tamanho5.6
+   Nome: bcs /Tamanho0.8
+   Nome: bil /Tamanho1.8
+   Nome: bga /Tamanho1.0
+   Nome: bed /Tamanho0.7
+   Nome: bdv /Tamanho0.2
+   Nome: bdn /Tamanho1.9
+   Nome: bdx /Tamanho1.9
+   Nome: ben /Tamanho7.9
+   Nome: bef /Tamanho2.3
+   Nome: bfk /Tamanho4.5
+   Nome: bhb /Tamanho1.4
+   Nome: bgj /Tamanho5.8
+   Nome: bgf /Tamanho1.2
+   Nome: bgz /Tamanho0.2
+   Nome: big /Tamanho1.4
+   Nome: bhf /Tamanho6.9
+   Nome: bik /Tamanho0.1
+   Nome: bjq /Tamanho4.7
+   Nome: bjo /Tamanho0.1
+   Nome: bit /Tamanho4.6
+   Nome: bjp /Tamanho2.3
+   Nome: blb /Tamanho1.3
+   Nome: bku /Tamanho0.9
+   Nome: bkr /Tamanho0.3
+   Nome: bky /Tamanho0.6
+   Nome: blg /Tamanho7.0
+   Nome: blf /Tamanho0.3
+   Nome: bmi /Tamanho0.6
 
-Nome bfs	Tamanho2.8
-Nome bdj	Tamanho1.1
-Nome bbj	Tamanho8.1
-Nome bbc	Tamanho1.5
-Nome bat	Tamanho3.1
-Nome bbf	Tamanho0.9
-Nome bco	Tamanho0.9
-Nome bcd	Tamanho4.1
-Nome bcr	Tamanho4.7
-Nome bek	Tamanho0.5
-Nome beg	Tamanho0.3
-Nome bdq	Tamanho4.4
-Nome bei	Tamanho0.8
-Nome bfc	Tamanho0.9
-Nome bel	Tamanho7.5
-Nome bfl	Tamanho1.3
-Nome bjy	Tamanho3.1
-Nome bhw	Tamanho0.9
-Nome bgq	Tamanho6.3
-Nome bfy	Tamanho3.9
-Nome bhi	Tamanho3.6
-Nome bin	Tamanho5.6
-Nome bib	Tamanho4.3
-Nome bjn	Tamanho3.9
-Nome bkx	Tamanho2.1
-Nome bkp	Tamanho0.9
-Nome blw	Tamanho2.3
-Nome bld	Tamanho5.8
-Nome bmj	Tamanho0.8
+-Computador: cmma
+  Imagens: 
+   Nome: bfs /Tamanho2.8
+   Nome: bdj /Tamanho1.1
+   Nome: bbj /Tamanho8.1
+   Nome: bbc /Tamanho1.5
+   Nome: bat /Tamanho3.1
+   Nome: bbf /Tamanho0.9
+   Nome: bco /Tamanho0.9
+   Nome: bcd /Tamanho4.1
+   Nome: bcr /Tamanho4.7
+   Nome: bek /Tamanho0.5
+   Nome: beg /Tamanho0.3
+   Nome: bdq /Tamanho4.4
+   Nome: bei /Tamanho0.8
+   Nome: bfc /Tamanho0.9
+   Nome: bel /Tamanho7.5
+   Nome: bfl /Tamanho1.3
+   Nome: bjy /Tamanho3.1
+   Nome: bhw /Tamanho0.9
+   Nome: bgq /Tamanho6.3
+   Nome: bfy /Tamanho3.9
+   Nome: bhi /Tamanho3.6
+   Nome: bin /Tamanho5.6
+   Nome: bib /Tamanho4.3
+   Nome: bjn /Tamanho3.9
+   Nome: bkx /Tamanho2.1
+   Nome: bkp /Tamanho0.9
+   Nome: blw /Tamanho2.3
+   Nome: bld /Tamanho5.8
+   Nome: bmj /Tamanho0.8
 
-Computador: computadorHsp
-Imagens: 
+-Computador: computadorHsp
+  Imagens: 
+   Nome: bho /Tamanho4.6
+   Nome: bce /Tamanho6.2
+   Nome: bag /Tamanho4.8
+   Nome: azv /Tamanho0.6
+   Nome: azl /Tamanho5.2
+   Nome: azw /Tamanho3.6
+   Nome: bbq /Tamanho6.1
+   Nome: bax /Tamanho6.1
+   Nome: bcc /Tamanho0.9
+   Nome: bdu /Tamanho7.3
+   Nome: bdi /Tamanho2.4
+   Nome: bdc /Tamanho1.9
+   Nome: bds /Tamanho0.2
+   Nome: bft /Tamanho9.2
+   Nome: bes /Tamanho7.9
+   Nome: bgv /Tamanho5.1
+   Nome: bkl /Tamanho0.1
+   Nome: biz /Tamanho2.4
+   Nome: bii /Tamanho2.6
+   Nome: bie /Tamanho1.7
+   Nome: biv /Tamanho0.9
+   Nome: bju /Tamanho2.1
+   Nome: bjg /Tamanho4.1
+   Nome: bkh /Tamanho1.3
+   Nome: bkt /Tamanho0.2
+   Nome: bkn /Tamanho0.6
+   Nome: blo /Tamanho0.3
+   Nome: bkv /Tamanho6.2
+   Nome: blr /Tamanho5.5
 
-Nome bho	Tamanho4.6
-Nome bce	Tamanho6.2
-Nome bag	Tamanho4.8
-Nome azv	Tamanho0.6
-Nome azl	Tamanho5.2
-Nome azw	Tamanho3.6
-Nome bbq	Tamanho6.1
-Nome bax	Tamanho6.1
-Nome bcc	Tamanho0.9
-Nome bdu	Tamanho7.3
-Nome bdi	Tamanho2.4
-Nome bdc	Tamanho1.9
-Nome bds	Tamanho0.2
-Nome bft	Tamanho9.2
-Nome bes	Tamanho7.9
-Nome bgv	Tamanho5.1
-Nome bkl	Tamanho0.1
-Nome biz	Tamanho2.4
-Nome bii	Tamanho2.6
-Nome bie	Tamanho1.7
-Nome biv	Tamanho0.9
-Nome bju	Tamanho2.1
-Nome bjg	Tamanho4.1
-Nome bkh	Tamanho1.3
-Nome bkt	Tamanho0.2
-Nome bkn	Tamanho0.6
-Nome blo	Tamanho0.3
-Nome bkv	Tamanho6.2
-Nome blr	Tamanho5.5
+-Computador: hospitalPc
+  Imagens: 
+   Nome: bjb /Tamanho2.4
+   Nome: bid /Tamanho3.7
+   Nome: bhz /Tamanho0.1
+   Nome: bhx /Tamanho0.2
+   Nome: bia /Tamanho1.7
+   Nome: biu /Tamanho1.0
+   Nome: biq /Tamanho0.4
+   Nome: biy /Tamanho0.6
+   Nome: bli /Tamanho4.7
+   Nome: bkd /Tamanho3.9
+   Nome: bjk /Tamanho5.5
+   Nome: bkz /Tamanho1.8
+   Nome: bme /Tamanho0.2
+   Nome: blu /Tamanho0.9
+   Nome: bmg /Tamanho0.1
+   Nome: bmh /Tamanho2.9
 
-Computador: hospitalPc
-Imagens: 
+-Computador: hspSolution
+  Imagens: 
+   Nome: ayq /Tamanho1.1
+   Nome: ase /Tamanho3.2
+   Nome: apj /Tamanho2.0
+   Nome: anl /Tamanho4.3
+   Nome: ams /Tamanho4.0
+   Nome: alw /Tamanho4.5
+   Nome: alr /Tamanho0.7
+   Nome: amd /Tamanho4.8
+   Nome: ang /Tamanho1.3
+   Nome: amy /Tamanho2.7
+   Nome: ank /Tamanho0.2
+   Nome: aos /Tamanho1.5
+   Nome: aob /Tamanho2.0
+   Nome: anz /Tamanho1.8
+   Nome: aoe /Tamanho4.9
+   Nome: aow /Tamanho1.4
+   Nome: aov /Tamanho0.1
+   Nome: apb /Tamanho3.2
+   Nome: aqx /Tamanho0.1
+   Nome: aqk /Tamanho1.8
+   Nome: apy /Tamanho5.4
+   Nome: apn /Tamanho3.4
+   Nome: aqi /Tamanho1.0
+   Nome: aqq /Tamanho1.3
+   Nome: aqn /Tamanho1.7
+   Nome: aqw /Tamanho0.3
+   Nome: arr /Tamanho0.3
+   Nome: arb /Tamanho0.1
+   Nome: aqy /Tamanho0.2
+   Nome: ard /Tamanho3.3
+   Nome: ary /Tamanho1.4
+   Nome: ars /Tamanho3.0
+   Nome: asb /Tamanho1.0
+   Nome: avs /Tamanho4.4
+   Nome: aua /Tamanho0.5
+   Nome: asz /Tamanho4.0
+   Nome: asn /Tamanho0.5
+   Nome: asm /Tamanho1.6
+   Nome: asp /Tamanho3.7
+   Nome: atl /Tamanho1.0
+   Nome: ath /Tamanho2.5
+   Nome: atn /Tamanho2.9
+   Nome: avf /Tamanho1.9
+   Nome: aur /Tamanho4.6
+   Nome: auc /Tamanho9.1
+   Nome: avb /Tamanho1.6
+   Nome: avn /Tamanho1.1
+   Nome: avk /Tamanho2.0
+   Nome: avp /Tamanho0.7
+   Nome: axf /Tamanho1.1
+   Nome: awu /Tamanho0.8
+   Nome: awm /Tamanho0.5
+   Nome: awd /Tamanho3.5
+   Nome: awp /Tamanho3.3
+   Nome: axa /Tamanho0.2
+   Nome: awx /Tamanho0.2
+   Nome: axc /Tamanho0.1
+   Nome: ayd /Tamanho0.2
+   Nome: axk /Tamanho0.2
+   Nome: axg /Tamanho1.3
+   Nome: axl /Tamanho7.7
+   Nome: ayi /Tamanho2.1
+   Nome: aye /Tamanho1.9
+   Nome: ayo /Tamanho0.7
+   Nome: bbo /Tamanho3.6
+   Nome: bal /Tamanho1.5
+   Nome: azi /Tamanho2.4
+   Nome: ayy /Tamanho2.4
+   Nome: ayv /Tamanho1.1
+   Nome: aza /Tamanho2.3
+   Nome: baa /Tamanho1.1
+   Nome: azp /Tamanho5.5
+   Nome: bac /Tamanho2.3
+   Nome: bay /Tamanho0.6
+   Nome: bau /Tamanho0.9
+   Nome: bap /Tamanho0.7
+   Nome: baw /Tamanho0.7
+   Nome: bbb /Tamanho2.8
+   Nome: baz /Tamanho0.5
+   Nome: bbk /Tamanho0.8
+   Nome: bgu /Tamanho3.0
+   Nome: bem /Tamanho0.9
+   Nome: bct /Tamanho0.2
+   Nome: bcg /Tamanho1.5
+   Nome: bbw /Tamanho4.9
+   Nome: bcm /Tamanho2.3
+   Nome: bcx /Tamanho3.9
+   Nome: bcu /Tamanho0.9
+   Nome: bdm /Tamanho6.7
+   Nome: bfi /Tamanho4.2
+   Nome: bfb /Tamanho0.7
+   Nome: beo /Tamanho6.0
+   Nome: bff /Tamanho0.5
+   Nome: bfz /Tamanho2.9
+   Nome: bfx /Tamanho0.4
+   Nome: bgl /Tamanho2.7
+   Nome: bjw /Tamanho0.3
+   Nome: bim /Tamanho1.9
+   Nome: bhp /Tamanho0.6
+   Nome: bhd /Tamanho2.9
+   Nome: bht /Tamanho6.6
+   Nome: bjc /Tamanho6.1
+   Nome: biw /Tamanho1.0
+   Nome: bjv /Tamanho0.1
+   Nome: blm /Tamanho1.6
+   Nome: bkk /Tamanho5.6
+   Nome: bjx /Tamanho2.7
+   Nome: blk /Tamanho0.5
+   Nome: bly /Tamanho0.2
+   Nome: bls /Tamanho1.8
+   Nome: blz /Tamanho5.2
 
-Nome bjb	Tamanho2.4
-Nome bid	Tamanho3.7
-Nome bhz	Tamanho0.1
-Nome bhx	Tamanho0.2
-Nome bia	Tamanho1.7
-Nome biu	Tamanho1.0
-Nome biq	Tamanho0.4
-Nome biy	Tamanho0.6
-Nome bli	Tamanho4.7
-Nome bkd	Tamanho3.9
-Nome bjk	Tamanho5.5
-Nome bkz	Tamanho1.8
-Nome bme	Tamanho0.2
-Nome blu	Tamanho0.9
-Nome bmg	Tamanho0.1
-Nome bmh	Tamanho2.9
+-Computador: solutionsComputer
+  Imagens: 
+   Nome: bcy /Tamanho4.9
+   Nome: bbm /Tamanho5.9
+   Nome: ban /Tamanho0.7
+   Nome: bak /Tamanho1.0
+   Nome: bar /Tamanho6.6
+   Nome: bcj /Tamanho2.1
+   Nome: bbz /Tamanho4.0
+   Nome: bcp /Tamanho1.8
+   Nome: bgw /Tamanho5.4
+   Nome: bfg /Tamanho5.2
+   Nome: bdy /Tamanho8.6
+   Nome: bdt /Tamanho1.1
+   Nome: bev /Tamanho3.8
+   Nome: bgm /Tamanho2.4
+   Nome: bgb /Tamanho2.5
+   Nome: bgs /Tamanho1.1
+   Nome: bix /Tamanho6.7
+   Nome: bio /Tamanho1.0
+   Nome: bhs /Tamanho6.9
+   Nome: bis /Tamanho0.9
+   Nome: blc /Tamanho7.1
+   Nome: bjt /Tamanho6.1
+   Nome: bmc /Tamanho6.0
 
-Computador: hspSolution
-Imagens: 
+-Computador: computer
+  Imagens: 
+   Nome: axp /Tamanho4.8
+   Nome: arj /Tamanho4.2
+   Nome: ann /Tamanho2.5
+   Nome: alf /Tamanho7.0
+   Nome: aki /Tamanho0.6
+   Nome: akf /Tamanho0.1
+   Nome: ajz /Tamanho3.3
+   Nome: akg /Tamanho0.5
+   Nome: akq /Tamanho1.4
+   Nome: akl /Tamanho3.1
+   Nome: akv /Tamanho3.2
+   Nome: amn /Tamanho0.3
+   Nome: alz /Tamanho6.5
+   Nome: alo /Tamanho2.2
+   Nome: amk /Tamanho0.9
+   Nome: amq /Tamanho8.5
+   Nome: amp /Tamanho0.3
+   Nome: ani /Tamanho1.2
+   Nome: ape /Tamanho2.1
+   Nome: aoo /Tamanho1.7
+   Nome: aof /Tamanho0.9
+   Nome: anv /Tamanho6.1
+   Nome: aoi /Tamanho2.0
+   Nome: aou /Tamanho2.4
+   Nome: aot /Tamanho0.2
+   Nome: apd /Tamanho0.3
+   Nome: aqf /Tamanho7.4
+   Nome: apm /Tamanho7.3
+   Nome: api /Tamanho1.5
+   Nome: aqc /Tamanho1.0
+   Nome: arc /Tamanho0.6
+   Nome: aqz /Tamanho0.2
+   Nome: arf /Tamanho0.1
+   Nome: aup /Tamanho5.6
+   Nome: atf /Tamanho1.0
+   Nome: asq /Tamanho1.9
+   Nome: asf /Tamanho0.2
+   Nome: art /Tamanho4.6
+   Nome: ash /Tamanho4.6
+   Nome: asx /Tamanho2.2
+   Nome: asu /Tamanho1.3
+   Nome: atd /Tamanho0.4
+   Nome: atp /Tamanho1.5
+   Nome: atj /Tamanho1.3
+   Nome: atg /Tamanho3.3
+   Nome: ato /Tamanho0.3
+   Nome: aue /Tamanho4.6
+   Nome: atw /Tamanho1.7
+   Nome: aum /Tamanho2.1
+   Nome: awj /Tamanho1.1
+   Nome: avw /Tamanho0.3
+   Nome: avj /Tamanho2.1
+   Nome: ava /Tamanho4.3
+   Nome: avm /Tamanho3.3
+   Nome: awa /Tamanho2.5
+   Nome: avx /Tamanho2.1
+   Nome: awg /Tamanho1.0
+   Nome: axe /Tamanho2.2
+   Nome: awv /Tamanho0.4
+   Nome: awo /Tamanho3.6
+   Nome: aww /Tamanho0.6
+   Nome: axm /Tamanho0.5
+   Nome: axi /Tamanho0.6
+   Nome: axo /Tamanho0.2
+   Nome: bha /Tamanho2.3
+   Nome: bdf /Tamanho3.3
+   Nome: azq /Tamanho0.1
+   Nome: azd /Tamanho0.2
+   Nome: ayf /Tamanho3.5
+   Nome: axy /Tamanho2.6
+   Nome: ayn /Tamanho6.9
+   Nome: azg /Tamanho1.8
+   Nome: aze /Tamanho0.4
+   Nome: azn /Tamanho1.2
+   Nome: bbr /Tamanho0.1
+   Nome: bah /Tamanho3.2
+   Nome: azr /Tamanho7.2
+   Nome: bas /Tamanho8.2
+   Nome: bbx /Tamanho3.6
+   Nome: bbt /Tamanho2.6
+   Nome: bcf /Tamanho6.6
+   Nome: bfn /Tamanho0.6
+   Nome: bew /Tamanho3.0
+   Nome: bdr /Tamanho2.9
+   Nome: bdp /Tamanho0.2
+   Nome: bec /Tamanho7.6
+   Nome: bfj /Tamanho0.3
+   Nome: bfe /Tamanho0.6
+   Nome: bfm /Tamanho0.1
+   Nome: bfw /Tamanho1.6
+   Nome: bfu /Tamanho1.4
+   Nome: bfq /Tamanho0.6
+   Nome: bfv /Tamanho0.5
+   Nome: bgd /Tamanho2.5
+   Nome: bgc /Tamanho0.3
+   Nome: bgp /Tamanho4.8
+   Nome: bjl /Tamanho3.3
+   Nome: bhy /Tamanho8.0
+   Nome: bhr /Tamanho0.4
+   Nome: bhk /Tamanho1.4
+   Nome: bhu /Tamanho1.6
+   Nome: bji /Tamanho0.1
+   Nome: bjd /Tamanho1.9
+   Nome: bjj /Tamanho0.1
+   Nome: bkf /Tamanho0.6
+   Nome: bkb /Tamanho0.2
+   Nome: bjr /Tamanho1.9
+   Nome: bkc /Tamanho0.3
+   Nome: blj /Tamanho3.9
+   Nome: bla /Tamanho1.0
+   Nome: bki /Tamanho3.1
+   Nome: ble /Tamanho1.8
+   Nome: blv /Tamanho2.5
+   Nome: bml /Tamanho4.3
 
-Nome ayq	Tamanho1.1
-Nome ase	Tamanho3.2
-Nome apj	Tamanho2.0
-Nome anl	Tamanho4.3
-Nome ams	Tamanho4.0
-Nome alw	Tamanho4.5
-Nome alr	Tamanho0.7
-Nome amd	Tamanho4.8
-Nome ang	Tamanho1.3
-Nome amy	Tamanho2.7
-Nome ank	Tamanho0.2
-Nome aos	Tamanho1.5
-Nome aob	Tamanho2.0
-Nome anz	Tamanho1.8
-Nome aoe	Tamanho4.9
-Nome aow	Tamanho1.4
-Nome aov	Tamanho0.1
-Nome apb	Tamanho3.2
-Nome aqx	Tamanho0.1
-Nome aqk	Tamanho1.8
-Nome apy	Tamanho5.4
-Nome apn	Tamanho3.4
-Nome aqi	Tamanho1.0
-Nome aqq	Tamanho1.3
-Nome aqn	Tamanho1.7
-Nome aqw	Tamanho0.3
-Nome arr	Tamanho0.3
-Nome arb	Tamanho0.1
-Nome aqy	Tamanho0.2
-Nome ard	Tamanho3.3
-Nome ary	Tamanho1.4
-Nome ars	Tamanho3.0
-Nome asb	Tamanho1.0
-Nome avs	Tamanho4.4
-Nome aua	Tamanho0.5
-Nome asz	Tamanho4.0
-Nome asn	Tamanho0.5
-Nome asm	Tamanho1.6
-Nome asp	Tamanho3.7
-Nome atl	Tamanho1.0
-Nome ath	Tamanho2.5
-Nome atn	Tamanho2.9
-Nome avf	Tamanho1.9
-Nome aur	Tamanho4.6
-Nome auc	Tamanho9.1
-Nome avb	Tamanho1.6
-Nome avn	Tamanho1.1
-Nome avk	Tamanho2.0
-Nome avp	Tamanho0.7
-Nome axf	Tamanho1.1
-Nome awu	Tamanho0.8
-Nome awm	Tamanho0.5
-Nome awd	Tamanho3.5
-Nome awp	Tamanho3.3
-Nome axa	Tamanho0.2
-Nome awx	Tamanho0.2
-Nome axc	Tamanho0.1
-Nome ayd	Tamanho0.2
-Nome axk	Tamanho0.2
-Nome axg	Tamanho1.3
-Nome axl	Tamanho7.7
-Nome ayi	Tamanho2.1
-Nome aye	Tamanho1.9
-Nome ayo	Tamanho0.7
-Nome bbo	Tamanho3.6
-Nome bal	Tamanho1.5
-Nome azi	Tamanho2.4
-Nome ayy	Tamanho2.4
-Nome ayv	Tamanho1.1
-Nome aza	Tamanho2.3
-Nome baa	Tamanho1.1
-Nome azp	Tamanho5.5
-Nome bac	Tamanho2.3
-Nome bay	Tamanho0.6
-Nome bau	Tamanho0.9
-Nome bap	Tamanho0.7
-Nome baw	Tamanho0.7
-Nome bbb	Tamanho2.8
-Nome baz	Tamanho0.5
-Nome bbk	Tamanho0.8
-Nome bgu	Tamanho3.0
-Nome bem	Tamanho0.9
-Nome bct	Tamanho0.2
-Nome bcg	Tamanho1.5
-Nome bbw	Tamanho4.9
-Nome bcm	Tamanho2.3
-Nome bcx	Tamanho3.9
-Nome bcu	Tamanho0.9
-Nome bdm	Tamanho6.7
-Nome bfi	Tamanho4.2
-Nome bfb	Tamanho0.7
-Nome beo	Tamanho6.0
-Nome bff	Tamanho0.5
-Nome bfz	Tamanho2.9
-Nome bfx	Tamanho0.4
-Nome bgl	Tamanho2.7
-Nome bjw	Tamanho0.3
-Nome bim	Tamanho1.9
-Nome bhp	Tamanho0.6
-Nome bhd	Tamanho2.9
-Nome bht	Tamanho6.6
-Nome bjc	Tamanho6.1
-Nome biw	Tamanho1.0
-Nome bjv	Tamanho0.1
-Nome blm	Tamanho1.6
-Nome bkk	Tamanho5.6
-Nome bjx	Tamanho2.7
-Nome blk	Tamanho0.5
-Nome bly	Tamanho0.2
-Nome bls	Tamanho1.8
-Nome blz	Tamanho5.2
+-Computador: computadorcm
+  Imagens: 
+   Nome: aha /Tamanho1.5
+   Nome: adr /Tamanho1.7
+   Nome: abq /Tamanho4.2
+   Nome: aau /Tamanho0.4
+   Nome: aah /Tamanho5.8
+   Nome: aad /Tamanho5.0
+   Nome: aaa /Tamanho3.0
+   Nome: aaf /Tamanho0.6
+   Nome: aar /Tamanho3.3
+   Nome: aak /Tamanho6.9
+   Nome: aat /Tamanho3.1
+   Nome: abh /Tamanho0.5
+   Nome: aaz /Tamanho4.5
+   Nome: aav /Tamanho2.0
+   Nome: abd /Tamanho2.9
+   Nome: abm /Tamanho0.1
+   Nome: abi /Tamanho2.9
+   Nome: abn /Tamanho7.1
+   Nome: acq /Tamanho0.8
+   Nome: acb /Tamanho4.5
+   Nome: abx /Tamanho1.2
+   Nome: abw /Tamanho1.2
+   Nome: aca /Tamanho0.1
+   Nome: acj /Tamanho3.7
+   Nome: acg /Tamanho5.2
+   Nome: aco /Tamanho1.1
+   Nome: ade /Tamanho1.6
+   Nome: acx /Tamanho1.5
+   Nome: acu /Tamanho3.2
+   Nome: acz /Tamanho0.7
+   Nome: adk /Tamanho2.3
+   Nome: adh /Tamanho1.7
+   Nome: adl /Tamanho5.9
+   Nome: aff /Tamanho5.7
+   Nome: aej /Tamanho1.1
+   Nome: adx /Tamanho2.8
+   Nome: adu /Tamanho0.7
+   Nome: adt /Tamanho0.6
+   Nome: adw /Tamanho0.7
+   Nome: aeg /Tamanho0.4
+   Nome: aed /Tamanho3.3
+   Nome: aeh /Tamanho0.9
+   Nome: aev /Tamanho0.1
+   Nome: aep /Tamanho0.8
+   Nome: ael /Tamanho3.6
+   Nome: aer /Tamanho8.3
+   Nome: afc /Tamanho1.9
+   Nome: aew /Tamanho5.4
+   Nome: afe /Tamanho0.2
+   Nome: agf /Tamanho1.9
+   Nome: afo /Tamanho7.7
+   Nome: afm /Tamanho1.6
+   Nome: afl /Tamanho0.2
+   Nome: afn /Tamanho0.2
+   Nome: afz /Tamanho2.9
+   Nome: afv /Tamanho5.8
+   Nome: agd /Tamanho3.4
+   Nome: ago /Tamanho1.0
+   Nome: agk /Tamanho3.1
+   Nome: agh /Tamanho3.3
+   Nome: agm /Tamanho1.7
+   Nome: agr /Tamanho2.4
+   Nome: agp /Tamanho1.6
+   Nome: agv /Tamanho4.5
+   Nome: auf /Tamanho0.6
+   Nome: alx /Tamanho1.1
+   Nome: ail /Tamanho1.8
+   Nome: ahv /Tamanho0.3
+   Nome: ahm /Tamanho1.0
+   Nome: ahf /Tamanho4.9
+   Nome: ahd /Tamanho3.1
+   Nome: ahj /Tamanho1.7
+   Nome: aho /Tamanho1.2
+   Nome: ahn /Tamanho1.0
+   Nome: ahq /Tamanho5.0
+   Nome: aid /Tamanho0.6
+   Nome: aia /Tamanho2.1
+   Nome: ahw /Tamanho1.2
+   Nome: aic /Tamanho0.1
+   Nome: aig /Tamanho0.7
+   Nome: aie /Tamanho0.6
+   Nome: aih /Tamanho3.6
+   Nome: aks /Tamanho1.6
+   Nome: aji /Tamanho4.5
+   Nome: aiy /Tamanho1.3
+   Nome: aio /Tamanho8.1
+   Nome: ajd /Tamanho4.4
+   Nome: ajx /Tamanho4.8
+   Nome: ajo /Tamanho3.8
+   Nome: akh /Tamanho3.9
+   Nome: alk /Tamanho0.8
+   Nome: alc /Tamanho5.3
+   Nome: akw /Tamanho2.5
+   Nome: alj /Tamanho0.4
+   Nome: alm /Tamanho1.9
+   Nome: all /Tamanho0.1
+   Nome: alu /Tamanho0.8
+   Nome: apv /Tamanho4.7
+   Nome: anu /Tamanho0.7
+   Nome: amm /Tamanho1.1
+   Nome: amc /Tamanho1.0
+   Nome: ama /Tamanho2.8
+   Nome: ame /Tamanho2.5
+   Nome: amx /Tamanho7.3
+   Nome: amr /Tamanho4.2
+   Nome: ans /Tamanho0.4
+   Nome: apg /Tamanho3.3
+   Nome: aon /Tamanho2.5
+   Nome: any /Tamanho8.1
+   Nome: aox /Tamanho2.6
+   Nome: apo /Tamanho2.4
+   Nome: apl /Tamanho0.7
+   Nome: apt /Tamanho0.2
+   Nome: arv /Tamanho2.7
+   Nome: aqv /Tamanho1.5
+   Nome: aqe /Tamanho0.5
+   Nome: aqd /Tamanho0.1
+   Nome: aqg /Tamanho6.5
+   Nome: ark /Tamanho4.6
+   Nome: arh /Tamanho0.1
+   Nome: aru /Tamanho0.5
+   Nome: ata /Tamanho5.7
+   Nome: asi /Tamanho7.1
+   Nome: asd /Tamanho1.6
+   Nome: asw /Tamanho1.4
+   Nome: atm /Tamanho3.9
+   Nome: ati /Tamanho0.2
+   Nome: aub /Tamanho1.2
+   Nome: bdd /Tamanho0.6
+   Nome: ayp /Tamanho1.4
+   Nome: awr /Tamanho0.7
+   Nome: aux /Tamanho9.3
+   Nome: auh /Tamanho0.3
+   Nome: aug /Tamanho0.5
+   Nome: auk /Tamanho9.3
+   Nome: awk /Tamanho0.2
+   Nome: avq /Tamanho7.9
+   Nome: awl /Tamanho2.6
+   Nome: axq /Tamanho3.1
+   Nome: axj /Tamanho0.5
+   Nome: aws /Tamanho4.1
+   Nome: axn /Tamanho1.5
+   Nome: ayc /Tamanho3.5
+   Nome: axw /Tamanho2.9
+   Nome: aym /Tamanho0.9
+   Nome: bai /Tamanho0.8
+   Nome: azx /Tamanho1.8
+   Nome: ayx /Tamanho5.0
+   Nome: ayt /Tamanho1.2
+   Nome: azk /Tamanho6.0
+   Nome: bad /Tamanho0.5
+   Nome: bab /Tamanho1.1
+   Nome: baf /Tamanho1.1
+   Nome: bby /Tamanho1.0
+   Nome: baq /Tamanho8.6
+   Nome: bam /Tamanho1.4
+   Nome: bbs /Tamanho4.0
+   Nome: bcq /Tamanho1.9
+   Nome: bcb /Tamanho5.3
+   Nome: bcz /Tamanho0.2
+   Nome: bhq /Tamanho0.9
+   Nome: bgh /Tamanho4.4
+   Nome: bee /Tamanho4.2
+   Nome: bdh /Tamanho2.5
+   Nome: bdg /Tamanho0.5
+   Nome: bdo /Tamanho3.7
+   Nome: bfh /Tamanho0.8
+   Nome: ber /Tamanho6.5
+   Nome: bfp /Tamanho5.0
+   Nome: bhe /Tamanho0.5
+   Nome: bgy /Tamanho0.7
+   Nome: bgt /Tamanho2.2
+   Nome: bhc /Tamanho0.7
+   Nome: bhh /Tamanho1.3
+   Nome: bhg /Tamanho0.2
+   Nome: bhn /Tamanho0.5
+   Nome: bko /Tamanho0.2
+   Nome: bij /Tamanho4.0
+   Nome: bic /Tamanho0.3
+   Nome: bhv /Tamanho3.2
+   Nome: bif /Tamanho1.8
+   Nome: bjz /Tamanho0.5
+   Nome: bje /Tamanho6.7
+   Nome: bka /Tamanho2.2
+   Nome: blp /Tamanho0.2
+   Nome: bks /Tamanho5.0
+   Nome: bkq /Tamanho0.2
+   Nome: bll /Tamanho1.5
+   Nome: blq /Tamanho0.8
+   Nome: blt /Tamanho8.1
 
-Computador: solutionsComputer
-Imagens: 
+-Computador: solutions
+  Imagens: 
+   Nome: aib /Tamanho4.6
+   Nome: aei /Tamanho1.5
+   Nome: acp /Tamanho1.4
+   Nome: abo /Tamanho2.4
+   Nome: abe /Tamanho1.0
+   Nome: abb /Tamanho1.6
+   Nome: aay /Tamanho1.1
+   Nome: abc /Tamanho2.2
+   Nome: abj /Tamanho2.4
+   Nome: abf /Tamanho2.3
+   Nome: abl /Tamanho1.5
+   Nome: acc /Tamanho3.9
+   Nome: abu /Tamanho1.1
+   Nome: abp /Tamanho6.5
+   Nome: abv /Tamanho3.1
+   Nome: aci /Tamanho6.7
+   Nome: acf /Tamanho0.8
+   Nome: acm /Tamanho2.1
+   Nome: adn /Tamanho0.2
+   Nome: acy /Tamanho0.4
+   Nome: acv /Tamanho0.9
+   Nome: act /Tamanho1.6
+   Nome: acw /Tamanho2.1
+   Nome: adg /Tamanho0.3
+   Nome: adb /Tamanho1.8
+   Nome: adi /Tamanho7.1
+   Nome: ads /Tamanho4.2
+   Nome: adp /Tamanho0.1
+   Nome: ado /Tamanho0.9
+   Nome: adq /Tamanho2.0
+   Nome: aeb /Tamanho0.9
+   Nome: aea /Tamanho1.0
+   Nome: aee /Tamanho3.8
+   Nome: age /Tamanho3.8
+   Nome: afd /Tamanho2.2
+   Nome: aet /Tamanho0.9
+   Nome: aen /Tamanho0.8
+   Nome: aek /Tamanho3.3
+   Nome: aeq /Tamanho3.9
+   Nome: aey /Tamanho3.6
+   Nome: aeu /Tamanho5.5
+   Nome: afb /Tamanho2.2
+   Nome: aft /Tamanho0.8
+   Nome: afp /Tamanho1.0
+   Nome: afh /Tamanho7.3
+   Nome: afq /Tamanho1.6
+   Nome: afx /Tamanho3.0
+   Nome: afu /Tamanho6.8
+   Nome: agb /Tamanho2.4
+   Nome: ahg /Tamanho4.8
+   Nome: agx /Tamanho0.2
+   Nome: agl /Tamanho0.2
+   Nome: agg /Tamanho7.2
+   Nome: agn /Tamanho8.4
+   Nome: agz /Tamanho3.3
+   Nome: agy /Tamanho0.3
+   Nome: ahc /Tamanho4.5
+   Nome: ahs /Tamanho0.7
+   Nome: ahl /Tamanho4.7
+   Nome: ahk /Tamanho0.2
+   Nome: ahr /Tamanho0.8
+   Nome: ahx /Tamanho0.2
+   Nome: ahu /Tamanho3.6
+   Nome: ahy /Tamanho2.2
+   Nome: awq /Tamanho3.4
+   Nome: aok /Tamanho0.6
+   Nome: alg /Tamanho3.3
+   Nome: ajp /Tamanho7.8
+   Nome: aiu /Tamanho0.3
+   Nome: aij /Tamanho0.7
+   Nome: aii /Tamanho0.1
+   Nome: aik /Tamanho6.1
+   Nome: ajh /Tamanho5.6
+   Nome: aiv /Tamanho7.9
+   Nome: ajl /Tamanho0.9
+   Nome: aku /Tamanho1.6
+   Nome: akj /Tamanho0.1
+   Nome: ake /Tamanho0.9
+   Nome: akk /Tamanho4.2
+   Nome: alb /Tamanho0.6
+   Nome: aky /Tamanho1.3
+   Nome: ale /Tamanho0.7
+   Nome: amt /Tamanho3.7
+   Nome: amb /Tamanho5.5
+   Nome: aln /Tamanho1.5
+   Nome: ali /Tamanho2.7
+   Nome: als /Tamanho2.1
+   Nome: aml /Tamanho0.3
+   Nome: amj /Tamanho0.7
+   Nome: amo /Tamanho3.2
+   Nome: anw /Tamanho6.3
+   Nome: ane /Tamanho3.0
+   Nome: anc /Tamanho0.7
+   Nome: anp /Tamanho2.3
+   Nome: aoh /Tamanho0.9
+   Nome: aog /Tamanho0.2
+   Nome: aoj /Tamanho0.3
+   Nome: asr /Tamanho1.3
+   Nome: aqj /Tamanho4.1
+   Nome: apr /Tamanho1.6
+   Nome: aph /Tamanho4.4
+   Nome: aom /Tamanho6.1
+   Nome: apq /Tamanho0.1
+   Nome: apz /Tamanho2.2
+   Nome: apx /Tamanho0.8
+   Nome: aqa /Tamanho3.4
+   Nome: arx /Tamanho0.8
+   Nome: arg /Tamanho2.6
+   Nome: aqr /Tamanho2.6
+   Nome: arq /Tamanho3.0
+   Nome: asa /Tamanho2.8
+   Nome: arz /Tamanho0.6
+   Nome: asj /Tamanho4.0
+   Nome: auv /Tamanho0.1
+   Nome: atz /Tamanho2.8
+   Nome: ate /Tamanho6.6
+   Nome: ass /Tamanho4.1
+   Nome: ats /Tamanho1.7
+   Nome: auo /Tamanho3.9
+   Nome: aui /Tamanho3.9
+   Nome: aut /Tamanho1.2
+   Nome: avt /Tamanho1.4
+   Nome: auz /Tamanho4.4
+   Nome: auw /Tamanho1.2
+   Nome: avi /Tamanho5.3
+   Nome: awe /Tamanho2.5
+   Nome: avz /Tamanho2.0
+   Nome: awi /Tamanho2.2
+   Nome: bep /Tamanho0.6
+   Nome: baj /Tamanho4.6
+   Nome: axz /Tamanho4.6
+   Nome: axd /Tamanho7.0
+   Nome: awz /Tamanho0.2
+   Nome: awy /Tamanho0.1
+   Nome: axb /Tamanho0.1
+   Nome: axv /Tamanho0.7
+   Nome: axt /Tamanho0.4
+   Nome: axx /Tamanho0.7
+   Nome: azf /Tamanho1.9
+   Nome: ayw /Tamanho4.9
+   Nome: ayk /Tamanho3.0
+   Nome: azc /Tamanho0.4
+   Nome: azo /Tamanho2.8
+   Nome: azm /Tamanho0.6
+   Nome: azs /Tamanho6.4
+   Nome: bcn /Tamanho3.6
+   Nome: bbn /Tamanho6.1
+   Nome: bbi /Tamanho1.0
+   Nome: bba /Tamanho2.5
+   Nome: bbl /Tamanho0.4
+   Nome: bch /Tamanho1.1
+   Nome: bca /Tamanho2.8
+   Nome: bck /Tamanho0.4
+   Nome: bdl /Tamanho2.3
+   Nome: bde /Tamanho2.5
+   Nome: bdb /Tamanho0.5
+   Nome: bdk /Tamanho0.2
+   Nome: beb /Tamanho2.2
+   Nome: bdw /Tamanho1.5
+   Nome: bej /Tamanho1.8
+   Nome: bgg /Tamanho0.2
+   Nome: bey /Tamanho0.3
+   Nome: bet /Tamanho0.4
+   Nome: beq /Tamanho0.8
+   Nome: beu /Tamanho3.3
+   Nome: bfa /Tamanho7.2
+   Nome: bez /Tamanho0.1
+   Nome: bge /Tamanho0.2
+   Nome: bjm /Tamanho5.5
+   Nome: bhm /Tamanho6.0
+   Nome: bgn /Tamanho1.1
+   Nome: bgi /Tamanho1.7
+   Nome: bgr /Tamanho7.0
+   Nome: bja /Tamanho1.4
+   Nome: bih /Tamanho4.1
+   Nome: bjf /Tamanho1.4
+   Nome: bkm /Tamanho4.0
+   Nome: bke /Tamanho1.5
+   Nome: blx /Tamanho0.4
+   Nome: blh /Tamanho5.1
+   Nome: bmb /Tamanho7.5
 
-Nome bcy	Tamanho4.9
-Nome bbm	Tamanho5.9
-Nome ban	Tamanho0.7
-Nome bak	Tamanho1.0
-Nome bar	Tamanho6.6
-Nome bcj	Tamanho2.1
-Nome bbz	Tamanho4.0
-Nome bcp	Tamanho1.8
-Nome bgw	Tamanho5.4
-Nome bfg	Tamanho5.2
-Nome bdy	Tamanho8.6
-Nome bdt	Tamanho1.1
-Nome bev	Tamanho3.8
-Nome bgm	Tamanho2.4
-Nome bgb	Tamanho2.5
-Nome bgs	Tamanho1.1
-Nome bix	Tamanho6.7
-Nome bio	Tamanho1.0
-Nome bhs	Tamanho6.9
-Nome bis	Tamanho0.9
-Nome blc	Tamanho7.1
-Nome bjt	Tamanho6.1
-Nome bmc	Tamanho6.0
+-Computador: cmmaSolutions
+  Imagens: 
+   Nome: avg /Tamanho0.6
+   Nome: anq /Tamanho8.8
+   Nome: ala /Tamanho1.0
+   Nome: ajr /Tamanho0.2
+   Nome: aix /Tamanho0.3
+   Nome: ais /Tamanho5.8
+   Nome: air /Tamanho0.6
+   Nome: aiw /Tamanho0.5
+   Nome: ajg /Tamanho7.2
+   Nome: aja /Tamanho3.6
+   Nome: ajq /Tamanho0.6
+   Nome: akb /Tamanho5.6
+   Nome: ajw /Tamanho0.1
+   Nome: ajs /Tamanho2.2
+   Nome: ajy /Tamanho2.4
+   Nome: akr /Tamanho1.8
+   Nome: akp /Tamanho0.5
+   Nome: akx /Tamanho1.5
+   Nome: amv /Tamanho0.9
+   Nome: alv /Tamanho6.2
+   Nome: alq /Tamanho0.6
+   Nome: ald /Tamanho7.7
+   Nome: alt /Tamanho0.2
+   Nome: amh /Tamanho5.3
+   Nome: amf /Tamanho0.2
+   Nome: amu /Tamanho1.3
+   Nome: anf /Tamanho1.1
+   Nome: ana /Tamanho1.3
+   Nome: amz /Tamanho0.2
+   Nome: and /Tamanho0.8
+   Nome: anj /Tamanho1.1
+   Nome: anh /Tamanho0.2
+   Nome: anm /Tamanho1.7
+   Nome: ast /Tamanho0.4
+   Nome: aqs /Tamanho1.4
+   Nome: apf /Tamanho4.4
+   Nome: aor /Tamanho1.9
+   Nome: aol /Tamanho1.5
+   Nome: aoy /Tamanho2.5
+   Nome: apw /Tamanho8.1
+   Nome: app /Tamanho2.4
+   Nome: aql /Tamanho2.8
+   Nome: arw /Tamanho3.5
+   Nome: ari /Tamanho1.9
+   Nome: ara /Tamanho0.9
+   Nome: arn /Tamanho3.6
+   Nome: ask /Tamanho0.8
+   Nome: asg /Tamanho1.3
+   Nome: asl /Tamanho4.2
+   Nome: atx /Tamanho0.4
+   Nome: atk /Tamanho1.7
+   Nome: asy /Tamanho2.0
+   Nome: asv /Tamanho1.2
+   Nome: atc /Tamanho4.9
+   Nome: atu /Tamanho0.4
+   Nome: atq /Tamanho0.6
+   Nome: atv /Tamanho0.5
+   Nome: aus /Tamanho1.6
+   Nome: auj /Tamanho1.2
+   Nome: aty /Tamanho2.9
+   Nome: aul /Tamanho6.0
+   Nome: avd /Tamanho0.9
+   Nome: auu /Tamanho3.5
+   Nome: ave /Tamanho0.5
+   Nome: bda /Tamanho5.9
+   Nome: ayh /Tamanho1.3
+   Nome: awc /Tamanho1.7
+   Nome: avu /Tamanho0.1
+   Nome: avl /Tamanho1.8
+   Nome: avh /Tamanho2.6
+   Nome: avr /Tamanho1.3
+   Nome: avy /Tamanho2.1
+   Nome: avv /Tamanho0.6
+   Nome: awb /Tamanho0.3
+   Nome: axs /Tamanho4.0
+   Nome: awn /Tamanho3.4
+   Nome: awf /Tamanho2.3
+   Nome: awt /Tamanho7.0
+   Nome: ayb /Tamanho0.7
+   Nome: aya /Tamanho0.6
+   Nome: ayg /Tamanho0.8
+   Nome: azz /Tamanho2.0
+   Nome: azh /Tamanho0.1
+   Nome: ays /Tamanho0.8
+   Nome: ayj /Tamanho2.4
+   Nome: ayu /Tamanho5.8
+   Nome: azt /Tamanho1.7
+   Nome: azj /Tamanho4.9
+   Nome: azy /Tamanho0.7
+   Nome: bbp /Tamanho2.0
+   Nome: bao /Tamanho5.3
+   Nome: bae /Tamanho3.5
+   Nome: bbh /Tamanho1.8
+   Nome: bcl /Tamanho3.0
+   Nome: bbu /Tamanho7.9
+   Nome: bcw /Tamanho0.9
+   Nome: bjs /Tamanho2.4
+   Nome: bgk /Tamanho0.7
+   Nome: bex /Tamanho2.8
+   Nome: bea /Tamanho1.5
+   Nome: bdz /Tamanho1.0
+   Nome: beh /Tamanho6.4
+   Nome: bfo /Tamanho0.9
+   Nome: bfd /Tamanho1.2
+   Nome: bfr /Tamanho5.7
+   Nome: bhl /Tamanho8.6
+   Nome: bgx /Tamanho2.5
+   Nome: bgo /Tamanho4.2
+   Nome: bhj /Tamanho0.5
+   Nome: bir /Tamanho3.8
+   Nome: bip /Tamanho0.7
+   Nome: bjh /Tamanho3.7
+   Nome: bln /Tamanho3.3
+   Nome: bkj /Tamanho1.6
+   Nome: bkg /Tamanho0.9
+   Nome: bkw /Tamanho5.0
+   Nome: bmd /Tamanho0.2
+   Nome: bma /Tamanho0.2
+   Nome: bmf /Tamanho1.6
+   Nome: bmk /Tamanho9.1
 
-Computador: computer
-Imagens: 
+IMAGENS DO COMPUTADOR computerCmma
+ Nome da imagem: agu
+ Nome da imagem: ada
+ Nome da imagem: aba
+ Nome da imagem: aam
+ Nome da imagem: aag
+ Nome da imagem: aac
+ Nome da imagem: aab
+ Nome da imagem: aae
+ Nome da imagem: aaj
+ Nome da imagem: aai
+ Nome da imagem: aal
+ Nome da imagem: aaq
+ Nome da imagem: aao
+ Nome da imagem: aan
+ Nome da imagem: aap
+ Nome da imagem: aaw
+ Nome da imagem: aas
+ Nome da imagem: aax
+ Nome da imagem: acd
+ Nome da imagem: abs
+ Nome da imagem: abk
+ Nome da imagem: abg
+ Nome da imagem: abr
+ Nome da imagem: aby
+ Nome da imagem: abt
+ Nome da imagem: abz
+ Nome da imagem: acl
+ Nome da imagem: ach
+ Nome da imagem: ace
+ Nome da imagem: ack
+ Nome da imagem: acr
+ Nome da imagem: acn
+ Nome da imagem: acs
+ Nome da imagem: afa
+ Nome da imagem: adz
+ Nome da imagem: adj
+ Nome da imagem: add
+ Nome da imagem: adc
+ Nome da imagem: adf
+ Nome da imagem: adv
+ Nome da imagem: adm
+ Nome da imagem: ady
+ Nome da imagem: aeo
+ Nome da imagem: aef
+ Nome da imagem: aec
+ Nome da imagem: aem
+ Nome da imagem: aex
+ Nome da imagem: aes
+ Nome da imagem: aez
+ Nome da imagem: afy
+ Nome da imagem: afk
+ Nome da imagem: afi
+ Nome da imagem: afg
+ Nome da imagem: afj
+ Nome da imagem: afs
+ Nome da imagem: afr
+ Nome da imagem: afw
+ Nome da imagem: agj
+ Nome da imagem: agc
+ Nome da imagem: aga
+ Nome da imagem: agi
+ Nome da imagem: ags
+ Nome da imagem: agq
+ Nome da imagem: agt
+ Nome da imagem: are
+ Nome da imagem: ako
+ Nome da imagem: ajb
+ Nome da imagem: ahz
+ Nome da imagem: ahh
+ Nome da imagem: ahb
+ Nome da imagem: agw
+ Nome da imagem: ahe
+ Nome da imagem: ahp
+ Nome da imagem: ahi
+ Nome da imagem: aht
+ Nome da imagem: aip
+ Nome da imagem: aim
+ Nome da imagem: aif
+ Nome da imagem: ain
+ Nome da imagem: ait
+ Nome da imagem: aiq
+ Nome da imagem: aiz
+ Nome da imagem: ajt
+ Nome da imagem: ajj
+ Nome da imagem: aje
+ Nome da imagem: ajc
+ Nome da imagem: ajf
+ Nome da imagem: ajm
+ Nome da imagem: ajk
+ Nome da imagem: ajn
+ Nome da imagem: akc
+ Nome da imagem: ajv
+ Nome da imagem: aju
+ Nome da imagem: aka
+ Nome da imagem: akm
+ Nome da imagem: akd
+ Nome da imagem: akn
+ Nome da imagem: aod
+ Nome da imagem: amw
+ Nome da imagem: alp
+ Nome da imagem: akz
+ Nome da imagem: akt
+ Nome da imagem: alh
+ Nome da imagem: amg
+ Nome da imagem: aly
+ Nome da imagem: ami
+ Nome da imagem: ant
+ Nome da imagem: ano
+ Nome da imagem: anb
+ Nome da imagem: anr
+ Nome da imagem: aoa
+ Nome da imagem: anx
+ Nome da imagem: aoc
+ Nome da imagem: apu
+ Nome da imagem: apa
+ Nome da imagem: aoq
+ Nome da imagem: aop
+ Nome da imagem: aoz
+ Nome da imagem: apk
+ Nome da imagem: apc
+ Nome da imagem: aps
+ Nome da imagem: aqo
+ Nome da imagem: aqh
+ Nome da imagem: aqb
+ Nome da imagem: aqm
+ Nome da imagem: aqt
+ Nome da imagem: aqp
+ Nome da imagem: aqu
+ Nome da imagem: bcv
+ Nome da imagem: awh
+ Nome da imagem: atr
+ Nome da imagem: arp
+ Nome da imagem: arm
+ Nome da imagem: arl
+ Nome da imagem: aro
+ Nome da imagem: aso
+ Nome da imagem: asc
+ Nome da imagem: atb
+ Nome da imagem: auq
+ Nome da imagem: aud
+ Nome da imagem: att
+ Nome da imagem: aun
+ Nome da imagem: avc
+ Nome da imagem: auy
+ Nome da imagem: avo
+ Nome da imagem: azu
+ Nome da imagem: ayl
+ Nome da imagem: axr
+ Nome da imagem: axh
+ Nome da imagem: axu
+ Nome da imagem: ayz
+ Nome da imagem: ayr
+ Nome da imagem: azb
+ Nome da imagem: bbg
+ Nome da imagem: bbd
+ Nome da imagem: bav
+ Nome da imagem: bbe
+ Nome da imagem: bci
+ Nome da imagem: bbv
+ Nome da imagem: bcs
+ Nome da imagem: bil
+ Nome da imagem: bga
+ Nome da imagem: bed
+ Nome da imagem: bdv
+ Nome da imagem: bdn
+ Nome da imagem: bdx
+ Nome da imagem: ben
+ Nome da imagem: bef
+ Nome da imagem: bfk
+ Nome da imagem: bhb
+ Nome da imagem: bgj
+ Nome da imagem: bgf
+ Nome da imagem: bgz
+ Nome da imagem: big
+ Nome da imagem: bhf
+ Nome da imagem: bik
+ Nome da imagem: bjq
+ Nome da imagem: bjo
+ Nome da imagem: bit
+ Nome da imagem: bjp
+ Nome da imagem: blb
+ Nome da imagem: bku
+ Nome da imagem: bkr
+ Nome da imagem: bky
+ Nome da imagem: blg
+ Nome da imagem: blf
+ Nome da imagem: bmi
 
-Nome axp	Tamanho4.8
-Nome arj	Tamanho4.2
-Nome ann	Tamanho2.5
-Nome alf	Tamanho7.0
-Nome aki	Tamanho0.6
-Nome akf	Tamanho0.1
-Nome ajz	Tamanho3.3
-Nome akg	Tamanho0.5
-Nome akq	Tamanho1.4
-Nome akl	Tamanho3.1
-Nome akv	Tamanho3.2
-Nome amn	Tamanho0.3
-Nome alz	Tamanho6.5
-Nome alo	Tamanho2.2
-Nome amk	Tamanho0.9
-Nome amq	Tamanho8.5
-Nome amp	Tamanho0.3
-Nome ani	Tamanho1.2
-Nome ape	Tamanho2.1
-Nome aoo	Tamanho1.7
-Nome aof	Tamanho0.9
-Nome anv	Tamanho6.1
-Nome aoi	Tamanho2.0
-Nome aou	Tamanho2.4
-Nome aot	Tamanho0.2
-Nome apd	Tamanho0.3
-Nome aqf	Tamanho7.4
-Nome apm	Tamanho7.3
-Nome api	Tamanho1.5
-Nome aqc	Tamanho1.0
-Nome arc	Tamanho0.6
-Nome aqz	Tamanho0.2
-Nome arf	Tamanho0.1
-Nome aup	Tamanho5.6
-Nome atf	Tamanho1.0
-Nome asq	Tamanho1.9
-Nome asf	Tamanho0.2
-Nome art	Tamanho4.6
-Nome ash	Tamanho4.6
-Nome asx	Tamanho2.2
-Nome asu	Tamanho1.3
-Nome atd	Tamanho0.4
-Nome atp	Tamanho1.5
-Nome atj	Tamanho1.3
-Nome atg	Tamanho3.3
-Nome ato	Tamanho0.3
-Nome aue	Tamanho4.6
-Nome atw	Tamanho1.7
-Nome aum	Tamanho2.1
-Nome awj	Tamanho1.1
-Nome avw	Tamanho0.3
-Nome avj	Tamanho2.1
-Nome ava	Tamanho4.3
-Nome avm	Tamanho3.3
-Nome awa	Tamanho2.5
-Nome avx	Tamanho2.1
-Nome awg	Tamanho1.0
-Nome axe	Tamanho2.2
-Nome awv	Tamanho0.4
-Nome awo	Tamanho3.6
-Nome aww	Tamanho0.6
-Nome axm	Tamanho0.5
-Nome axi	Tamanho0.6
-Nome axo	Tamanho0.2
-Nome bha	Tamanho2.3
-Nome bdf	Tamanho3.3
-Nome azq	Tamanho0.1
-Nome azd	Tamanho0.2
-Nome ayf	Tamanho3.5
-Nome axy	Tamanho2.6
-Nome ayn	Tamanho6.9
-Nome azg	Tamanho1.8
-Nome aze	Tamanho0.4
-Nome azn	Tamanho1.2
-Nome bbr	Tamanho0.1
-Nome bah	Tamanho3.2
-Nome azr	Tamanho7.2
-Nome bas	Tamanho8.2
-Nome bbx	Tamanho3.6
-Nome bbt	Tamanho2.6
-Nome bcf	Tamanho6.6
-Nome bfn	Tamanho0.6
-Nome bew	Tamanho3.0
-Nome bdr	Tamanho2.9
-Nome bdp	Tamanho0.2
-Nome bec	Tamanho7.6
-Nome bfj	Tamanho0.3
-Nome bfe	Tamanho0.6
-Nome bfm	Tamanho0.1
-Nome bfw	Tamanho1.6
-Nome bfu	Tamanho1.4
-Nome bfq	Tamanho0.6
-Nome bfv	Tamanho0.5
-Nome bgd	Tamanho2.5
-Nome bgc	Tamanho0.3
-Nome bgp	Tamanho4.8
-Nome bjl	Tamanho3.3
-Nome bhy	Tamanho8.0
-Nome bhr	Tamanho0.4
-Nome bhk	Tamanho1.4
-Nome bhu	Tamanho1.6
-Nome bji	Tamanho0.1
-Nome bjd	Tamanho1.9
-Nome bjj	Tamanho0.1
-Nome bkf	Tamanho0.6
-Nome bkb	Tamanho0.2
-Nome bjr	Tamanho1.9
-Nome bkc	Tamanho0.3
-Nome blj	Tamanho3.9
-Nome bla	Tamanho1.0
-Nome bki	Tamanho3.1
-Nome ble	Tamanho1.8
-Nome blv	Tamanho2.5
-Nome bml	Tamanho4.3
 
-Computador: computadorcm
-Imagens: 
+IMAGENS DO COMPUTADOR cmma
+ Nome da imagem: bfs
+ Nome da imagem: bdj
+ Nome da imagem: bbj
+ Nome da imagem: bbc
+ Nome da imagem: bat
+ Nome da imagem: bbf
+ Nome da imagem: bco
+ Nome da imagem: bcd
+ Nome da imagem: bcr
+ Nome da imagem: bek
+ Nome da imagem: beg
+ Nome da imagem: bdq
+ Nome da imagem: bei
+ Nome da imagem: bfc
+ Nome da imagem: bel
+ Nome da imagem: bfl
+ Nome da imagem: bjy
+ Nome da imagem: bhw
+ Nome da imagem: bgq
+ Nome da imagem: bfy
+ Nome da imagem: bhi
+ Nome da imagem: bin
+ Nome da imagem: bib
+ Nome da imagem: bjn
+ Nome da imagem: bkx
+ Nome da imagem: bkp
+ Nome da imagem: blw
+ Nome da imagem: bld
+ Nome da imagem: bmj
 
-Nome aha	Tamanho1.5
-Nome adr	Tamanho1.7
-Nome abq	Tamanho4.2
-Nome aau	Tamanho0.4
-Nome aah	Tamanho5.8
-Nome aad	Tamanho5.0
-Nome aaa	Tamanho3.0
-Nome aaf	Tamanho0.6
-Nome aar	Tamanho3.3
-Nome aak	Tamanho6.9
-Nome aat	Tamanho3.1
-Nome abh	Tamanho0.5
-Nome aaz	Tamanho4.5
-Nome aav	Tamanho2.0
-Nome abd	Tamanho2.9
-Nome abm	Tamanho0.1
-Nome abi	Tamanho2.9
-Nome abn	Tamanho7.1
-Nome acq	Tamanho0.8
-Nome acb	Tamanho4.5
-Nome abx	Tamanho1.2
-Nome abw	Tamanho1.2
-Nome aca	Tamanho0.1
-Nome acj	Tamanho3.7
-Nome acg	Tamanho5.2
-Nome aco	Tamanho1.1
-Nome ade	Tamanho1.6
-Nome acx	Tamanho1.5
-Nome acu	Tamanho3.2
-Nome acz	Tamanho0.7
-Nome adk	Tamanho2.3
-Nome adh	Tamanho1.7
-Nome adl	Tamanho5.9
-Nome aff	Tamanho5.7
-Nome aej	Tamanho1.1
-Nome adx	Tamanho2.8
-Nome adu	Tamanho0.7
-Nome adt	Tamanho0.6
-Nome adw	Tamanho0.7
-Nome aeg	Tamanho0.4
-Nome aed	Tamanho3.3
-Nome aeh	Tamanho0.9
-Nome aev	Tamanho0.1
-Nome aep	Tamanho0.8
-Nome ael	Tamanho3.6
-Nome aer	Tamanho8.3
-Nome afc	Tamanho1.9
-Nome aew	Tamanho5.4
-Nome afe	Tamanho0.2
-Nome agf	Tamanho1.9
-Nome afo	Tamanho7.7
-Nome afm	Tamanho1.6
-Nome afl	Tamanho0.2
-Nome afn	Tamanho0.2
-Nome afz	Tamanho2.9
-Nome afv	Tamanho5.8
-Nome agd	Tamanho3.4
-Nome ago	Tamanho1.0
-Nome agk	Tamanho3.1
-Nome agh	Tamanho3.3
-Nome agm	Tamanho1.7
-Nome agr	Tamanho2.4
-Nome agp	Tamanho1.6
-Nome agv	Tamanho4.5
-Nome auf	Tamanho0.6
-Nome alx	Tamanho1.1
-Nome ail	Tamanho1.8
-Nome ahv	Tamanho0.3
-Nome ahm	Tamanho1.0
-Nome ahf	Tamanho4.9
-Nome ahd	Tamanho3.1
-Nome ahj	Tamanho1.7
-Nome aho	Tamanho1.2
-Nome ahn	Tamanho1.0
-Nome ahq	Tamanho5.0
-Nome aid	Tamanho0.6
-Nome aia	Tamanho2.1
-Nome ahw	Tamanho1.2
-Nome aic	Tamanho0.1
-Nome aig	Tamanho0.7
-Nome aie	Tamanho0.6
-Nome aih	Tamanho3.6
-Nome aks	Tamanho1.6
-Nome aji	Tamanho4.5
-Nome aiy	Tamanho1.3
-Nome aio	Tamanho8.1
-Nome ajd	Tamanho4.4
-Nome ajx	Tamanho4.8
-Nome ajo	Tamanho3.8
-Nome akh	Tamanho3.9
-Nome alk	Tamanho0.8
-Nome alc	Tamanho5.3
-Nome akw	Tamanho2.5
-Nome alj	Tamanho0.4
-Nome alm	Tamanho1.9
-Nome all	Tamanho0.1
-Nome alu	Tamanho0.8
-Nome apv	Tamanho4.7
-Nome anu	Tamanho0.7
-Nome amm	Tamanho1.1
-Nome amc	Tamanho1.0
-Nome ama	Tamanho2.8
-Nome ame	Tamanho2.5
-Nome amx	Tamanho7.3
-Nome amr	Tamanho4.2
-Nome ans	Tamanho0.4
-Nome apg	Tamanho3.3
-Nome aon	Tamanho2.5
-Nome any	Tamanho8.1
-Nome aox	Tamanho2.6
-Nome apo	Tamanho2.4
-Nome apl	Tamanho0.7
-Nome apt	Tamanho0.2
-Nome arv	Tamanho2.7
-Nome aqv	Tamanho1.5
-Nome aqe	Tamanho0.5
-Nome aqd	Tamanho0.1
-Nome aqg	Tamanho6.5
-Nome ark	Tamanho4.6
-Nome arh	Tamanho0.1
-Nome aru	Tamanho0.5
-Nome ata	Tamanho5.7
-Nome asi	Tamanho7.1
-Nome asd	Tamanho1.6
-Nome asw	Tamanho1.4
-Nome atm	Tamanho3.9
-Nome ati	Tamanho0.2
-Nome aub	Tamanho1.2
-Nome bdd	Tamanho0.6
-Nome ayp	Tamanho1.4
-Nome awr	Tamanho0.7
-Nome aux	Tamanho9.3
-Nome auh	Tamanho0.3
-Nome aug	Tamanho0.5
-Nome auk	Tamanho9.3
-Nome awk	Tamanho0.2
-Nome avq	Tamanho7.9
-Nome awl	Tamanho2.6
-Nome axq	Tamanho3.1
-Nome axj	Tamanho0.5
-Nome aws	Tamanho4.1
-Nome axn	Tamanho1.5
-Nome ayc	Tamanho3.5
-Nome axw	Tamanho2.9
-Nome aym	Tamanho0.9
-Nome bai	Tamanho0.8
-Nome azx	Tamanho1.8
-Nome ayx	Tamanho5.0
-Nome ayt	Tamanho1.2
-Nome azk	Tamanho6.0
-Nome bad	Tamanho0.5
-Nome bab	Tamanho1.1
-Nome baf	Tamanho1.1
-Nome bby	Tamanho1.0
-Nome baq	Tamanho8.6
-Nome bam	Tamanho1.4
-Nome bbs	Tamanho4.0
-Nome bcq	Tamanho1.9
-Nome bcb	Tamanho5.3
-Nome bcz	Tamanho0.2
-Nome bhq	Tamanho0.9
-Nome bgh	Tamanho4.4
-Nome bee	Tamanho4.2
-Nome bdh	Tamanho2.5
-Nome bdg	Tamanho0.5
-Nome bdo	Tamanho3.7
-Nome bfh	Tamanho0.8
-Nome ber	Tamanho6.5
-Nome bfp	Tamanho5.0
-Nome bhe	Tamanho0.5
-Nome bgy	Tamanho0.7
-Nome bgt	Tamanho2.2
-Nome bhc	Tamanho0.7
-Nome bhh	Tamanho1.3
-Nome bhg	Tamanho0.2
-Nome bhn	Tamanho0.5
-Nome bko	Tamanho0.2
-Nome bij	Tamanho4.0
-Nome bic	Tamanho0.3
-Nome bhv	Tamanho3.2
-Nome bif	Tamanho1.8
-Nome bjz	Tamanho0.5
-Nome bje	Tamanho6.7
-Nome bka	Tamanho2.2
-Nome blp	Tamanho0.2
-Nome bks	Tamanho5.0
-Nome bkq	Tamanho0.2
-Nome bll	Tamanho1.5
-Nome blq	Tamanho0.8
-Nome blt	Tamanho8.1
 
-Computador: solutions
-Imagens: 
+IMAGENS DO COMPUTADOR computadorHsp
+ Nome da imagem: bho
+ Nome da imagem: bce
+ Nome da imagem: bag
+ Nome da imagem: azv
+ Nome da imagem: azl
+ Nome da imagem: azw
+ Nome da imagem: bbq
+ Nome da imagem: bax
+ Nome da imagem: bcc
+ Nome da imagem: bdu
+ Nome da imagem: bdi
+ Nome da imagem: bdc
+ Nome da imagem: bds
+ Nome da imagem: bft
+ Nome da imagem: bes
+ Nome da imagem: bgv
+ Nome da imagem: bkl
+ Nome da imagem: biz
+ Nome da imagem: bii
+ Nome da imagem: bie
+ Nome da imagem: biv
+ Nome da imagem: bju
+ Nome da imagem: bjg
+ Nome da imagem: bkh
+ Nome da imagem: bkt
+ Nome da imagem: bkn
+ Nome da imagem: blo
+ Nome da imagem: bkv
+ Nome da imagem: blr
 
-Nome aib	Tamanho4.6
-Nome aei	Tamanho1.5
-Nome acp	Tamanho1.4
-Nome abo	Tamanho2.4
-Nome abe	Tamanho1.0
-Nome abb	Tamanho1.6
-Nome aay	Tamanho1.1
-Nome abc	Tamanho2.2
-Nome abj	Tamanho2.4
-Nome abf	Tamanho2.3
-Nome abl	Tamanho1.5
-Nome acc	Tamanho3.9
-Nome abu	Tamanho1.1
-Nome abp	Tamanho6.5
-Nome abv	Tamanho3.1
-Nome aci	Tamanho6.7
-Nome acf	Tamanho0.8
-Nome acm	Tamanho2.1
-Nome adn	Tamanho0.2
-Nome acy	Tamanho0.4
-Nome acv	Tamanho0.9
-Nome act	Tamanho1.6
-Nome acw	Tamanho2.1
-Nome adg	Tamanho0.3
-Nome adb	Tamanho1.8
-Nome adi	Tamanho7.1
-Nome ads	Tamanho4.2
-Nome adp	Tamanho0.1
-Nome ado	Tamanho0.9
-Nome adq	Tamanho2.0
-Nome aeb	Tamanho0.9
-Nome aea	Tamanho1.0
-Nome aee	Tamanho3.8
-Nome age	Tamanho3.8
-Nome afd	Tamanho2.2
-Nome aet	Tamanho0.9
-Nome aen	Tamanho0.8
-Nome aek	Tamanho3.3
-Nome aeq	Tamanho3.9
-Nome aey	Tamanho3.6
-Nome aeu	Tamanho5.5
-Nome afb	Tamanho2.2
-Nome aft	Tamanho0.8
-Nome afp	Tamanho1.0
-Nome afh	Tamanho7.3
-Nome afq	Tamanho1.6
-Nome afx	Tamanho3.0
-Nome afu	Tamanho6.8
-Nome agb	Tamanho2.4
-Nome ahg	Tamanho4.8
-Nome agx	Tamanho0.2
-Nome agl	Tamanho0.2
-Nome agg	Tamanho7.2
-Nome agn	Tamanho8.4
-Nome agz	Tamanho3.3
-Nome agy	Tamanho0.3
-Nome ahc	Tamanho4.5
-Nome ahs	Tamanho0.7
-Nome ahl	Tamanho4.7
-Nome ahk	Tamanho0.2
-Nome ahr	Tamanho0.8
-Nome ahx	Tamanho0.2
-Nome ahu	Tamanho3.6
-Nome ahy	Tamanho2.2
-Nome awq	Tamanho3.4
-Nome aok	Tamanho0.6
-Nome alg	Tamanho3.3
-Nome ajp	Tamanho7.8
-Nome aiu	Tamanho0.3
-Nome aij	Tamanho0.7
-Nome aii	Tamanho0.1
-Nome aik	Tamanho6.1
-Nome ajh	Tamanho5.6
-Nome aiv	Tamanho7.9
-Nome ajl	Tamanho0.9
-Nome aku	Tamanho1.6
-Nome akj	Tamanho0.1
-Nome ake	Tamanho0.9
-Nome akk	Tamanho4.2
-Nome alb	Tamanho0.6
-Nome aky	Tamanho1.3
-Nome ale	Tamanho0.7
-Nome amt	Tamanho3.7
-Nome amb	Tamanho5.5
-Nome aln	Tamanho1.5
-Nome ali	Tamanho2.7
-Nome als	Tamanho2.1
-Nome aml	Tamanho0.3
-Nome amj	Tamanho0.7
-Nome amo	Tamanho3.2
-Nome anw	Tamanho6.3
-Nome ane	Tamanho3.0
-Nome anc	Tamanho0.7
-Nome anp	Tamanho2.3
-Nome aoh	Tamanho0.9
-Nome aog	Tamanho0.2
-Nome aoj	Tamanho0.3
-Nome asr	Tamanho1.3
-Nome aqj	Tamanho4.1
-Nome apr	Tamanho1.6
-Nome aph	Tamanho4.4
-Nome aom	Tamanho6.1
-Nome apq	Tamanho0.1
-Nome apz	Tamanho2.2
-Nome apx	Tamanho0.8
-Nome aqa	Tamanho3.4
-Nome arx	Tamanho0.8
-Nome arg	Tamanho2.6
-Nome aqr	Tamanho2.6
-Nome arq	Tamanho3.0
-Nome asa	Tamanho2.8
-Nome arz	Tamanho0.6
-Nome asj	Tamanho4.0
-Nome auv	Tamanho0.1
-Nome atz	Tamanho2.8
-Nome ate	Tamanho6.6
-Nome ass	Tamanho4.1
-Nome ats	Tamanho1.7
-Nome auo	Tamanho3.9
-Nome aui	Tamanho3.9
-Nome aut	Tamanho1.2
-Nome avt	Tamanho1.4
-Nome auz	Tamanho4.4
-Nome auw	Tamanho1.2
-Nome avi	Tamanho5.3
-Nome awe	Tamanho2.5
-Nome avz	Tamanho2.0
-Nome awi	Tamanho2.2
-Nome bep	Tamanho0.6
-Nome baj	Tamanho4.6
-Nome axz	Tamanho4.6
-Nome axd	Tamanho7.0
-Nome awz	Tamanho0.2
-Nome awy	Tamanho0.1
-Nome axb	Tamanho0.1
-Nome axv	Tamanho0.7
-Nome axt	Tamanho0.4
-Nome axx	Tamanho0.7
-Nome azf	Tamanho1.9
-Nome ayw	Tamanho4.9
-Nome ayk	Tamanho3.0
-Nome azc	Tamanho0.4
-Nome azo	Tamanho2.8
-Nome azm	Tamanho0.6
-Nome azs	Tamanho6.4
-Nome bcn	Tamanho3.6
-Nome bbn	Tamanho6.1
-Nome bbi	Tamanho1.0
-Nome bba	Tamanho2.5
-Nome bbl	Tamanho0.4
-Nome bch	Tamanho1.1
-Nome bca	Tamanho2.8
-Nome bck	Tamanho0.4
-Nome bdl	Tamanho2.3
-Nome bde	Tamanho2.5
-Nome bdb	Tamanho0.5
-Nome bdk	Tamanho0.2
-Nome beb	Tamanho2.2
-Nome bdw	Tamanho1.5
-Nome bej	Tamanho1.8
-Nome bgg	Tamanho0.2
-Nome bey	Tamanho0.3
-Nome bet	Tamanho0.4
-Nome beq	Tamanho0.8
-Nome beu	Tamanho3.3
-Nome bfa	Tamanho7.2
-Nome bez	Tamanho0.1
-Nome bge	Tamanho0.2
-Nome bjm	Tamanho5.5
-Nome bhm	Tamanho6.0
-Nome bgn	Tamanho1.1
-Nome bgi	Tamanho1.7
-Nome bgr	Tamanho7.0
-Nome bja	Tamanho1.4
-Nome bih	Tamanho4.1
-Nome bjf	Tamanho1.4
-Nome bkm	Tamanho4.0
-Nome bke	Tamanho1.5
-Nome blx	Tamanho0.4
-Nome blh	Tamanho5.1
-Nome bmb	Tamanho7.5
 
-Computador: cmmaSolutions
-Imagens: 
+IMAGENS DO COMPUTADOR hospitalPc
+ Nome da imagem: bjb
+ Nome da imagem: bid
+ Nome da imagem: bhz
+ Nome da imagem: bhx
+ Nome da imagem: bia
+ Nome da imagem: biu
+ Nome da imagem: biq
+ Nome da imagem: biy
+ Nome da imagem: bli
+ Nome da imagem: bkd
+ Nome da imagem: bjk
+ Nome da imagem: bkz
+ Nome da imagem: bme
+ Nome da imagem: blu
+ Nome da imagem: bmg
+ Nome da imagem: bmh
 
-Nome avg	Tamanho0.6
-Nome anq	Tamanho8.8
-Nome ala	Tamanho1.0
-Nome ajr	Tamanho0.2
-Nome aix	Tamanho0.3
-Nome ais	Tamanho5.8
-Nome air	Tamanho0.6
-Nome aiw	Tamanho0.5
-Nome ajg	Tamanho7.2
-Nome aja	Tamanho3.6
-Nome ajq	Tamanho0.6
-Nome akb	Tamanho5.6
-Nome ajw	Tamanho0.1
-Nome ajs	Tamanho2.2
-Nome ajy	Tamanho2.4
-Nome akr	Tamanho1.8
-Nome akp	Tamanho0.5
-Nome akx	Tamanho1.5
-Nome amv	Tamanho0.9
-Nome alv	Tamanho6.2
-Nome alq	Tamanho0.6
-Nome ald	Tamanho7.7
-Nome alt	Tamanho0.2
-Nome amh	Tamanho5.3
-Nome amf	Tamanho0.2
-Nome amu	Tamanho1.3
-Nome anf	Tamanho1.1
-Nome ana	Tamanho1.3
-Nome amz	Tamanho0.2
-Nome and	Tamanho0.8
-Nome anj	Tamanho1.1
-Nome anh	Tamanho0.2
-Nome anm	Tamanho1.7
-Nome ast	Tamanho0.4
-Nome aqs	Tamanho1.4
-Nome apf	Tamanho4.4
-Nome aor	Tamanho1.9
-Nome aol	Tamanho1.5
-Nome aoy	Tamanho2.5
-Nome apw	Tamanho8.1
-Nome app	Tamanho2.4
-Nome aql	Tamanho2.8
-Nome arw	Tamanho3.5
-Nome ari	Tamanho1.9
-Nome ara	Tamanho0.9
-Nome arn	Tamanho3.6
-Nome ask	Tamanho0.8
-Nome asg	Tamanho1.3
-Nome asl	Tamanho4.2
-Nome atx	Tamanho0.4
-Nome atk	Tamanho1.7
-Nome asy	Tamanho2.0
-Nome asv	Tamanho1.2
-Nome atc	Tamanho4.9
-Nome atu	Tamanho0.4
-Nome atq	Tamanho0.6
-Nome atv	Tamanho0.5
-Nome aus	Tamanho1.6
-Nome auj	Tamanho1.2
-Nome aty	Tamanho2.9
-Nome aul	Tamanho6.0
-Nome avd	Tamanho0.9
-Nome auu	Tamanho3.5
-Nome ave	Tamanho0.5
-Nome bda	Tamanho5.9
-Nome ayh	Tamanho1.3
-Nome awc	Tamanho1.7
-Nome avu	Tamanho0.1
-Nome avl	Tamanho1.8
-Nome avh	Tamanho2.6
-Nome avr	Tamanho1.3
-Nome avy	Tamanho2.1
-Nome avv	Tamanho0.6
-Nome awb	Tamanho0.3
-Nome axs	Tamanho4.0
-Nome awn	Tamanho3.4
-Nome awf	Tamanho2.3
-Nome awt	Tamanho7.0
-Nome ayb	Tamanho0.7
-Nome aya	Tamanho0.6
-Nome ayg	Tamanho0.8
-Nome azz	Tamanho2.0
-Nome azh	Tamanho0.1
-Nome ays	Tamanho0.8
-Nome ayj	Tamanho2.4
-Nome ayu	Tamanho5.8
-Nome azt	Tamanho1.7
-Nome azj	Tamanho4.9
-Nome azy	Tamanho0.7
-Nome bbp	Tamanho2.0
-Nome bao	Tamanho5.3
-Nome bae	Tamanho3.5
-Nome bbh	Tamanho1.8
-Nome bcl	Tamanho3.0
-Nome bbu	Tamanho7.9
-Nome bcw	Tamanho0.9
-Nome bjs	Tamanho2.4
-Nome bgk	Tamanho0.7
-Nome bex	Tamanho2.8
-Nome bea	Tamanho1.5
-Nome bdz	Tamanho1.0
-Nome beh	Tamanho6.4
-Nome bfo	Tamanho0.9
-Nome bfd	Tamanho1.2
-Nome bfr	Tamanho5.7
-Nome bhl	Tamanho8.6
-Nome bgx	Tamanho2.5
-Nome bgo	Tamanho4.2
-Nome bhj	Tamanho0.5
-Nome bir	Tamanho3.8
-Nome bip	Tamanho0.7
-Nome bjh	Tamanho3.7
-Nome bln	Tamanho3.3
-Nome bkj	Tamanho1.6
-Nome bkg	Tamanho0.9
-Nome bkw	Tamanho5.0
-Nome bmd	Tamanho0.2
-Nome bma	Tamanho0.2
-Nome bmf	Tamanho1.6
-Nome bmk	Tamanho9.1
-Imagem: agu
-Imagem: ada
-Imagem: aba
-Imagem: aam
-Imagem: aag
-Imagem: aac
-Imagem: aab
-Imagem: aae
-Imagem: aaj
-Imagem: aai
-Imagem: aal
-Imagem: aaq
-Imagem: aao
-Imagem: aan
-Imagem: aap
-Imagem: aaw
-Imagem: aas
-Imagem: aax
-Imagem: acd
-Imagem: abs
-Imagem: abk
-Imagem: abg
-Imagem: abr
-Imagem: aby
-Imagem: abt
-Imagem: abz
-Imagem: acl
-Imagem: ach
-Imagem: ace
-Imagem: ack
-Imagem: acr
-Imagem: acn
-Imagem: acs
-Imagem: afa
-Imagem: adz
-Imagem: adj
-Imagem: add
-Imagem: adc
-Imagem: adf
-Imagem: adv
-Imagem: adm
-Imagem: ady
-Imagem: aeo
-Imagem: aef
-Imagem: aec
-Imagem: aem
-Imagem: aex
-Imagem: aes
-Imagem: aez
-Imagem: afy
-Imagem: afk
-Imagem: afi
-Imagem: afg
-Imagem: afj
-Imagem: afs
-Imagem: afr
-Imagem: afw
-Imagem: agj
-Imagem: agc
-Imagem: aga
-Imagem: agi
-Imagem: ags
-Imagem: agq
-Imagem: agt
-Imagem: are
-Imagem: ako
-Imagem: ajb
-Imagem: ahz
-Imagem: ahh
-Imagem: ahb
-Imagem: agw
-Imagem: ahe
-Imagem: ahp
-Imagem: ahi
-Imagem: aht
-Imagem: aip
-Imagem: aim
-Imagem: aif
-Imagem: ain
-Imagem: ait
-Imagem: aiq
-Imagem: aiz
-Imagem: ajt
-Imagem: ajj
-Imagem: aje
-Imagem: ajc
-Imagem: ajf
-Imagem: ajm
-Imagem: ajk
-Imagem: ajn
-Imagem: akc
-Imagem: ajv
-Imagem: aju
-Imagem: aka
-Imagem: akm
-Imagem: akd
-Imagem: akn
-Imagem: aod
-Imagem: amw
-Imagem: alp
-Imagem: akz
-Imagem: akt
-Imagem: alh
-Imagem: amg
-Imagem: aly
-Imagem: ami
-Imagem: ant
-Imagem: ano
-Imagem: anb
-Imagem: anr
-Imagem: aoa
-Imagem: anx
-Imagem: aoc
-Imagem: apu
-Imagem: apa
-Imagem: aoq
-Imagem: aop
-Imagem: aoz
-Imagem: apk
-Imagem: apc
-Imagem: aps
-Imagem: aqo
-Imagem: aqh
-Imagem: aqb
-Imagem: aqm
-Imagem: aqt
-Imagem: aqp
-Imagem: aqu
-Imagem: bcv
-Imagem: awh
-Imagem: atr
-Imagem: arp
-Imagem: arm
-Imagem: arl
-Imagem: aro
-Imagem: aso
-Imagem: asc
-Imagem: atb
-Imagem: auq
-Imagem: aud
-Imagem: att
-Imagem: aun
-Imagem: avc
-Imagem: auy
-Imagem: avo
-Imagem: azu
-Imagem: ayl
-Imagem: axr
-Imagem: axh
-Imagem: axu
-Imagem: ayz
-Imagem: ayr
-Imagem: azb
-Imagem: bbg
-Imagem: bbd
-Imagem: bav
-Imagem: bbe
-Imagem: bci
-Imagem: bbv
-Imagem: bcs
-Imagem: bil
-Imagem: bga
-Imagem: bed
-Imagem: bdv
-Imagem: bdn
-Imagem: bdx
-Imagem: ben
-Imagem: bef
-Imagem: bfk
-Imagem: bhb
-Imagem: bgj
-Imagem: bgf
-Imagem: bgz
-Imagem: big
-Imagem: bhf
-Imagem: bik
-Imagem: bjq
-Imagem: bjo
-Imagem: bit
-Imagem: bjp
-Imagem: blb
-Imagem: bku
-Imagem: bkr
-Imagem: bky
-Imagem: blg
-Imagem: blf
-Imagem: bmi
-Imagem: bfs
-Imagem: bdj
-Imagem: bbj
-Imagem: bbc
-Imagem: bat
-Imagem: bbf
-Imagem: bco
-Imagem: bcd
-Imagem: bcr
-Imagem: bek
-Imagem: beg
-Imagem: bdq
-Imagem: bei
-Imagem: bfc
-Imagem: bel
-Imagem: bfl
-Imagem: bjy
-Imagem: bhw
-Imagem: bgq
-Imagem: bfy
-Imagem: bhi
-Imagem: bin
-Imagem: bib
-Imagem: bjn
-Imagem: bkx
-Imagem: bkp
-Imagem: blw
-Imagem: bld
-Imagem: bmj
-Imagem: bho
-Imagem: bce
-Imagem: bag
-Imagem: azv
-Imagem: azl
-Imagem: azw
-Imagem: bbq
-Imagem: bax
-Imagem: bcc
-Imagem: bdu
-Imagem: bdi
-Imagem: bdc
-Imagem: bds
-Imagem: bft
-Imagem: bes
-Imagem: bgv
-Imagem: bkl
-Imagem: biz
-Imagem: bii
-Imagem: bie
-Imagem: biv
-Imagem: bju
-Imagem: bjg
-Imagem: bkh
-Imagem: bkt
-Imagem: bkn
-Imagem: blo
-Imagem: bkv
-Imagem: blr
-Imagem: bjb
-Imagem: bid
-Imagem: bhz
-Imagem: bhx
-Imagem: bia
-Imagem: biu
-Imagem: biq
-Imagem: biy
-Imagem: bli
-Imagem: bkd
-Imagem: bjk
-Imagem: bkz
-Imagem: bme
-Imagem: blu
-Imagem: bmg
-Imagem: bmh
-Imagem: ayq
-Imagem: ase
-Imagem: apj
-Imagem: anl
-Imagem: ams
-Imagem: alw
-Imagem: alr
-Imagem: amd
-Imagem: ang
-Imagem: amy
-Imagem: ank
-Imagem: aos
-Imagem: aob
-Imagem: anz
-Imagem: aoe
-Imagem: aow
-Imagem: aov
-Imagem: apb
-Imagem: aqx
-Imagem: aqk
-Imagem: apy
-Imagem: apn
-Imagem: aqi
-Imagem: aqq
-Imagem: aqn
-Imagem: aqw
-Imagem: arr
-Imagem: arb
-Imagem: aqy
-Imagem: ard
-Imagem: ary
-Imagem: ars
-Imagem: asb
-Imagem: avs
-Imagem: aua
-Imagem: asz
-Imagem: asn
-Imagem: asm
-Imagem: asp
-Imagem: atl
-Imagem: ath
-Imagem: atn
-Imagem: avf
-Imagem: aur
-Imagem: auc
-Imagem: avb
-Imagem: avn
-Imagem: avk
-Imagem: avp
-Imagem: axf
-Imagem: awu
-Imagem: awm
-Imagem: awd
-Imagem: awp
-Imagem: axa
-Imagem: awx
-Imagem: axc
-Imagem: ayd
-Imagem: axk
-Imagem: axg
-Imagem: axl
-Imagem: ayi
-Imagem: aye
-Imagem: ayo
-Imagem: bbo
-Imagem: bal
-Imagem: azi
-Imagem: ayy
-Imagem: ayv
-Imagem: aza
-Imagem: baa
-Imagem: azp
-Imagem: bac
-Imagem: bay
-Imagem: bau
-Imagem: bap
-Imagem: baw
-Imagem: bbb
-Imagem: baz
-Imagem: bbk
-Imagem: bgu
-Imagem: bem
-Imagem: bct
-Imagem: bcg
-Imagem: bbw
-Imagem: bcm
-Imagem: bcx
-Imagem: bcu
-Imagem: bdm
-Imagem: bfi
-Imagem: bfb
-Imagem: beo
-Imagem: bff
-Imagem: bfz
-Imagem: bfx
-Imagem: bgl
-Imagem: bjw
-Imagem: bim
-Imagem: bhp
-Imagem: bhd
-Imagem: bht
-Imagem: bjc
-Imagem: biw
-Imagem: bjv
-Imagem: blm
-Imagem: bkk
-Imagem: bjx
-Imagem: blk
-Imagem: bly
-Imagem: bls
-Imagem: blz
-Imagem: bcy
-Imagem: bbm
-Imagem: ban
-Imagem: bak
-Imagem: bar
-Imagem: bcj
-Imagem: bbz
-Imagem: bcp
-Imagem: bgw
-Imagem: bfg
-Imagem: bdy
-Imagem: bdt
-Imagem: bev
-Imagem: bgm
-Imagem: bgb
-Imagem: bgs
-Imagem: bix
-Imagem: bio
-Imagem: bhs
-Imagem: bis
-Imagem: blc
-Imagem: bjt
-Imagem: bmc
-Imagem: axp
-Imagem: arj
-Imagem: ann
-Imagem: alf
-Imagem: aki
-Imagem: akf
-Imagem: ajz
-Imagem: akg
-Imagem: akq
-Imagem: akl
-Imagem: akv
-Imagem: amn
-Imagem: alz
-Imagem: alo
-Imagem: amk
-Imagem: amq
-Imagem: amp
-Imagem: ani
-Imagem: ape
-Imagem: aoo
-Imagem: aof
-Imagem: anv
-Imagem: aoi
-Imagem: aou
-Imagem: aot
-Imagem: apd
-Imagem: aqf
-Imagem: apm
-Imagem: api
-Imagem: aqc
-Imagem: arc
-Imagem: aqz
-Imagem: arf
-Imagem: aup
-Imagem: atf
-Imagem: asq
-Imagem: asf
-Imagem: art
-Imagem: ash
-Imagem: asx
-Imagem: asu
-Imagem: atd
-Imagem: atp
-Imagem: atj
-Imagem: atg
-Imagem: ato
-Imagem: aue
-Imagem: atw
-Imagem: aum
-Imagem: awj
-Imagem: avw
-Imagem: avj
-Imagem: ava
-Imagem: avm
-Imagem: awa
-Imagem: avx
-Imagem: awg
-Imagem: axe
-Imagem: awv
-Imagem: awo
-Imagem: aww
-Imagem: axm
-Imagem: axi
-Imagem: axo
-Imagem: bha
-Imagem: bdf
-Imagem: azq
-Imagem: azd
-Imagem: ayf
-Imagem: axy
-Imagem: ayn
-Imagem: azg
-Imagem: aze
-Imagem: azn
-Imagem: bbr
-Imagem: bah
-Imagem: azr
-Imagem: bas
-Imagem: bbx
-Imagem: bbt
-Imagem: bcf
-Imagem: bfn
-Imagem: bew
-Imagem: bdr
-Imagem: bdp
-Imagem: bec
-Imagem: bfj
-Imagem: bfe
-Imagem: bfm
-Imagem: bfw
-Imagem: bfu
-Imagem: bfq
-Imagem: bfv
-Imagem: bgd
-Imagem: bgc
-Imagem: bgp
-Imagem: bjl
-Imagem: bhy
-Imagem: bhr
-Imagem: bhk
-Imagem: bhu
-Imagem: bji
-Imagem: bjd
-Imagem: bjj
-Imagem: bkf
-Imagem: bkb
-Imagem: bjr
-Imagem: bkc
-Imagem: blj
-Imagem: bla
-Imagem: bki
-Imagem: ble
-Imagem: blv
-Imagem: bml
-Imagem: aha
-Imagem: adr
-Imagem: abq
-Imagem: aau
-Imagem: aah
-Imagem: aad
-Imagem: aaa
-Imagem: aaf
-Imagem: aar
-Imagem: aak
-Imagem: aat
-Imagem: abh
-Imagem: aaz
-Imagem: aav
-Imagem: abd
-Imagem: abm
-Imagem: abi
-Imagem: abn
-Imagem: acq
-Imagem: acb
-Imagem: abx
-Imagem: abw
-Imagem: aca
-Imagem: acj
-Imagem: acg
-Imagem: aco
-Imagem: ade
-Imagem: acx
-Imagem: acu
-Imagem: acz
-Imagem: adk
-Imagem: adh
-Imagem: adl
-Imagem: aff
-Imagem: aej
-Imagem: adx
-Imagem: adu
-Imagem: adt
-Imagem: adw
-Imagem: aeg
-Imagem: aed
-Imagem: aeh
-Imagem: aev
-Imagem: aep
-Imagem: ael
-Imagem: aer
-Imagem: afc
-Imagem: aew
-Imagem: afe
-Imagem: agf
-Imagem: afo
-Imagem: afm
-Imagem: afl
-Imagem: afn
-Imagem: afz
-Imagem: afv
-Imagem: agd
-Imagem: ago
-Imagem: agk
-Imagem: agh
-Imagem: agm
-Imagem: agr
-Imagem: agp
-Imagem: agv
-Imagem: auf
-Imagem: alx
-Imagem: ail
-Imagem: ahv
-Imagem: ahm
-Imagem: ahf
-Imagem: ahd
-Imagem: ahj
-Imagem: aho
-Imagem: ahn
-Imagem: ahq
-Imagem: aid
-Imagem: aia
-Imagem: ahw
-Imagem: aic
-Imagem: aig
-Imagem: aie
-Imagem: aih
-Imagem: aks
-Imagem: aji
-Imagem: aiy
-Imagem: aio
-Imagem: ajd
-Imagem: ajx
-Imagem: ajo
-Imagem: akh
-Imagem: alk
-Imagem: alc
-Imagem: akw
-Imagem: alj
-Imagem: alm
-Imagem: all
-Imagem: alu
-Imagem: apv
-Imagem: anu
-Imagem: amm
-Imagem: amc
-Imagem: ama
-Imagem: ame
-Imagem: amx
-Imagem: amr
-Imagem: ans
-Imagem: apg
-Imagem: aon
-Imagem: any
-Imagem: aox
-Imagem: apo
-Imagem: apl
-Imagem: apt
-Imagem: arv
-Imagem: aqv
-Imagem: aqe
-Imagem: aqd
-Imagem: aqg
-Imagem: ark
-Imagem: arh
-Imagem: aru
-Imagem: ata
-Imagem: asi
-Imagem: asd
-Imagem: asw
-Imagem: atm
-Imagem: ati
-Imagem: aub
-Imagem: bdd
-Imagem: ayp
-Imagem: awr
-Imagem: aux
-Imagem: auh
-Imagem: aug
-Imagem: auk
-Imagem: awk
-Imagem: avq
-Imagem: awl
-Imagem: axq
-Imagem: axj
-Imagem: aws
-Imagem: axn
-Imagem: ayc
-Imagem: axw
-Imagem: aym
-Imagem: bai
-Imagem: azx
-Imagem: ayx
-Imagem: ayt
-Imagem: azk
-Imagem: bad
-Imagem: bab
-Imagem: baf
-Imagem: bby
-Imagem: baq
-Imagem: bam
-Imagem: bbs
-Imagem: bcq
-Imagem: bcb
-Imagem: bcz
-Imagem: bhq
-Imagem: bgh
-Imagem: bee
-Imagem: bdh
-Imagem: bdg
-Imagem: bdo
-Imagem: bfh
-Imagem: ber
-Imagem: bfp
-Imagem: bhe
-Imagem: bgy
-Imagem: bgt
-Imagem: bhc
-Imagem: bhh
-Imagem: bhg
-Imagem: bhn
-Imagem: bko
-Imagem: bij
-Imagem: bic
-Imagem: bhv
-Imagem: bif
-Imagem: bjz
-Imagem: bje
-Imagem: bka
-Imagem: blp
-Imagem: bks
-Imagem: bkq
-Imagem: bll
-Imagem: blq
-Imagem: blt
-Imagem: aib
-Imagem: aei
-Imagem: acp
-Imagem: abo
-Imagem: abe
-Imagem: abb
-Imagem: aay
-Imagem: abc
-Imagem: abj
-Imagem: abf
-Imagem: abl
-Imagem: acc
-Imagem: abu
-Imagem: abp
-Imagem: abv
-Imagem: aci
-Imagem: acf
-Imagem: acm
-Imagem: adn
-Imagem: acy
-Imagem: acv
-Imagem: act
-Imagem: acw
-Imagem: adg
-Imagem: adb
-Imagem: adi
-Imagem: ads
-Imagem: adp
-Imagem: ado
-Imagem: adq
-Imagem: aeb
-Imagem: aea
-Imagem: aee
-Imagem: age
-Imagem: afd
-Imagem: aet
-Imagem: aen
-Imagem: aek
-Imagem: aeq
-Imagem: aey
-Imagem: aeu
-Imagem: afb
-Imagem: aft
-Imagem: afp
-Imagem: afh
-Imagem: afq
-Imagem: afx
-Imagem: afu
-Imagem: agb
-Imagem: ahg
-Imagem: agx
-Imagem: agl
-Imagem: agg
-Imagem: agn
-Imagem: agz
-Imagem: agy
-Imagem: ahc
-Imagem: ahs
-Imagem: ahl
-Imagem: ahk
-Imagem: ahr
-Imagem: ahx
-Imagem: ahu
-Imagem: ahy
-Imagem: awq
-Imagem: aok
-Imagem: alg
-Imagem: ajp
-Imagem: aiu
-Imagem: aij
-Imagem: aii
-Imagem: aik
-Imagem: ajh
-Imagem: aiv
-Imagem: ajl
-Imagem: aku
-Imagem: akj
-Imagem: ake
-Imagem: akk
-Imagem: alb
-Imagem: aky
-Imagem: ale
-Imagem: amt
-Imagem: amb
-Imagem: aln
-Imagem: ali
-Imagem: als
-Imagem: aml
-Imagem: amj
-Imagem: amo
-Imagem: anw
-Imagem: ane
-Imagem: anc
-Imagem: anp
-Imagem: aoh
-Imagem: aog
-Imagem: aoj
-Imagem: asr
-Imagem: aqj
-Imagem: apr
-Imagem: aph
-Imagem: aom
-Imagem: apq
-Imagem: apz
-Imagem: apx
-Imagem: aqa
-Imagem: arx
-Imagem: arg
-Imagem: aqr
-Imagem: arq
-Imagem: asa
-Imagem: arz
-Imagem: asj
-Imagem: auv
-Imagem: atz
-Imagem: ate
-Imagem: ass
-Imagem: ats
-Imagem: auo
-Imagem: aui
-Imagem: aut
-Imagem: avt
-Imagem: auz
-Imagem: auw
-Imagem: avi
-Imagem: awe
-Imagem: avz
-Imagem: awi
-Imagem: bep
-Imagem: baj
-Imagem: axz
-Imagem: axd
-Imagem: awz
-Imagem: awy
-Imagem: axb
-Imagem: axv
-Imagem: axt
-Imagem: axx
-Imagem: azf
-Imagem: ayw
-Imagem: ayk
-Imagem: azc
-Imagem: azo
-Imagem: azm
-Imagem: azs
-Imagem: bcn
-Imagem: bbn
-Imagem: bbi
-Imagem: bba
-Imagem: bbl
-Imagem: bch
-Imagem: bca
-Imagem: bck
-Imagem: bdl
-Imagem: bde
-Imagem: bdb
-Imagem: bdk
-Imagem: beb
-Imagem: bdw
-Imagem: bej
-Imagem: bgg
-Imagem: bey
-Imagem: bet
-Imagem: beq
-Imagem: beu
-Imagem: bfa
-Imagem: bez
-Imagem: bge
-Imagem: bjm
-Imagem: bhm
-Imagem: bgn
-Imagem: bgi
-Imagem: bgr
-Imagem: bja
-Imagem: bih
-Imagem: bjf
-Imagem: bkm
-Imagem: bke
-Imagem: blx
-Imagem: blh
-Imagem: bmb
-Imagem: avg
-Imagem: anq
-Imagem: ala
-Imagem: ajr
-Imagem: aix
-Imagem: ais
-Imagem: air
-Imagem: aiw
-Imagem: ajg
-Imagem: aja
-Imagem: ajq
-Imagem: akb
-Imagem: ajw
-Imagem: ajs
-Imagem: ajy
-Imagem: akr
-Imagem: akp
-Imagem: akx
-Imagem: amv
-Imagem: alv
-Imagem: alq
-Imagem: ald
-Imagem: alt
-Imagem: amh
-Imagem: amf
-Imagem: amu
-Imagem: anf
-Imagem: ana
-Imagem: amz
-Imagem: and
-Imagem: anj
-Imagem: anh
-Imagem: anm
-Imagem: ast
-Imagem: aqs
-Imagem: apf
-Imagem: aor
-Imagem: aol
-Imagem: aoy
-Imagem: apw
-Imagem: app
-Imagem: aql
-Imagem: arw
-Imagem: ari
-Imagem: ara
-Imagem: arn
-Imagem: ask
-Imagem: asg
-Imagem: asl
-Imagem: atx
-Imagem: atk
-Imagem: asy
-Imagem: asv
-Imagem: atc
-Imagem: atu
-Imagem: atq
-Imagem: atv
-Imagem: aus
-Imagem: auj
-Imagem: aty
-Imagem: aul
-Imagem: avd
-Imagem: auu
-Imagem: ave
-Imagem: bda
-Imagem: ayh
-Imagem: awc
-Imagem: avu
-Imagem: avl
-Imagem: avh
-Imagem: avr
-Imagem: avy
-Imagem: avv
-Imagem: awb
-Imagem: axs
-Imagem: awn
-Imagem: awf
-Imagem: awt
-Imagem: ayb
-Imagem: aya
-Imagem: ayg
-Imagem: azz
-Imagem: azh
-Imagem: ays
-Imagem: ayj
-Imagem: ayu
-Imagem: azt
-Imagem: azj
-Imagem: azy
-Imagem: bbp
-Imagem: bao
-Imagem: bae
-Imagem: bbh
-Imagem: bcl
-Imagem: bbu
-Imagem: bcw
-Imagem: bjs
-Imagem: bgk
-Imagem: bex
-Imagem: bea
-Imagem: bdz
-Imagem: beh
-Imagem: bfo
-Imagem: bfd
-Imagem: bfr
-Imagem: bhl
-Imagem: bgx
-Imagem: bgo
-Imagem: bhj
-Imagem: bir
-Imagem: bip
-Imagem: bjh
-Imagem: bln
-Imagem: bkj
-Imagem: bkg
-Imagem: bkw
-Imagem: bmd
-Imagem: bma
-Imagem: bmf
-Imagem: bmk
-Imagem: agu
-Imagem: ada
-Imagem: aba
-Imagem: aam
-Imagem: aag
-Imagem: aac
-Imagem: aab
-Imagem: aae
-Imagem: aaj
-Imagem: aai
-Imagem: aal
-Imagem: aaq
-Imagem: aao
-Imagem: aan
-Imagem: aap
-Imagem: aaw
-Imagem: aas
-Imagem: aax
-Imagem: acd
-Imagem: abs
-Imagem: abk
-Imagem: abg
-Imagem: abr
-Imagem: aby
-Imagem: abt
-Imagem: abz
-Imagem: acl
-Imagem: ach
-Imagem: ace
-Imagem: ack
-Imagem: acr
-Imagem: acn
-Imagem: acs
-Imagem: afa
-Imagem: adz
-Imagem: adj
-Imagem: add
-Imagem: adc
-Imagem: adf
-Imagem: adv
-Imagem: adm
-Imagem: ady
-Imagem: aeo
-Imagem: aef
-Imagem: aec
-Imagem: aem
-Imagem: aex
-Imagem: aes
-Imagem: aez
-Imagem: afy
-Imagem: afk
-Imagem: afi
-Imagem: afg
-Imagem: afj
-Imagem: afs
-Imagem: afr
-Imagem: afw
-Imagem: agj
-Imagem: agc
-Imagem: aga
-Imagem: agi
-Imagem: ags
-Imagem: agq
-Imagem: agt
-Imagem: are
-Imagem: ako
-Imagem: ajb
-Imagem: ahz
-Imagem: ahh
-Imagem: ahb
-Imagem: agw
-Imagem: ahe
-Imagem: ahp
-Imagem: ahi
-Imagem: aht
-Imagem: aip
-Imagem: aim
-Imagem: aif
-Imagem: ain
-Imagem: ait
-Imagem: aiq
-Imagem: aiz
-Imagem: ajt
-Imagem: ajj
-Imagem: aje
-Imagem: ajc
-Imagem: ajf
-Imagem: ajm
-Imagem: ajk
-Imagem: ajn
-Imagem: akc
-Imagem: ajv
-Imagem: aju
-Imagem: aka
-Imagem: akm
-Imagem: akd
-Imagem: akn
-Imagem: aod
-Imagem: amw
-Imagem: alp
-Imagem: akz
-Imagem: akt
-Imagem: alh
-Imagem: amg
-Imagem: aly
-Imagem: ami
-Imagem: ant
-Imagem: ano
-Imagem: anb
-Imagem: anr
-Imagem: aoa
-Imagem: anx
-Imagem: aoc
-Imagem: apu
-Imagem: apa
-Imagem: aoq
-Imagem: aop
-Imagem: aoz
-Imagem: apk
-Imagem: apc
-Imagem: aps
-Imagem: aqo
-Imagem: aqh
-Imagem: aqb
-Imagem: aqm
-Imagem: aqt
-Imagem: aqp
-Imagem: aqu
-Imagem: bcv
-Imagem: awh
-Imagem: atr
-Imagem: arp
-Imagem: arm
-Imagem: arl
-Imagem: aro
-Imagem: aso
-Imagem: asc
-Imagem: atb
-Imagem: auq
-Imagem: aud
-Imagem: att
-Imagem: aun
-Imagem: avc
-Imagem: auy
-Imagem: avo
-Imagem: azu
-Imagem: ayl
-Imagem: axr
-Imagem: axh
-Imagem: axu
-Imagem: ayz
-Imagem: ayr
-Imagem: azb
-Imagem: bbg
-Imagem: bbd
-Imagem: bav
-Imagem: bbe
-Imagem: bci
-Imagem: bbv
-Imagem: bcs
-Imagem: bil
-Imagem: bga
-Imagem: bed
-Imagem: bdv
-Imagem: bdn
-Imagem: bdx
-Imagem: ben
-Imagem: bef
-Imagem: bfk
-Imagem: bhb
-Imagem: bgj
-Imagem: bgf
-Imagem: bgz
-Imagem: big
-Imagem: bhf
-Imagem: bik
-Imagem: bjq
-Imagem: bjo
-Imagem: bit
-Imagem: bjp
-Imagem: blb
-Imagem: bku
-Imagem: bkr
-Imagem: bky
-Imagem: blg
-Imagem: blf
-Imagem: bmi
-Imagem: bjb
-Imagem: bid
-Imagem: bhz
-Imagem: bhx
-Imagem: bia
-Imagem: biu
-Imagem: biq
-Imagem: biy
-Imagem: bli
-Imagem: bkd
-Imagem: bjk
-Imagem: bkz
-Imagem: bme
-Imagem: blu
-Imagem: bmg
-Imagem: bmh
-Imagem: axp
-Imagem: arj
-Imagem: ann
-Imagem: alf
-Imagem: aki
-Imagem: akf
-Imagem: ajz
-Imagem: akg
-Imagem: akq
-Imagem: akl
-Imagem: akv
-Imagem: amn
-Imagem: alz
-Imagem: alo
-Imagem: amk
-Imagem: amq
-Imagem: amp
-Imagem: ani
-Imagem: ape
-Imagem: aoo
-Imagem: aof
-Imagem: anv
-Imagem: aoi
-Imagem: aou
-Imagem: aot
-Imagem: apd
-Imagem: aqf
-Imagem: apm
-Imagem: api
-Imagem: aqc
-Imagem: arc
-Imagem: aqz
-Imagem: arf
-Imagem: aup
-Imagem: atf
-Imagem: asq
-Imagem: asf
-Imagem: art
-Imagem: ash
-Imagem: asx
-Imagem: asu
-Imagem: atd
-Imagem: atp
-Imagem: atj
-Imagem: atg
-Imagem: ato
-Imagem: aue
-Imagem: atw
-Imagem: aum
-Imagem: awj
-Imagem: avw
-Imagem: avj
-Imagem: ava
-Imagem: avm
-Imagem: awa
-Imagem: avx
-Imagem: awg
-Imagem: axe
-Imagem: awv
-Imagem: awo
-Imagem: aww
-Imagem: axm
-Imagem: axi
-Imagem: axo
-Imagem: bha
-Imagem: bdf
-Imagem: azq
-Imagem: azd
-Imagem: ayf
-Imagem: axy
-Imagem: ayn
-Imagem: azg
-Imagem: aze
-Imagem: azn
-Imagem: bbr
-Imagem: bah
-Imagem: azr
-Imagem: bas
-Imagem: bbx
-Imagem: bbt
-Imagem: bcf
-Imagem: bfn
-Imagem: bew
-Imagem: bdr
-Imagem: bdp
-Imagem: bec
-Imagem: bfj
-Imagem: bfe
-Imagem: bfm
-Imagem: bfw
-Imagem: bfu
-Imagem: bfq
-Imagem: bfv
-Imagem: bgd
-Imagem: bgc
-Imagem: bgp
-Imagem: bjl
-Imagem: bhy
-Imagem: bhr
-Imagem: bhk
-Imagem: bhu
-Imagem: bji
-Imagem: bjd
-Imagem: bjj
-Imagem: bkf
-Imagem: bkb
-Imagem: bjr
-Imagem: bkc
-Imagem: blj
-Imagem: bla
-Imagem: bki
-Imagem: ble
-Imagem: blv
-Imagem: bml
-Imagem: avg
-Imagem: anq
-Imagem: ala
-Imagem: ajr
-Imagem: aix
-Imagem: ais
-Imagem: air
-Imagem: aiw
-Imagem: ajg
-Imagem: aja
-Imagem: ajq
-Imagem: akb
-Imagem: ajw
-Imagem: ajs
-Imagem: ajy
-Imagem: akr
-Imagem: akp
-Imagem: akx
-Imagem: amv
-Imagem: alv
-Imagem: alq
-Imagem: ald
-Imagem: alt
-Imagem: amh
-Imagem: amf
-Imagem: amu
-Imagem: anf
-Imagem: ana
-Imagem: amz
-Imagem: and
-Imagem: anj
-Imagem: anh
-Imagem: anm
-Imagem: ast
-Imagem: aqs
-Imagem: apf
-Imagem: aor
-Imagem: aol
-Imagem: aoy
-Imagem: apw
-Imagem: app
-Imagem: aql
-Imagem: arw
-Imagem: ari
-Imagem: ara
-Imagem: arn
-Imagem: ask
-Imagem: asg
-Imagem: asl
-Imagem: atx
-Imagem: atk
-Imagem: asy
-Imagem: asv
-Imagem: atc
-Imagem: atu
-Imagem: atq
-Imagem: atv
-Imagem: aus
-Imagem: auj
-Imagem: aty
-Imagem: aul
-Imagem: avd
-Imagem: auu
-Imagem: ave
-Imagem: bda
-Imagem: ayh
-Imagem: awc
-Imagem: avu
-Imagem: avl
-Imagem: avh
-Imagem: avr
-Imagem: avy
-Imagem: avv
-Imagem: awb
-Imagem: axs
-Imagem: awn
-Imagem: awf
-Imagem: awt
-Imagem: ayb
-Imagem: aya
-Imagem: ayg
-Imagem: azz
-Imagem: azh
-Imagem: ays
-Imagem: ayj
-Imagem: ayu
-Imagem: azt
-Imagem: azj
-Imagem: azy
-Imagem: bbp
-Imagem: bao
-Imagem: bae
-Imagem: bbh
-Imagem: bcl
-Imagem: bbu
-Imagem: bcw
-Imagem: bjs
-Imagem: bgk
-Imagem: bex
-Imagem: bea
-Imagem: bdz
-Imagem: beh
-Imagem: bfo
-Imagem: bfd
-Imagem: bfr
-Imagem: bhl
-Imagem: bgx
-Imagem: bgo
-Imagem: bhj
-Imagem: bir
-Imagem: bip
-Imagem: bjh
-Imagem: bln
-Imagem: bkj
-Imagem: bkg
-Imagem: bkw
-Imagem: bmd
-Imagem: bma
-Imagem: bmf
-Imagem: bmk
-Nome: computadorcm
-Capacidade: 700.0
-Nome: computerCmma
-Capacidade: 699.0
-Nome: solutions
-Capacidade: 670.0
-Nome: cmmaSolutions
-Capacidade: 502.0
-Nome: computer
-Capacidade: 480.0
-Nome: hspSolution
-Capacidade: 460.0
-Nome: computadorHsp
-Capacidade: 320.0
-Nome: solutionsComputer
-Capacidade: 309.0
-Nome: cmma
-Capacidade: 307.0
-Nome: hospitalPc
-Capacidade: 250.0Espaços Disponível dos Computadores cadastrados
-1º computador: 700.0
-2º computador: 699.0
-3º computador: 670.0
-4º computador: 502.0
-5º computador: 480.0
-6º computador: 460.0
-7º computador: 320.0
-8º computador: 309.0
-9º computador: 307.0
-10º computador: 250.0
+
+IMAGENS DO COMPUTADOR hspSolution
+ Nome da imagem: ayq
+ Nome da imagem: ase
+ Nome da imagem: apj
+ Nome da imagem: anl
+ Nome da imagem: ams
+ Nome da imagem: alw
+ Nome da imagem: alr
+ Nome da imagem: amd
+ Nome da imagem: ang
+ Nome da imagem: amy
+ Nome da imagem: ank
+ Nome da imagem: aos
+ Nome da imagem: aob
+ Nome da imagem: anz
+ Nome da imagem: aoe
+ Nome da imagem: aow
+ Nome da imagem: aov
+ Nome da imagem: apb
+ Nome da imagem: aqx
+ Nome da imagem: aqk
+ Nome da imagem: apy
+ Nome da imagem: apn
+ Nome da imagem: aqi
+ Nome da imagem: aqq
+ Nome da imagem: aqn
+ Nome da imagem: aqw
+ Nome da imagem: arr
+ Nome da imagem: arb
+ Nome da imagem: aqy
+ Nome da imagem: ard
+ Nome da imagem: ary
+ Nome da imagem: ars
+ Nome da imagem: asb
+ Nome da imagem: avs
+ Nome da imagem: aua
+ Nome da imagem: asz
+ Nome da imagem: asn
+ Nome da imagem: asm
+ Nome da imagem: asp
+ Nome da imagem: atl
+ Nome da imagem: ath
+ Nome da imagem: atn
+ Nome da imagem: avf
+ Nome da imagem: aur
+ Nome da imagem: auc
+ Nome da imagem: avb
+ Nome da imagem: avn
+ Nome da imagem: avk
+ Nome da imagem: avp
+ Nome da imagem: axf
+ Nome da imagem: awu
+ Nome da imagem: awm
+ Nome da imagem: awd
+ Nome da imagem: awp
+ Nome da imagem: axa
+ Nome da imagem: awx
+ Nome da imagem: axc
+ Nome da imagem: ayd
+ Nome da imagem: axk
+ Nome da imagem: axg
+ Nome da imagem: axl
+ Nome da imagem: ayi
+ Nome da imagem: aye
+ Nome da imagem: ayo
+ Nome da imagem: bbo
+ Nome da imagem: bal
+ Nome da imagem: azi
+ Nome da imagem: ayy
+ Nome da imagem: ayv
+ Nome da imagem: aza
+ Nome da imagem: baa
+ Nome da imagem: azp
+ Nome da imagem: bac
+ Nome da imagem: bay
+ Nome da imagem: bau
+ Nome da imagem: bap
+ Nome da imagem: baw
+ Nome da imagem: bbb
+ Nome da imagem: baz
+ Nome da imagem: bbk
+ Nome da imagem: bgu
+ Nome da imagem: bem
+ Nome da imagem: bct
+ Nome da imagem: bcg
+ Nome da imagem: bbw
+ Nome da imagem: bcm
+ Nome da imagem: bcx
+ Nome da imagem: bcu
+ Nome da imagem: bdm
+ Nome da imagem: bfi
+ Nome da imagem: bfb
+ Nome da imagem: beo
+ Nome da imagem: bff
+ Nome da imagem: bfz
+ Nome da imagem: bfx
+ Nome da imagem: bgl
+ Nome da imagem: bjw
+ Nome da imagem: bim
+ Nome da imagem: bhp
+ Nome da imagem: bhd
+ Nome da imagem: bht
+ Nome da imagem: bjc
+ Nome da imagem: biw
+ Nome da imagem: bjv
+ Nome da imagem: blm
+ Nome da imagem: bkk
+ Nome da imagem: bjx
+ Nome da imagem: blk
+ Nome da imagem: bly
+ Nome da imagem: bls
+ Nome da imagem: blz
+
+
+IMAGENS DO COMPUTADOR solutionsComputer
+ Nome da imagem: bcy
+ Nome da imagem: bbm
+ Nome da imagem: ban
+ Nome da imagem: bak
+ Nome da imagem: bar
+ Nome da imagem: bcj
+ Nome da imagem: bbz
+ Nome da imagem: bcp
+ Nome da imagem: bgw
+ Nome da imagem: bfg
+ Nome da imagem: bdy
+ Nome da imagem: bdt
+ Nome da imagem: bev
+ Nome da imagem: bgm
+ Nome da imagem: bgb
+ Nome da imagem: bgs
+ Nome da imagem: bix
+ Nome da imagem: bio
+ Nome da imagem: bhs
+ Nome da imagem: bis
+ Nome da imagem: blc
+ Nome da imagem: bjt
+ Nome da imagem: bmc
+
+
+IMAGENS DO COMPUTADOR computer
+ Nome da imagem: axp
+ Nome da imagem: arj
+ Nome da imagem: ann
+ Nome da imagem: alf
+ Nome da imagem: aki
+ Nome da imagem: akf
+ Nome da imagem: ajz
+ Nome da imagem: akg
+ Nome da imagem: akq
+ Nome da imagem: akl
+ Nome da imagem: akv
+ Nome da imagem: amn
+ Nome da imagem: alz
+ Nome da imagem: alo
+ Nome da imagem: amk
+ Nome da imagem: amq
+ Nome da imagem: amp
+ Nome da imagem: ani
+ Nome da imagem: ape
+ Nome da imagem: aoo
+ Nome da imagem: aof
+ Nome da imagem: anv
+ Nome da imagem: aoi
+ Nome da imagem: aou
+ Nome da imagem: aot
+ Nome da imagem: apd
+ Nome da imagem: aqf
+ Nome da imagem: apm
+ Nome da imagem: api
+ Nome da imagem: aqc
+ Nome da imagem: arc
+ Nome da imagem: aqz
+ Nome da imagem: arf
+ Nome da imagem: aup
+ Nome da imagem: atf
+ Nome da imagem: asq
+ Nome da imagem: asf
+ Nome da imagem: art
+ Nome da imagem: ash
+ Nome da imagem: asx
+ Nome da imagem: asu
+ Nome da imagem: atd
+ Nome da imagem: atp
+ Nome da imagem: atj
+ Nome da imagem: atg
+ Nome da imagem: ato
+ Nome da imagem: aue
+ Nome da imagem: atw
+ Nome da imagem: aum
+ Nome da imagem: awj
+ Nome da imagem: avw
+ Nome da imagem: avj
+ Nome da imagem: ava
+ Nome da imagem: avm
+ Nome da imagem: awa
+ Nome da imagem: avx
+ Nome da imagem: awg
+ Nome da imagem: axe
+ Nome da imagem: awv
+ Nome da imagem: awo
+ Nome da imagem: aww
+ Nome da imagem: axm
+ Nome da imagem: axi
+ Nome da imagem: axo
+ Nome da imagem: bha
+ Nome da imagem: bdf
+ Nome da imagem: azq
+ Nome da imagem: azd
+ Nome da imagem: ayf
+ Nome da imagem: axy
+ Nome da imagem: ayn
+ Nome da imagem: azg
+ Nome da imagem: aze
+ Nome da imagem: azn
+ Nome da imagem: bbr
+ Nome da imagem: bah
+ Nome da imagem: azr
+ Nome da imagem: bas
+ Nome da imagem: bbx
+ Nome da imagem: bbt
+ Nome da imagem: bcf
+ Nome da imagem: bfn
+ Nome da imagem: bew
+ Nome da imagem: bdr
+ Nome da imagem: bdp
+ Nome da imagem: bec
+ Nome da imagem: bfj
+ Nome da imagem: bfe
+ Nome da imagem: bfm
+ Nome da imagem: bfw
+ Nome da imagem: bfu
+ Nome da imagem: bfq
+ Nome da imagem: bfv
+ Nome da imagem: bgd
+ Nome da imagem: bgc
+ Nome da imagem: bgp
+ Nome da imagem: bjl
+ Nome da imagem: bhy
+ Nome da imagem: bhr
+ Nome da imagem: bhk
+ Nome da imagem: bhu
+ Nome da imagem: bji
+ Nome da imagem: bjd
+ Nome da imagem: bjj
+ Nome da imagem: bkf
+ Nome da imagem: bkb
+ Nome da imagem: bjr
+ Nome da imagem: bkc
+ Nome da imagem: blj
+ Nome da imagem: bla
+ Nome da imagem: bki
+ Nome da imagem: ble
+ Nome da imagem: blv
+ Nome da imagem: bml
+
+
+IMAGENS DO COMPUTADOR computadorcm
+ Nome da imagem: aha
+ Nome da imagem: adr
+ Nome da imagem: abq
+ Nome da imagem: aau
+ Nome da imagem: aah
+ Nome da imagem: aad
+ Nome da imagem: aaa
+ Nome da imagem: aaf
+ Nome da imagem: aar
+ Nome da imagem: aak
+ Nome da imagem: aat
+ Nome da imagem: abh
+ Nome da imagem: aaz
+ Nome da imagem: aav
+ Nome da imagem: abd
+ Nome da imagem: abm
+ Nome da imagem: abi
+ Nome da imagem: abn
+ Nome da imagem: acq
+ Nome da imagem: acb
+ Nome da imagem: abx
+ Nome da imagem: abw
+ Nome da imagem: aca
+ Nome da imagem: acj
+ Nome da imagem: acg
+ Nome da imagem: aco
+ Nome da imagem: ade
+ Nome da imagem: acx
+ Nome da imagem: acu
+ Nome da imagem: acz
+ Nome da imagem: adk
+ Nome da imagem: adh
+ Nome da imagem: adl
+ Nome da imagem: aff
+ Nome da imagem: aej
+ Nome da imagem: adx
+ Nome da imagem: adu
+ Nome da imagem: adt
+ Nome da imagem: adw
+ Nome da imagem: aeg
+ Nome da imagem: aed
+ Nome da imagem: aeh
+ Nome da imagem: aev
+ Nome da imagem: aep
+ Nome da imagem: ael
+ Nome da imagem: aer
+ Nome da imagem: afc
+ Nome da imagem: aew
+ Nome da imagem: afe
+ Nome da imagem: agf
+ Nome da imagem: afo
+ Nome da imagem: afm
+ Nome da imagem: afl
+ Nome da imagem: afn
+ Nome da imagem: afz
+ Nome da imagem: afv
+ Nome da imagem: agd
+ Nome da imagem: ago
+ Nome da imagem: agk
+ Nome da imagem: agh
+ Nome da imagem: agm
+ Nome da imagem: agr
+ Nome da imagem: agp
+ Nome da imagem: agv
+ Nome da imagem: auf
+ Nome da imagem: alx
+ Nome da imagem: ail
+ Nome da imagem: ahv
+ Nome da imagem: ahm
+ Nome da imagem: ahf
+ Nome da imagem: ahd
+ Nome da imagem: ahj
+ Nome da imagem: aho
+ Nome da imagem: ahn
+ Nome da imagem: ahq
+ Nome da imagem: aid
+ Nome da imagem: aia
+ Nome da imagem: ahw
+ Nome da imagem: aic
+ Nome da imagem: aig
+ Nome da imagem: aie
+ Nome da imagem: aih
+ Nome da imagem: aks
+ Nome da imagem: aji
+ Nome da imagem: aiy
+ Nome da imagem: aio
+ Nome da imagem: ajd
+ Nome da imagem: ajx
+ Nome da imagem: ajo
+ Nome da imagem: akh
+ Nome da imagem: alk
+ Nome da imagem: alc
+ Nome da imagem: akw
+ Nome da imagem: alj
+ Nome da imagem: alm
+ Nome da imagem: all
+ Nome da imagem: alu
+ Nome da imagem: apv
+ Nome da imagem: anu
+ Nome da imagem: amm
+ Nome da imagem: amc
+ Nome da imagem: ama
+ Nome da imagem: ame
+ Nome da imagem: amx
+ Nome da imagem: amr
+ Nome da imagem: ans
+ Nome da imagem: apg
+ Nome da imagem: aon
+ Nome da imagem: any
+ Nome da imagem: aox
+ Nome da imagem: apo
+ Nome da imagem: apl
+ Nome da imagem: apt
+ Nome da imagem: arv
+ Nome da imagem: aqv
+ Nome da imagem: aqe
+ Nome da imagem: aqd
+ Nome da imagem: aqg
+ Nome da imagem: ark
+ Nome da imagem: arh
+ Nome da imagem: aru
+ Nome da imagem: ata
+ Nome da imagem: asi
+ Nome da imagem: asd
+ Nome da imagem: asw
+ Nome da imagem: atm
+ Nome da imagem: ati
+ Nome da imagem: aub
+ Nome da imagem: bdd
+ Nome da imagem: ayp
+ Nome da imagem: awr
+ Nome da imagem: aux
+ Nome da imagem: auh
+ Nome da imagem: aug
+ Nome da imagem: auk
+ Nome da imagem: awk
+ Nome da imagem: avq
+ Nome da imagem: awl
+ Nome da imagem: axq
+ Nome da imagem: axj
+ Nome da imagem: aws
+ Nome da imagem: axn
+ Nome da imagem: ayc
+ Nome da imagem: axw
+ Nome da imagem: aym
+ Nome da imagem: bai
+ Nome da imagem: azx
+ Nome da imagem: ayx
+ Nome da imagem: ayt
+ Nome da imagem: azk
+ Nome da imagem: bad
+ Nome da imagem: bab
+ Nome da imagem: baf
+ Nome da imagem: bby
+ Nome da imagem: baq
+ Nome da imagem: bam
+ Nome da imagem: bbs
+ Nome da imagem: bcq
+ Nome da imagem: bcb
+ Nome da imagem: bcz
+ Nome da imagem: bhq
+ Nome da imagem: bgh
+ Nome da imagem: bee
+ Nome da imagem: bdh
+ Nome da imagem: bdg
+ Nome da imagem: bdo
+ Nome da imagem: bfh
+ Nome da imagem: ber
+ Nome da imagem: bfp
+ Nome da imagem: bhe
+ Nome da imagem: bgy
+ Nome da imagem: bgt
+ Nome da imagem: bhc
+ Nome da imagem: bhh
+ Nome da imagem: bhg
+ Nome da imagem: bhn
+ Nome da imagem: bko
+ Nome da imagem: bij
+ Nome da imagem: bic
+ Nome da imagem: bhv
+ Nome da imagem: bif
+ Nome da imagem: bjz
+ Nome da imagem: bje
+ Nome da imagem: bka
+ Nome da imagem: blp
+ Nome da imagem: bks
+ Nome da imagem: bkq
+ Nome da imagem: bll
+ Nome da imagem: blq
+ Nome da imagem: blt
+
+
+IMAGENS DO COMPUTADOR solutions
+ Nome da imagem: aib
+ Nome da imagem: aei
+ Nome da imagem: acp
+ Nome da imagem: abo
+ Nome da imagem: abe
+ Nome da imagem: abb
+ Nome da imagem: aay
+ Nome da imagem: abc
+ Nome da imagem: abj
+ Nome da imagem: abf
+ Nome da imagem: abl
+ Nome da imagem: acc
+ Nome da imagem: abu
+ Nome da imagem: abp
+ Nome da imagem: abv
+ Nome da imagem: aci
+ Nome da imagem: acf
+ Nome da imagem: acm
+ Nome da imagem: adn
+ Nome da imagem: acy
+ Nome da imagem: acv
+ Nome da imagem: act
+ Nome da imagem: acw
+ Nome da imagem: adg
+ Nome da imagem: adb
+ Nome da imagem: adi
+ Nome da imagem: ads
+ Nome da imagem: adp
+ Nome da imagem: ado
+ Nome da imagem: adq
+ Nome da imagem: aeb
+ Nome da imagem: aea
+ Nome da imagem: aee
+ Nome da imagem: age
+ Nome da imagem: afd
+ Nome da imagem: aet
+ Nome da imagem: aen
+ Nome da imagem: aek
+ Nome da imagem: aeq
+ Nome da imagem: aey
+ Nome da imagem: aeu
+ Nome da imagem: afb
+ Nome da imagem: aft
+ Nome da imagem: afp
+ Nome da imagem: afh
+ Nome da imagem: afq
+ Nome da imagem: afx
+ Nome da imagem: afu
+ Nome da imagem: agb
+ Nome da imagem: ahg
+ Nome da imagem: agx
+ Nome da imagem: agl
+ Nome da imagem: agg
+ Nome da imagem: agn
+ Nome da imagem: agz
+ Nome da imagem: agy
+ Nome da imagem: ahc
+ Nome da imagem: ahs
+ Nome da imagem: ahl
+ Nome da imagem: ahk
+ Nome da imagem: ahr
+ Nome da imagem: ahx
+ Nome da imagem: ahu
+ Nome da imagem: ahy
+ Nome da imagem: awq
+ Nome da imagem: aok
+ Nome da imagem: alg
+ Nome da imagem: ajp
+ Nome da imagem: aiu
+ Nome da imagem: aij
+ Nome da imagem: aii
+ Nome da imagem: aik
+ Nome da imagem: ajh
+ Nome da imagem: aiv
+ Nome da imagem: ajl
+ Nome da imagem: aku
+ Nome da imagem: akj
+ Nome da imagem: ake
+ Nome da imagem: akk
+ Nome da imagem: alb
+ Nome da imagem: aky
+ Nome da imagem: ale
+ Nome da imagem: amt
+ Nome da imagem: amb
+ Nome da imagem: aln
+ Nome da imagem: ali
+ Nome da imagem: als
+ Nome da imagem: aml
+ Nome da imagem: amj
+ Nome da imagem: amo
+ Nome da imagem: anw
+ Nome da imagem: ane
+ Nome da imagem: anc
+ Nome da imagem: anp
+ Nome da imagem: aoh
+ Nome da imagem: aog
+ Nome da imagem: aoj
+ Nome da imagem: asr
+ Nome da imagem: aqj
+ Nome da imagem: apr
+ Nome da imagem: aph
+ Nome da imagem: aom
+ Nome da imagem: apq
+ Nome da imagem: apz
+ Nome da imagem: apx
+ Nome da imagem: aqa
+ Nome da imagem: arx
+ Nome da imagem: arg
+ Nome da imagem: aqr
+ Nome da imagem: arq
+ Nome da imagem: asa
+ Nome da imagem: arz
+ Nome da imagem: asj
+ Nome da imagem: auv
+ Nome da imagem: atz
+ Nome da imagem: ate
+ Nome da imagem: ass
+ Nome da imagem: ats
+ Nome da imagem: auo
+ Nome da imagem: aui
+ Nome da imagem: aut
+ Nome da imagem: avt
+ Nome da imagem: auz
+ Nome da imagem: auw
+ Nome da imagem: avi
+ Nome da imagem: awe
+ Nome da imagem: avz
+ Nome da imagem: awi
+ Nome da imagem: bep
+ Nome da imagem: baj
+ Nome da imagem: axz
+ Nome da imagem: axd
+ Nome da imagem: awz
+ Nome da imagem: awy
+ Nome da imagem: axb
+ Nome da imagem: axv
+ Nome da imagem: axt
+ Nome da imagem: axx
+ Nome da imagem: azf
+ Nome da imagem: ayw
+ Nome da imagem: ayk
+ Nome da imagem: azc
+ Nome da imagem: azo
+ Nome da imagem: azm
+ Nome da imagem: azs
+ Nome da imagem: bcn
+ Nome da imagem: bbn
+ Nome da imagem: bbi
+ Nome da imagem: bba
+ Nome da imagem: bbl
+ Nome da imagem: bch
+ Nome da imagem: bca
+ Nome da imagem: bck
+ Nome da imagem: bdl
+ Nome da imagem: bde
+ Nome da imagem: bdb
+ Nome da imagem: bdk
+ Nome da imagem: beb
+ Nome da imagem: bdw
+ Nome da imagem: bej
+ Nome da imagem: bgg
+ Nome da imagem: bey
+ Nome da imagem: bet
+ Nome da imagem: beq
+ Nome da imagem: beu
+ Nome da imagem: bfa
+ Nome da imagem: bez
+ Nome da imagem: bge
+ Nome da imagem: bjm
+ Nome da imagem: bhm
+ Nome da imagem: bgn
+ Nome da imagem: bgi
+ Nome da imagem: bgr
+ Nome da imagem: bja
+ Nome da imagem: bih
+ Nome da imagem: bjf
+ Nome da imagem: bkm
+ Nome da imagem: bke
+ Nome da imagem: blx
+ Nome da imagem: blh
+ Nome da imagem: bmb
+
+
+IMAGENS DO COMPUTADOR cmmaSolutions
+ Nome da imagem: avg
+ Nome da imagem: anq
+ Nome da imagem: ala
+ Nome da imagem: ajr
+ Nome da imagem: aix
+ Nome da imagem: ais
+ Nome da imagem: air
+ Nome da imagem: aiw
+ Nome da imagem: ajg
+ Nome da imagem: aja
+ Nome da imagem: ajq
+ Nome da imagem: akb
+ Nome da imagem: ajw
+ Nome da imagem: ajs
+ Nome da imagem: ajy
+ Nome da imagem: akr
+ Nome da imagem: akp
+ Nome da imagem: akx
+ Nome da imagem: amv
+ Nome da imagem: alv
+ Nome da imagem: alq
+ Nome da imagem: ald
+ Nome da imagem: alt
+ Nome da imagem: amh
+ Nome da imagem: amf
+ Nome da imagem: amu
+ Nome da imagem: anf
+ Nome da imagem: ana
+ Nome da imagem: amz
+ Nome da imagem: and
+ Nome da imagem: anj
+ Nome da imagem: anh
+ Nome da imagem: anm
+ Nome da imagem: ast
+ Nome da imagem: aqs
+ Nome da imagem: apf
+ Nome da imagem: aor
+ Nome da imagem: aol
+ Nome da imagem: aoy
+ Nome da imagem: apw
+ Nome da imagem: app
+ Nome da imagem: aql
+ Nome da imagem: arw
+ Nome da imagem: ari
+ Nome da imagem: ara
+ Nome da imagem: arn
+ Nome da imagem: ask
+ Nome da imagem: asg
+ Nome da imagem: asl
+ Nome da imagem: atx
+ Nome da imagem: atk
+ Nome da imagem: asy
+ Nome da imagem: asv
+ Nome da imagem: atc
+ Nome da imagem: atu
+ Nome da imagem: atq
+ Nome da imagem: atv
+ Nome da imagem: aus
+ Nome da imagem: auj
+ Nome da imagem: aty
+ Nome da imagem: aul
+ Nome da imagem: avd
+ Nome da imagem: auu
+ Nome da imagem: ave
+ Nome da imagem: bda
+ Nome da imagem: ayh
+ Nome da imagem: awc
+ Nome da imagem: avu
+ Nome da imagem: avl
+ Nome da imagem: avh
+ Nome da imagem: avr
+ Nome da imagem: avy
+ Nome da imagem: avv
+ Nome da imagem: awb
+ Nome da imagem: axs
+ Nome da imagem: awn
+ Nome da imagem: awf
+ Nome da imagem: awt
+ Nome da imagem: ayb
+ Nome da imagem: aya
+ Nome da imagem: ayg
+ Nome da imagem: azz
+ Nome da imagem: azh
+ Nome da imagem: ays
+ Nome da imagem: ayj
+ Nome da imagem: ayu
+ Nome da imagem: azt
+ Nome da imagem: azj
+ Nome da imagem: azy
+ Nome da imagem: bbp
+ Nome da imagem: bao
+ Nome da imagem: bae
+ Nome da imagem: bbh
+ Nome da imagem: bcl
+ Nome da imagem: bbu
+ Nome da imagem: bcw
+ Nome da imagem: bjs
+ Nome da imagem: bgk
+ Nome da imagem: bex
+ Nome da imagem: bea
+ Nome da imagem: bdz
+ Nome da imagem: beh
+ Nome da imagem: bfo
+ Nome da imagem: bfd
+ Nome da imagem: bfr
+ Nome da imagem: bhl
+ Nome da imagem: bgx
+ Nome da imagem: bgo
+ Nome da imagem: bhj
+ Nome da imagem: bir
+ Nome da imagem: bip
+ Nome da imagem: bjh
+ Nome da imagem: bln
+ Nome da imagem: bkj
+ Nome da imagem: bkg
+ Nome da imagem: bkw
+ Nome da imagem: bmd
+ Nome da imagem: bma
+ Nome da imagem: bmf
+ Nome da imagem: bmk
+
+
+IMAGENS DO COMPUTADOR computerCmma
+ Nome da imagem: agu
+ Nome da imagem: ada
+ Nome da imagem: aba
+ Nome da imagem: aam
+ Nome da imagem: aag
+ Nome da imagem: aac
+ Nome da imagem: aab
+ Nome da imagem: aae
+ Nome da imagem: aaj
+ Nome da imagem: aai
+ Nome da imagem: aal
+ Nome da imagem: aaq
+ Nome da imagem: aao
+ Nome da imagem: aan
+ Nome da imagem: aap
+ Nome da imagem: aaw
+ Nome da imagem: aas
+ Nome da imagem: aax
+ Nome da imagem: acd
+ Nome da imagem: abs
+ Nome da imagem: abk
+ Nome da imagem: abg
+ Nome da imagem: abr
+ Nome da imagem: aby
+ Nome da imagem: abt
+ Nome da imagem: abz
+ Nome da imagem: acl
+ Nome da imagem: ach
+ Nome da imagem: ace
+ Nome da imagem: ack
+ Nome da imagem: acr
+ Nome da imagem: acn
+ Nome da imagem: acs
+ Nome da imagem: afa
+ Nome da imagem: adz
+ Nome da imagem: adj
+ Nome da imagem: add
+ Nome da imagem: adc
+ Nome da imagem: adf
+ Nome da imagem: adv
+ Nome da imagem: adm
+ Nome da imagem: ady
+ Nome da imagem: aeo
+ Nome da imagem: aef
+ Nome da imagem: aec
+ Nome da imagem: aem
+ Nome da imagem: aex
+ Nome da imagem: aes
+ Nome da imagem: aez
+ Nome da imagem: afy
+ Nome da imagem: afk
+ Nome da imagem: afi
+ Nome da imagem: afg
+ Nome da imagem: afj
+ Nome da imagem: afs
+ Nome da imagem: afr
+ Nome da imagem: afw
+ Nome da imagem: agj
+ Nome da imagem: agc
+ Nome da imagem: aga
+ Nome da imagem: agi
+ Nome da imagem: ags
+ Nome da imagem: agq
+ Nome da imagem: agt
+ Nome da imagem: are
+ Nome da imagem: ako
+ Nome da imagem: ajb
+ Nome da imagem: ahz
+ Nome da imagem: ahh
+ Nome da imagem: ahb
+ Nome da imagem: agw
+ Nome da imagem: ahe
+ Nome da imagem: ahp
+ Nome da imagem: ahi
+ Nome da imagem: aht
+ Nome da imagem: aip
+ Nome da imagem: aim
+ Nome da imagem: aif
+ Nome da imagem: ain
+ Nome da imagem: ait
+ Nome da imagem: aiq
+ Nome da imagem: aiz
+ Nome da imagem: ajt
+ Nome da imagem: ajj
+ Nome da imagem: aje
+ Nome da imagem: ajc
+ Nome da imagem: ajf
+ Nome da imagem: ajm
+ Nome da imagem: ajk
+ Nome da imagem: ajn
+ Nome da imagem: akc
+ Nome da imagem: ajv
+ Nome da imagem: aju
+ Nome da imagem: aka
+ Nome da imagem: akm
+ Nome da imagem: akd
+ Nome da imagem: akn
+ Nome da imagem: aod
+ Nome da imagem: amw
+ Nome da imagem: alp
+ Nome da imagem: akz
+ Nome da imagem: akt
+ Nome da imagem: alh
+ Nome da imagem: amg
+ Nome da imagem: aly
+ Nome da imagem: ami
+ Nome da imagem: ant
+ Nome da imagem: ano
+ Nome da imagem: anb
+ Nome da imagem: anr
+ Nome da imagem: aoa
+ Nome da imagem: anx
+ Nome da imagem: aoc
+ Nome da imagem: apu
+ Nome da imagem: apa
+ Nome da imagem: aoq
+ Nome da imagem: aop
+ Nome da imagem: aoz
+ Nome da imagem: apk
+ Nome da imagem: apc
+ Nome da imagem: aps
+ Nome da imagem: aqo
+ Nome da imagem: aqh
+ Nome da imagem: aqb
+ Nome da imagem: aqm
+ Nome da imagem: aqt
+ Nome da imagem: aqp
+ Nome da imagem: aqu
+ Nome da imagem: bcv
+ Nome da imagem: awh
+ Nome da imagem: atr
+ Nome da imagem: arp
+ Nome da imagem: arm
+ Nome da imagem: arl
+ Nome da imagem: aro
+ Nome da imagem: aso
+ Nome da imagem: asc
+ Nome da imagem: atb
+ Nome da imagem: auq
+ Nome da imagem: aud
+ Nome da imagem: att
+ Nome da imagem: aun
+ Nome da imagem: avc
+ Nome da imagem: auy
+ Nome da imagem: avo
+ Nome da imagem: azu
+ Nome da imagem: ayl
+ Nome da imagem: axr
+ Nome da imagem: axh
+ Nome da imagem: axu
+ Nome da imagem: ayz
+ Nome da imagem: ayr
+ Nome da imagem: azb
+ Nome da imagem: bbg
+ Nome da imagem: bbd
+ Nome da imagem: bav
+ Nome da imagem: bbe
+ Nome da imagem: bci
+ Nome da imagem: bbv
+ Nome da imagem: bcs
+ Nome da imagem: bil
+ Nome da imagem: bga
+ Nome da imagem: bed
+ Nome da imagem: bdv
+ Nome da imagem: bdn
+ Nome da imagem: bdx
+ Nome da imagem: ben
+ Nome da imagem: bef
+ Nome da imagem: bfk
+ Nome da imagem: bhb
+ Nome da imagem: bgj
+ Nome da imagem: bgf
+ Nome da imagem: bgz
+ Nome da imagem: big
+ Nome da imagem: bhf
+ Nome da imagem: bik
+ Nome da imagem: bjq
+ Nome da imagem: bjo
+ Nome da imagem: bit
+ Nome da imagem: bjp
+ Nome da imagem: blb
+ Nome da imagem: bku
+ Nome da imagem: bkr
+ Nome da imagem: bky
+ Nome da imagem: blg
+ Nome da imagem: blf
+ Nome da imagem: bmi
+
+
+IMAGENS DO COMPUTADOR hospitalPc
+ Nome da imagem: bjb
+ Nome da imagem: bid
+ Nome da imagem: bhz
+ Nome da imagem: bhx
+ Nome da imagem: bia
+ Nome da imagem: biu
+ Nome da imagem: biq
+ Nome da imagem: biy
+ Nome da imagem: bli
+ Nome da imagem: bkd
+ Nome da imagem: bjk
+ Nome da imagem: bkz
+ Nome da imagem: bme
+ Nome da imagem: blu
+ Nome da imagem: bmg
+ Nome da imagem: bmh
+
+
+IMAGENS DO COMPUTADOR computer
+ Nome da imagem: axp
+ Nome da imagem: arj
+ Nome da imagem: ann
+ Nome da imagem: alf
+ Nome da imagem: aki
+ Nome da imagem: akf
+ Nome da imagem: ajz
+ Nome da imagem: akg
+ Nome da imagem: akq
+ Nome da imagem: akl
+ Nome da imagem: akv
+ Nome da imagem: amn
+ Nome da imagem: alz
+ Nome da imagem: alo
+ Nome da imagem: amk
+ Nome da imagem: amq
+ Nome da imagem: amp
+ Nome da imagem: ani
+ Nome da imagem: ape
+ Nome da imagem: aoo
+ Nome da imagem: aof
+ Nome da imagem: anv
+ Nome da imagem: aoi
+ Nome da imagem: aou
+ Nome da imagem: aot
+ Nome da imagem: apd
+ Nome da imagem: aqf
+ Nome da imagem: apm
+ Nome da imagem: api
+ Nome da imagem: aqc
+ Nome da imagem: arc
+ Nome da imagem: aqz
+ Nome da imagem: arf
+ Nome da imagem: aup
+ Nome da imagem: atf
+ Nome da imagem: asq
+ Nome da imagem: asf
+ Nome da imagem: art
+ Nome da imagem: ash
+ Nome da imagem: asx
+ Nome da imagem: asu
+ Nome da imagem: atd
+ Nome da imagem: atp
+ Nome da imagem: atj
+ Nome da imagem: atg
+ Nome da imagem: ato
+ Nome da imagem: aue
+ Nome da imagem: atw
+ Nome da imagem: aum
+ Nome da imagem: awj
+ Nome da imagem: avw
+ Nome da imagem: avj
+ Nome da imagem: ava
+ Nome da imagem: avm
+ Nome da imagem: awa
+ Nome da imagem: avx
+ Nome da imagem: awg
+ Nome da imagem: axe
+ Nome da imagem: awv
+ Nome da imagem: awo
+ Nome da imagem: aww
+ Nome da imagem: axm
+ Nome da imagem: axi
+ Nome da imagem: axo
+ Nome da imagem: bha
+ Nome da imagem: bdf
+ Nome da imagem: azq
+ Nome da imagem: azd
+ Nome da imagem: ayf
+ Nome da imagem: axy
+ Nome da imagem: ayn
+ Nome da imagem: azg
+ Nome da imagem: aze
+ Nome da imagem: azn
+ Nome da imagem: bbr
+ Nome da imagem: bah
+ Nome da imagem: azr
+ Nome da imagem: bas
+ Nome da imagem: bbx
+ Nome da imagem: bbt
+ Nome da imagem: bcf
+ Nome da imagem: bfn
+ Nome da imagem: bew
+ Nome da imagem: bdr
+ Nome da imagem: bdp
+ Nome da imagem: bec
+ Nome da imagem: bfj
+ Nome da imagem: bfe
+ Nome da imagem: bfm
+ Nome da imagem: bfw
+ Nome da imagem: bfu
+ Nome da imagem: bfq
+ Nome da imagem: bfv
+ Nome da imagem: bgd
+ Nome da imagem: bgc
+ Nome da imagem: bgp
+ Nome da imagem: bjl
+ Nome da imagem: bhy
+ Nome da imagem: bhr
+ Nome da imagem: bhk
+ Nome da imagem: bhu
+ Nome da imagem: bji
+ Nome da imagem: bjd
+ Nome da imagem: bjj
+ Nome da imagem: bkf
+ Nome da imagem: bkb
+ Nome da imagem: bjr
+ Nome da imagem: bkc
+ Nome da imagem: blj
+ Nome da imagem: bla
+ Nome da imagem: bki
+ Nome da imagem: ble
+ Nome da imagem: blv
+ Nome da imagem: bml
+
+
+IMAGENS DO COMPUTADOR cmmaSolutions
+ Nome da imagem: avg
+ Nome da imagem: anq
+ Nome da imagem: ala
+ Nome da imagem: ajr
+ Nome da imagem: aix
+ Nome da imagem: ais
+ Nome da imagem: air
+ Nome da imagem: aiw
+ Nome da imagem: ajg
+ Nome da imagem: aja
+ Nome da imagem: ajq
+ Nome da imagem: akb
+ Nome da imagem: ajw
+ Nome da imagem: ajs
+ Nome da imagem: ajy
+ Nome da imagem: akr
+ Nome da imagem: akp
+ Nome da imagem: akx
+ Nome da imagem: amv
+ Nome da imagem: alv
+ Nome da imagem: alq
+ Nome da imagem: ald
+ Nome da imagem: alt
+ Nome da imagem: amh
+ Nome da imagem: amf
+ Nome da imagem: amu
+ Nome da imagem: anf
+ Nome da imagem: ana
+ Nome da imagem: amz
+ Nome da imagem: and
+ Nome da imagem: anj
+ Nome da imagem: anh
+ Nome da imagem: anm
+ Nome da imagem: ast
+ Nome da imagem: aqs
+ Nome da imagem: apf
+ Nome da imagem: aor
+ Nome da imagem: aol
+ Nome da imagem: aoy
+ Nome da imagem: apw
+ Nome da imagem: app
+ Nome da imagem: aql
+ Nome da imagem: arw
+ Nome da imagem: ari
+ Nome da imagem: ara
+ Nome da imagem: arn
+ Nome da imagem: ask
+ Nome da imagem: asg
+ Nome da imagem: asl
+ Nome da imagem: atx
+ Nome da imagem: atk
+ Nome da imagem: asy
+ Nome da imagem: asv
+ Nome da imagem: atc
+ Nome da imagem: atu
+ Nome da imagem: atq
+ Nome da imagem: atv
+ Nome da imagem: aus
+ Nome da imagem: auj
+ Nome da imagem: aty
+ Nome da imagem: aul
+ Nome da imagem: avd
+ Nome da imagem: auu
+ Nome da imagem: ave
+ Nome da imagem: bda
+ Nome da imagem: ayh
+ Nome da imagem: awc
+ Nome da imagem: avu
+ Nome da imagem: avl
+ Nome da imagem: avh
+ Nome da imagem: avr
+ Nome da imagem: avy
+ Nome da imagem: avv
+ Nome da imagem: awb
+ Nome da imagem: axs
+ Nome da imagem: awn
+ Nome da imagem: awf
+ Nome da imagem: awt
+ Nome da imagem: ayb
+ Nome da imagem: aya
+ Nome da imagem: ayg
+ Nome da imagem: azz
+ Nome da imagem: azh
+ Nome da imagem: ays
+ Nome da imagem: ayj
+ Nome da imagem: ayu
+ Nome da imagem: azt
+ Nome da imagem: azj
+ Nome da imagem: azy
+ Nome da imagem: bbp
+ Nome da imagem: bao
+ Nome da imagem: bae
+ Nome da imagem: bbh
+ Nome da imagem: bcl
+ Nome da imagem: bbu
+ Nome da imagem: bcw
+ Nome da imagem: bjs
+ Nome da imagem: bgk
+ Nome da imagem: bex
+ Nome da imagem: bea
+ Nome da imagem: bdz
+ Nome da imagem: beh
+ Nome da imagem: bfo
+ Nome da imagem: bfd
+ Nome da imagem: bfr
+ Nome da imagem: bhl
+ Nome da imagem: bgx
+ Nome da imagem: bgo
+ Nome da imagem: bhj
+ Nome da imagem: bir
+ Nome da imagem: bip
+ Nome da imagem: bjh
+ Nome da imagem: bln
+ Nome da imagem: bkj
+ Nome da imagem: bkg
+ Nome da imagem: bkw
+ Nome da imagem: bmd
+ Nome da imagem: bma
+ Nome da imagem: bmf
+ Nome da imagem: bmk
+
+
+COMPUTADORES E CAPACIDADE DE DISCO:
+ -Nome: computadorcm  -Capacidade: 700.0
+ -Nome: computerCmma  -Capacidade: 699.0
+ -Nome: solutions  -Capacidade: 670.0
+ -Nome: cmmaSolutions  -Capacidade: 502.0
+ -Nome: computer  -Capacidade: 480.0
+ -Nome: hspSolution  -Capacidade: 460.0
+ -Nome: computadorHsp  -Capacidade: 320.0
+ -Nome: solutionsComputer  -Capacidade: 309.0
+ -Nome: cmma  -Capacidade: 307.0
+ -Nome: hospitalPc  -Capacidade: 250.0
+
+
+ESPAÇOS DISPONÍVEIS DOS COMPUTADORES CADASTRADOS
+1º computador: 221.29999999999936
+2º computador: 220.59999999999994
+3º computador: 219.90000000000006
+4º computador: 219.90000000000003
+5º computador: 218.10000000000014
+6º computador: 217.19999999999996
+7º computador: 216.99999999999955
+8º computador: 216.5999999999994
+9º computador: 215.79999999999987
+10º computador: 212.2000000000001
 Já existe uma imagem com esse nome!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

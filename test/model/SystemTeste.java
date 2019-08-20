@@ -26,13 +26,14 @@ import static org.junit.Assert.*;
  */
 public class SystemTeste {
 
-    System sistema;
+    System sistema, sistema2;
     Computador computador1, computador2, computador3, computador4, computador5;
     Imagem imagem1, imagem2, imagem3, imagem4, imagem5, imagem6;
 
     @Before
     public void setUp() throws Exception {
         sistema = new System();
+        sistema2 = new System();
         computador1 = new Computador("hospital", 600);
         computador2 = new Computador("pcRecepcao", 598);
         computador3 = new Computador("computerCMMA", 450);
@@ -41,7 +42,7 @@ public class SystemTeste {
         imagem1 = new Imagem("Photo1", 5);
         imagem2 = new Imagem("anaBook", 4);
         imagem3 = new Imagem("Photo1", 2);
-        
+
     }
 
     /**
@@ -184,7 +185,7 @@ public class SystemTeste {
         assertEquals(181, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(8)));
 
         assertEquals(120, sistema.getComputadores().listarNomeImagem(sistema.getComputadores().get(9)));
-        
+
         // Se todos os testes acima deram certo, a quantidade esperada está correta, sendo assim
         // podemos validar que todas as imagens foram importadas, já que
         // 187 + 29 + 29 + 16 + 111 + 23 + 114 + 190 + 181 + 120 = 1000
@@ -224,8 +225,10 @@ public class SystemTeste {
      * @throws FileNotFoundException - exceção de arquivo não encontrado
      */
     @Test
-    public void testeListarEspacoDisponivelEmComputadores() throws FileNotFoundException {
+    public void testeListarEspacoDisponivelEmComputadores() throws FileNotFoundException, IOException {
         sistema.importarComputadores("files//computadores.ascii");
+        sistema.importarImagens("files//imagens.ascii");
+        
         assertEquals(10, sistema.getComputadores().ListarEspacoDisponivel());
     }
 
