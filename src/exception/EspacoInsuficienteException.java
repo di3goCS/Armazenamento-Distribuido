@@ -15,6 +15,9 @@ package exception;
 /**
  * Exceção lançada quando o usuário tenta inserir uma imagem, porém
  * não há espaço disponível nos computadores.
+ * 
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
  */
 public class EspacoInsuficienteException extends Exception {
     

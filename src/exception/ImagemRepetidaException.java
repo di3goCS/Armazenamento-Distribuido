@@ -15,6 +15,9 @@ package exception;
 /**
  * Exceção lançada quando o usuário tenta inserir uma imagem, porém
  * já existe uma imagem com o mesmo nome no sistema.
+ * 
+ * @author Estéfane Carmo de Souza
+ * @author Diego do Carmo Silva
  */
 public class ImagemRepetidaException extends Exception {
     
